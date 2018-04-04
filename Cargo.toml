@@ -1,0 +1,12 @@
+[package]
+name = "dpg"
+version = "0.1.0"
+authors = ["MaciekTalaska <maciek.talaska@gmail.com>"]
+
+[dependencies]
+
+[profile.release]
+lto = true
+panic = 'abort'
+opt-level = 3
+debuginfo = 0 
