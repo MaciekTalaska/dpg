@@ -11,5 +11,5 @@ fn dice_throw_should_always_return_value_from_1_to_6() {
 
 #[test]
 fn dice_throws_should_return_array_of_values() {
-    assert!(true);
+    assert!(false);
 }
