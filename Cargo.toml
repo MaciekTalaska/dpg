@@ -2,11 +2,16 @@
 name = "dpg"
 version = "0.1.0"
 authors = ["MaciekTalaska <maciek.talaska@gmail.com>"]
+description = "generate password(s) using diceware method & crypto secure random numbers"
+
+#[lib]
+#path="src/lib.rs"
 
 [dependencies]
+rand = "0.4.2"
 
 [profile.release]
 lto = true
 panic = 'abort'
 opt-level = 3
-debuginfo = 0 
+#debuginfo = 0 
