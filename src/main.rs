@@ -2,10 +2,10 @@ extern crate dpg;
 
 
 fn main() {
-    println!("hello world from main of dpg!");
-
     //dpg::mrandom::dice_roll_test();
     //dpg::mrandom::dice_rolls_test();
-    dpg::read_diceware_list();
-//    show_files();
+    let all_diceware = dpg::read_all_diceware_lists();
+    for info in all_diceware {
+        dpg::print_diceware_info(info);
+    }
 }

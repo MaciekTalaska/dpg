@@ -1,6 +1,17 @@
 pub mod mrandom;
 
-struct DicewareInfo {
+static POLISH_DICEWARE: &str = include_str!("diceware-pl.txt");
+static ENGLISH_DICEWARE: &str= include_str!("diceware-en.txt");
+
+fn get_diceware_words_by_language(language: &str) -> &str{
+    match language.to_lowercase().as_str() {
+        "en" => ENGLISH_DICEWARE,
+        "pl" => POLISH_DICEWARE,
+        _ => ENGLISH_DICEWARE
+    }
+}
+
+pub struct DicewareInfo {
     language:   String,
     num_dices:  u8,
     words:      Vec<String>
@@ -19,20 +30,32 @@ fn process_diceware_words(message: &str) -> DicewareInfo {
         .map( |s| s.to_string())
         .collect::<Vec<String>>();
 
-    println!("first word: {:?}", words[0]);
-    println!("second word:  {:?}", words[1]);
-
-    return DicewareInfo{language: "en".to_string(),
+    return DicewareInfo{language: "".to_string(),
         num_dices: calculate_max_dice_count(words.len()),
         words};
 }
 
-pub fn read_diceware_list() {
-    let bytes = include_bytes!("diceware-pl.txt");
-    let words = String::from_utf8_lossy(bytes).to_string().to_owned();
-    let info = process_diceware_words(&words);
+fn read_diceware_list(language: &str) -> DicewareInfo {
+    let words = get_diceware_words_by_language(language);
+    let mut info = process_diceware_words(&words);
+    info.language = language.to_string();
+    return info;
+}
+
+pub fn print_diceware_info(info: DicewareInfo) {
+    println!("---- print diceware info ----");
     println!("language: {:?}", info.language);
     println!("num_dices: {:?}", info.num_dices);
-    println!("words[0]: {:?}", info.words[0]);
+    println!("words[0]: {:?}", in   fo.words[0]);
     println!("words.length: {:?}", info.words.len());
+}
+
+pub fn read_all_diceware_lists() -> Vec<DicewareInfo> {
+    let languages = ["en", "pl"];
+    let mut all_diceware: Vec<DicewareInfo> = Vec::new();
+    for lang in languages.iter() {
+        let info = read_diceware_list(lang);
+        all_diceware.push(info);
+    }
+    return all_diceware;
 }
