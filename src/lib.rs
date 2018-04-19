@@ -11,10 +11,11 @@ fn get_diceware_words_by_language(language: &str) -> &str{
     }
 }
 
+#[derive(Clone)]
 pub struct DicewareInfo {
-    language:   String,
-    num_dices:  u8,
-    words:      Vec<String>
+    pub language:   String,
+    pub num_dices:  u8,
+    pub words:      Vec<String>
 }
 
 fn calculate_max_dice_count(size: usize) -> u8 {
@@ -46,7 +47,7 @@ pub fn print_diceware_info(info: DicewareInfo) {
     println!("---- print diceware info ----");
     println!("language: {:?}", info.language);
     println!("num_dices: {:?}", info.num_dices);
-    println!("words[0]: {:?}", in   fo.words[0]);
+    println!("words[0]: {:?}", info.words[0]);
     println!("words.length: {:?}", info.words.len());
 }
 

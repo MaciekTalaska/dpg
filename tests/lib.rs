@@ -4,7 +4,7 @@ extern crate dpg;
 
 #[test]
 fn dice_throw_should_always_return_value_from_1_to_6() {
-    let result = dpg::mrandom::dice_roll();
+    let result = dpg::mrandom::roll_dice();
     assert!(result > 0);
     assert!(result <= 6);
 }
