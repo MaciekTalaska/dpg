@@ -1,7 +1,5 @@
 extern crate rand;
 
-use std::vec::Vec;
-
 pub mod mrandom;
 
 pub fn roll_dice() -> u8 {
@@ -16,8 +14,8 @@ pub fn roll_dice_test() {
 
 pub fn roll_dices(dices: u8) -> u32 {
     let mut index: u32 = 0;
-    for i in {0..dices} {
-        if (index == 0) {
+    for _i in {0..dices} {
+        if index == 0 {
             index += roll_dice() as u32;
         } else {
             index += roll_dice() as u32;
