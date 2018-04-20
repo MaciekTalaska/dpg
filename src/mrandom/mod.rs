@@ -11,7 +11,7 @@ pub fn roll_dices(dices: u8) -> u32 {
     let mut index: u32 = 0;
     for _i in {0..dices} {
         index *= 6;
-        index += roll_dice() as u32;
+        index += (roll_dice() as u32) -1;
     }
     return index;
 }
