@@ -14,7 +14,7 @@ fn max_by_dice_num(dice_num: u8) -> u32 {
 #[test]
 fn roll_dices_1_dice_should_return_value_from_0_to_5() {
     let result = dpg::mrandom::roll_dices(1);
-    assert!(result <= 5);
+    assert!(result <= max_by_dice_num(1));
 }
 
 #[test]
