@@ -1,5887 +1,3888 @@
-11111	abak
-11112	abaka
-11113	abakan
-11114	abakus
-11115	abcug
-11116	abort
-11121	abrys
-11122	absces
-11123	absurd
-11124	absyda
-11125	absynt
-11126	abulik
-11131	acan
-11132	acpan
-11133	addend
-11134	adept
-11135	adidas
-11136	adonis
-11141	adres
-11142	adria
-11143	adwent
-11144	aerob
-11145	afatyk
-11146	afazja
-11151	afekt
-11152	afera
-11153	afgan
-11154	afgani
-11155	afisz
-11156	afro
-11161	afront
-11162	agalit
-11163	agania
-11164	aganin
-11165	aganka
-11166	agapa
-11211	agar
-11212	agat
-11213	agenda
-11214	agent
-11215	agitka
-11216	agnat
-11221	agon
-11222	agona
-11223	agonia
-11224	agrest
-11225	ahoj
-11226	ajent
-11231	ajer
-11232	akacja
-11233	akant
-11234	akapit
-11235	akces
-11236	akcik
-11241	akcja
-11242	akcyza
-11243	aklina
-11244	akonto
-11245	akord
-11246	akryl
-11251	aksis
-11252	akson
-11253	aktor
-11254	aktowy
-11255	aktyw
-11256	aktywa
-11261	alarm
-11262	alaski
-11263	alasz
-11264	alba
-11265	albit
-11266	album
-11311	aleja
-11312	alejka
-11313	alert
-11314	alfa
-11315	alfons
-11316	alga
-11321	algina
-11322	algol
-11323	alians
-11324	alkad
-11325	alkowa
-11326	almeja
-11331	alofan
-11332	alpaga
-11333	altana
-11334	altowy
-11335	alumn
-11336	aluzja
-11341	alwar
-11342	amant
-11343	amator
-11344	ambona
-11345	ambra
-11346	ameba
-11351	ameryk
-11352	amfora
-11353	amiant
-11354	amidek
-11355	amok
-11356	amonit
-11361	amor
-11362	amorka
-11363	ampeks
-11364	ampla
-11365	amulet
-11366	analog
-11411	ananas
-11412	anatom
-11413	andrus
-11414	andrut
-11415	anemia
-11416	anemik
-11421	angina
-11422	anglik
-11423	angora
-11424	ankier
-11425	annaty
-11426	anomia
-11431	anonim
-11432	anons
-11433	anorak
-11434	antaba
-11435	antek
-11436	antena
-11441	antyk
-11442	anuria
-11443	aorta
-11444	aparat
-11445	apasz
-11446	apatia
-11451	apatyt
-11452	apel
-11453	apetyt
-11454	aplauz
-11455	aplika
-11456	aporia
-11461	aport
-11462	apsyda
-11463	apteka
-11464	arab
-11465	arak
-11466	arat
-11511	arba
-11512	arbuz
-11513	arena
-11514	arenga
-11515	areszt
-11516	arfa
-11521	aria
-11522	ariel
-11523	arka
-11524	arkada
-11525	arkan
-11526	arkany
-11531	arkusz
-11532	armada
-11533	armata
-11534	aromat
-11535	aronia
-11536	arras
-11541	arsa
-11542	arszyn
-11543	artel
-11544	aryjka
-11545	asan
-11546	asana
-11551	asceta
-11552	asceza
-11553	asesor
-11554	asfalt
-11555	aspekt
-11556	astma
-11561	asumpt
-11562	asysta
-11563	atak
-11564	ataman
-11565	ateizm
-11566	atenka
-11611	atest
-11612	ateusz
-11613	atlant
-11614	atlas
-11615	atleta
-11616	atol
-11621	atom
-11622	atrapa
-11623	atrium
-11624	atucik
-11625	atut
-11626	atymia
-11631	atypia
-11632	audion
-11633	augur
-11634	aukcja
-11635	aukuba
-11636	aula
-11641	aura
-11642	autko
-11643	auto
-11644	autor
-11645	autowy
-11646	autyzm
-11651	awal
-11652	awans
-11653	awaria
-11654	awers
-11655	awiz
-11656	awizo
-11661	azbest
-11662	azjata
-11663	azoik
-11664	azor
-11665	azot
-11666	azotan
-12111	azotyn
-12112	aztek
-12113	azyl
-12114	azymut
-12115	baba
-12116	babcia
-12121	babina
-12122	babka
-12123	baca
-12124	bachor
-12125	baciar
-12126	bacik
-12131	baczek
-12132	baczny
-12133	badacz
-12134	badan
-12135	badany
-12136	badian
-12141	badyl
-12142	bagier
-12143	bagnet
-12144	bagno
-12145	baja
-12146	bajan
-12151	bajarz
-12152	bajcik
-12153	bajda
-12154	bajdak
-12155	bajer
-12156	bajka
-12161	bajoro
-12162	bajowy
-12163	bajram
-12164	bajt
-12165	baka
-12166	bakcyl
-12211	baken
-12212	bala
-12213	balast
-12214	balia
-12215	balkon
-12216	balon
-12221	balot
-12222	balowy
-12223	balsam
-12224	bambus
-12225	banan
-12226	bancik
-12231	band
-12232	banda
-12233	bandos
-12234	bania
-12235	banita
-12236	bank
-12241	bany
-12242	bara
-12243	barak
-12244	baran
-12245	barani
-12246	barbet
-12251	bard
-12252	bardon
-12253	barek
-12254	baria
-12255	barion
-12256	bark
-12261	barka
-12262	barkas
-12263	barman
-12264	barok
-12265	baron
-12266	barowy
-12311	barski
-12312	bartny
-12313	barwa
-12314	barwny
-12315	bary
-12316	basa
-12321	basen
-12322	basior
-12323	baskil
-12324	basowy
-12325	basza
-12326	baszta
-12331	batiar
-12332	batik
-12333	batog
-12334	baton
-12335	batut
-12336	batuta
-12341	batyst
-12342	bauer
-12343	bawet
-12344	bawoli
-12345	baza
-12346	bazar
-12351	bazia
-12352	bazowy
-12353	bebech
-12354	becik
-12355	beczka
-12356	bejca
-12361	bejowy
-12362	beka
-12363	bekany
-12364	bekas
-12365	bekon
-12366	beksa
-12411	bela
-12412	belfer
-12413	belka
-12414	bemar
-12415	bemol
-12416	bentos
-12421	benzyl
-12422	beocki
-12423	bera
-12424	berek
-12425	beret
-12426	bereza
-12431	bers
-12432	beryl
-12433	bessa
-12434	bestia
-12435	beta
-12436	betel
-12441	beton
-12442	betu
-12443	beza
-12444	bezdno
-12445	bezik
-12446	bezlik
-12451	bezoki
-12452	bias
-12453	biba
-12454	bibka
-12455	biblia
-12456	bibosz
-12461	biceps
-12462	bicykl
-12463	bicz
-12464	biczyk
-12465	bidet
-12466	bidon
-12511	biec
-12512	biecki
-12513	bieda
-12514	biedak
-12515	biedka
-12516	biedny
-12521	bieg
-12522	biegun
-12523	biegus
-12524	biel
-12525	bielak
-12526	bielmo
-12531	bierka
-12532	bierny
-12533	bies
-12534	biga
-12535	bigiel
-12536	bigos
-12541	bigot
-12542	bijak
-12543	bijany
-12544	bijnik
-12545	bila
-12546	bilans
-12551	bilard
-12552	bilet
-12553	bilion
-12554	bilon
-12555	bimber
-12556	binda
-12561	bingo
-12562	biodro
-12563	biogaz
-12564	biolog
-12565	bionik
-12566	biorca
-12611	bios
-12612	biotyt
-12613	biret
-12614	birkut
-12615	bisior
-12616	biskup
-12621	bisowy
-12622	bistor
-12623	bitels
-12624	bitka
-12625	bitnik
-12626	bitny
-12631	bitowy
-12632	bitwa
-12633	biurko
-12634	biuro
-12635	biust
-12636	biwak
-12641	biza
-12642	bizmut
-12643	biznes
-12644	bizon
-12645	bizun
-12646	blacha
-12651	blacik
-12652	blady
-12653	blaga
-12654	blank
-12655	blanka
-12656	blansz
-12661	blask
-12662	blat
-12663	blef
-12664	blenda
-12665	blezer
-12666	blich
-13111	blin
-13112	bliski
-13113	blizna
-13114	blotka
-13115	bluff
-13116	bluza
-13121	bluzg
-13122	bluzka
-13123	bobas
-13124	bobek
-13125	bober
-13126	bochen
-13131	bocian
-13132	bociek
-13133	boczek
-13134	boczny
-13135	bodiak
-13136	bogacz
-13141	bogaty
-13142	bogini
-13143	boiken
-13144	boisko
-13145	bojer
-13146	bojka
-13151	bojkot
-13152	bojler
-13153	bojowy
-13154	boks
-13155	bokser
-13156	boksyt
-13161	bolec
-13162	bolero
-13163	bolid
-13164	bomba
-13165	bombka
-13166	bona
-13211	bonia
-13212	bonowy
-13213	bonza
-13214	boom
-13215	bora
-13216	borg
-13221	borgis
-13222	bornit
-13223	borny
-13224	borowy
-13225	borsuk
-13226	boruta
-13231	borygo
-13232	bosak
-13233	boski
-13234	bosman
-13235	bosy
-13236	botek
-13241	bozon
-13242	brach
-13243	bracia
-13244	bracki
-13245	brajl
-13246	brak
-13251	brama
-13252	bramin
-13253	bramka
-13254	branka
-13255	brany
-13256	brat
-13261	bratek
-13262	bratni
-13263	brawko
-13264	brawo
-13265	breja
-13266	brek
-13311	brelok
-13312	brew
-13313	brocki
-13314	broda
-13315	brokat
-13316	broker
-13321	brom
-13322	bromek
-13323	brosza
-13324	browar
-13325	brucyt
-13326	brud
-13331	brudek
-13332	brudny
-13333	bruk
-13334	brunet
-13335	brus
-13336	brut
-13341	brutal
-13342	bruzda
-13343	bryg
-13344	bryk
-13345	bryka
-13346	brykla
-13351	bryt
-13352	brytan
-13353	bryza
-13354	bryzol
-13355	brzana
-13356	brzany
-13361	brzask
-13362	brzeg
-13363	brzuch
-13364	bubek
-13365	bubel
-13366	buchta
-13411	bucior
-13412	bucki
-13413	buczek
-13414	buda
-13415	budka
-13416	budowa
-13421	budrys
-13422	buduar
-13423	budzik
-13424	bufa
-13425	bufet
-13426	bufon
-13431	bufor
-13432	buhaj
-13433	bujak
-13434	bujany
-13435	bujny
-13436	bukiew
-13441	bukowy
-13442	buks
-13443	bulaj
-13444	buldog
-13445	bulgot
-13446	bulier
-13451	bulion
-13452	bulla
-13453	bulwa
-13454	bulwar
-13455	bulwka
-13456	buncik
-13461	bundz
-13462	bura
-13463	burak
-13464	buran
-13465	buras
-13466	burawy
-13511	burda
-13512	burdel
-13513	burdon
-13514	bureta
-13515	burka
-13516	burnus
-13521	bursa
-13522	burski
-13523	bursz
-13524	burta
-13525	bury
-13526	burza
-13531	burzan
-13532	burzyk
-13533	buski
-13534	busola
-13535	busz
-13536	buta
-13541	butan
-13542	butik
-13543	butla
-13544	butny
-13545	buton
-13546	buza
-13551	buzia
-13552	buziak
-13553	buzika
-13554	byczek
-13555	byczy
-13556	bystry
-13561	bzdura
-13562	bzik
-13563	bzowy
-13564	cacko
-13565	cacy
-13566	cadyk
-13611	cajg
-13612	cakiel
-13613	calec
-13614	calowy
-13615	calszy
-13616	campus
-13621	capi
-13622	capina
-13623	carat
-13624	carmen
-13625	carowa
-13626	carowy
-13631	carski
-13632	caryca
-13633	caryzm
-13634	casus
-13635	cebula
-13636	cech
-13641	cecha
-13642	cedet
-13643	cedr
-13644	cedzak
-13645	cekaem
-13646	cekin
-13651	cela
-13652	celka
-13653	cellon
-13654	celny
-13655	celoma
-13656	celowy
-13661	celta
-13662	cement
-13663	cena
-13664	cencik
-13665	cennik
-13666	cenny
-14111	cenowy
-14112	cent
-14113	center
-14114	centra
-14115	centym
-14116	ceny
-14121	cenzor
-14122	cenzus
-14123	cepak
-14124	ceper
-14125	cepu
-14126	cerata
-14131	cerber
-14132	ceres
-14133	cerka
-14134	cerowy
-14135	certa
-14136	cesarz
-14141	cesja
-14142	cetn
-14143	cetnar
-14144	cetno
-14145	cewka
-14146	cewnik
-14151	ceza
-14152	cezar
-14153	cezura
-14154	chaber
-14155	chadek
-14156	chalif
-14161	cham
-14162	chan
-14163	chaos
-14164	charci
-14165	chart
-14166	chasyd
-14211	chata
-14212	chatka
-14213	chciwy
-14214	chef
-14215	chemia
-14216	chemik
-14221	chlany
-14222	chlapa
-14223	chlew
-14224	chlor
-14225	chluba
-14226	chlust
-14231	chmara
-14232	chmiel
-14233	chmura
-14234	chmyz
-14235	chodak
-14236	choina
-14241	chojrak
-14242	chomik
-14243	chorej
-14244	chory
-14245	chram
-14246	chrap
-14251	chrom
-14252	chromy
-14253	chrust
-14254	chryja
-14255	chrypa
-14256	chuch
-14261	chudy
-14262	chusta
-14263	chutor
-14264	chwast
-14265	chwila
-14266	chwost
-14311	chwyt
-14312	chybki
-14313	chybot
-14314	chytry
-14315	ciacho
-14316	ciapa
-14321	ciapka
-14322	ciarka
-14323	ciasno
-14324	ciasny
-14325	ciasto
-14326	cichy
-14331	ciecz
-14332	ciek
-14333	cielak
-14334	cielec
-14335	cielny
-14336	ciem
-14341	ciemno
-14342	ciemny
-14343	cienki
-14344	cierny
-14345	ciocia
-14346	cios
-14351	ciosa
-14352	ciota
-14353	ciotka
-14354	cisawy
-14355	cisowy
-14356	cisza
-14361	ciuch
-14362	ciupa
-14363	ciut
-14364	ckliwy
-14365	clip
-14366	cofany
-14411	comber
-14412	cucha
-14413	cudak
-14414	cudny
-14415	cudo
-14416	cudzy
-14421	cugant
-14422	cugle
-14423	cugowy
-14424	cukier
-14425	cuma
-14426	cumowy
-14431	cura
-14432	cwany
-14433	cwibak
-14434	cybet
-14435	cybeta
-14436	cyborg
-14441	cybuch
-14442	cyfra
-14443	cygan
-14444	cygaro
-14445	cyjan
-14446	cykada
-14451	cykany
-14452	cykata
-14453	cykl
-14454	cyklon
-14455	cyklop
-14456	cykor
-14461	cykot
-14462	cykuta
-14463	cymes
-14464	cynia
-14465	cynik
-14466	cynizm
-14511	cynk
-14512	cynkit
-14513	cynowy
-14514	cypel
-14515	cyprys
-14516	cyrk
-14521	cyrla
-14522	cytat
-14523	cytata
-14524	cytoza
-14525	cytra
-14526	cytrus
-14531	cytryn
-14532	cywil
-14533	czaban
-14534	czacha
-14535	czador
-14536	czadra
-14541	czajka
-14542	czapa
-14543	czapka
-14544	czapla
-14545	czapli
-14546	czar
-14551	czara
-14552	czarka
-14553	czarny
-14554	czart
-14555	czas
-14556	czasza
-14561	czczy
-14562	czek
-14563	czekan
-14564	czelny
-14565	czep
-14566	czepek
-14611	czepny
-14612	czerep
-14613	czeski
-14614	czkany
-14615	czort
-14616	czub
-14621	czubek
-14622	czucha
-14623	czuj
-14624	czujka
-14625	czujny
-14626	czumak
-14631	czynny
-14632	czynsz
-14633	czyrak
-14634	czysto
-14635	czysty
-14636	dach
-14641	daktyl
-14642	daleka
-14643	daleki
-14644	dalia
-14645	dalszy
-14646	dama
-14651	damara
-14652	damka
-14653	damski
-14654	daniel
-14655	danina
-14656	danser
-14661	dany
-14662	darcie
-14663	darty
-14664	daszek
-14665	data
-14666	datek
-15111	dawany
-15112	dawca
-15113	dawka
-15114	dawna
-15115	dawno
-15116	dawny
-15121	debata
-15122	debel
-15123	debet
-15124	debil
-15125	dech
-15126	decha
-15131	deista
-15132	deizm
-15133	dekada
-15134	dekarz
-15135	dekiel
-15136	dekolt
-15141	dekret
-15142	delfin
-15143	delia
-15144	delikt
-15145	delta
-15146	demon
-15151	denar
-15152	denat
-15153	denko
-15154	denny
-15155	depo
-15156	deptak
-15161	dera
-15162	deresz
-15163	derma
-15164	desant
-15165	deser
-15166	deska
-15211	desu
-15212	desusy
-15213	deszcz
-15214	detal
-15215	dewiza
-15216	dewot
-15221	dewota
-15222	diabli
-15223	diadem
-15224	diakon
-15225	dialog
-15226	diasek
-15231	diera
-15232	diesel
-15233	dieta
-15234	dietka
-15235	dioda
-15236	diodon
-15241	diolen
-15242	dipol
-15243	dira
-15244	disc
-15245	diuk
-15246	diwa
-15251	dixi
-15252	dniowy
-15253	doba
-15254	dobiec
-15255	dobieg
-15256	dobity
-15261	dobnia
-15262	dobosz
-15263	dobowy
-15264	dobro
-15265	dobry
-15266	dobyty
-15311	docisk
-15312	dogmat
-15313	dojarz
-15314	dojazd
-15315	dojny
-15316	dojony
-15321	doker
-15322	dokowy
-15323	doktor
-15324	dola
-15325	dolany
-15326	dolar
-15331	dolec
-15332	dolina
-15333	dolman
-15334	dolmen
-15335	dolny
-15336	dolski
-15341	domek
-15342	domena
-15343	domiar
-15344	domino
-15345	domowy
-15346	domyty
-15351	donna
-15352	donor
-15353	donos
-15354	doping
-15355	dopity
-15356	dopust
-15361	dorsz
-15362	dorzut
-15363	dosiew
-15364	doskok
-15365	dosuw
-15366	dotyk
-15411	dowaga
-15412	dowcip
-15413	dowlec
-15414	doza
-15415	drab
-15416	drabka
-15421	draga
-15422	dragon
-15423	draka
-15424	drama
-15425	dramat
-15426	dranka
-15431	drapak
-15432	dratwa
-15433	drem
-15434	dren
-15435	dres
-15436	drewko
-15441	drewno
-15442	driada
-15443	drink
-15444	driver
-15445	drobny
-15446	droga
-15451	drogi
-15452	drom
-15453	drop
-15454	drops
-15455	drozd
-15456	drucik
-15461	drugi
-15462	druh
-15463	druhna
-15464	druk
-15465	drut
-15466	drwa
-15511	drwal
-15512	drwina
-15513	dryf
-15514	dryft
-15515	dryg
-15516	drynda
-15521	drzewo
-15522	drzwi
-15523	dubel
-15524	dubia
-15525	dubla
-15526	dubler
-15531	dublet
-15532	duby
-15533	duch
-15534	duda
-15535	dudarz
-15536	dudek
-15541	dudka
-15542	dufany
-15543	duha
-15544	dukany
-15545	dukat
-15546	duma
-15551	dumany
-15552	dumka
-15553	dumny
-15554	dunder
-15555	dural
-15556	durny
-15561	durowy
-15562	duser
-15563	dusza
-15564	duszek
-15565	duszny
-15566	dwoina
-15611	dwojak
-15612	dworak
-15613	dworek
-15614	dworka
-15615	dworny
-15616	dwugaz
-15621	dwuoki
-15622	dwusuw
-15623	dwuton
-15624	dybany
-15625	dybuk
-15626	dyby
-15631	dycha
-15632	dydek
-15633	dygany
-15634	dygot
-15635	dykcja
-15636	dykta
-15641	dyktat
-15642	dylica
-15643	dylowy
-15644	dyma
-15645	dymany
-15646	dymarz
-15651	dymek
-15652	dymka
-15653	dymnik
-15654	dymny
-15655	dymowy
-15656	dyna
-15661	dynamo
-15662	dynar
-15663	dyngus
-15664	dynia
-15665	dyon
-15666	dypl
-16111	dyplom
-16112	dyptyk
-16113	dysk
-16114	dysten
-16115	dysza
-16116	dyszel
-16121	dyszka
-16122	dywan
-16123	dyza
-16124	dzban
-16125	dziad
-16126	dziany
-16131	dzicz
-16132	dziczy
-16133	dzida
-16134	dzieje
-16135	dzik
-16136	dziki
-16141	dziryt
-16142	dziura
-16143	dziw
-16144	dziwa
-16145	dziwak
-16146	dziwka
-16151	dziwny
-16152	dziwo
-16153	dzwon
-16154	dzwono
-16155	eblis
-16156	ebonit
-16161	echo
-16162	echowy
-16163	eden
-16164	edycja
-16165	edykt
-16166	edyl
-16211	edytor
-16212	efeb
-16213	efekt
-16214	efendi
-16215	efeski
-16216	egida
-16221	egoizm
-16222	ekiwok
-16223	ekler
-16224	ekloga
-16225	ekonom
-16226	ekran
-16231	eksces
-16232	elana
-16233	elegia
-16234	elekt
-16235	elew
-16236	elewka
-16241	elewon
-16242	elita
-16243	elki
-16244	elkowy
-16245	emeryt
-16246	emezja
-16251	emfaza
-16252	emir
-16253	emirat
-16254	emisja
-16255	emiter
-16256	emocja
-16261	empik
-16262	empora
-16263	emski
-16264	enacja
-16265	enat
-16266	encja
-16311	endek
-16312	enigma
-16313	enter
-16314	enzym
-16315	eolit
-16316	eolowy
-16321	eolski
-16322	epicki
-16323	epigon
-16324	epik
-16325	epika
-16326	epilog
-16331	epitet
-16332	epizod
-16333	epoda
-16334	epoka
-16335	epolet
-16336	epos
-16341	eratyk
-16342	erem
-16343	erka
-16344	eros
-16345	erotyk
-16346	erozja
-16351	errata
-16352	ersatz
-16353	erynia
-16354	erzac
-16355	esbek
-16356	esdek
-16361	esej
-16362	ester
-16363	esteta
-16364	estyma
-16365	etacik
-16366	etanol
-16411	etap
-16412	etat
-16413	eter
-16414	etiuda
-16415	etola
-16416	etolog
-16421	etos
-16422	etui
-16423	etyk
-16424	etyka
-16425	eunuch
-16426	facet
-16431	fach
-16432	fagot
-16433	faja
-16434	fajans
-16435	fajer
-16436	fajka
-16441	fajny
-16442	fajowy
-16443	fakcik
-16444	fakir
-16445	faks
-16446	fakt
-16451	faktor
-16452	fala
-16453	falka
-16454	falowy
-16455	falset
-16456	fama
-16461	fanga
-16462	fanka
-16463	fant
-16464	fantom
-16465	fara
-16466	faraon
-16511	farba
-16512	farbka
-16513	farma
-16514	farmer
-16515	farsa
-16516	farsz
-16521	fart
-16522	farys
-16523	fasa
-16524	faseta
-16525	faska
-16526	fasola
-16531	fason
-16532	fatum
-16533	fatyga
-16534	faul
-16535	faun
-16536	fauna
-16541	fawor
-16542	faza
-16543	fazka
-16544	fazowy
-16545	feblik
-16546	febra
-16551	feler
-16552	felga
-16553	feniks
-16554	fenowy
-16555	ferie
-16556	ferm
-16561	fermer
-16562	ferryt
-16563	ferwor
-16564	feston
-16565	festyn
-16566	feta
-16611	fetor
-16612	fetysz
-16613	fiacik
-16614	fiasko
-16615	fiat
-16616	fiesta
-16621	fifka
-16622	figa
-16623	figiel
-16624	figowy
-16625	figura
-16626	fikany
-16631	fiks
-16632	fiksat
-16633	fikus
-16634	fila
-16635	filc
-16636	filet
-16641	filia
-16642	film
-16643	filmik
-16644	filtr
-16645	filut
-16646	finisz
-16651	finka
-16652	fiok
-16653	fiola
-16654	fiolet
-16655	fiolka
-16656	fiord
-16661	fircyk
-16662	firma
-16663	fiskus
-16664	fisza
-16665	fiszka
-16666	fita
-21111	fizyk
-21112	fizyka
-21113	flacha
-21114	flaga
-21115	flak
-21116	flakon
-21121	flama
-21122	flanca
-21123	flank
-21124	flanka
-21125	flara
-21126	flasza
-21131	flausz
-21132	flecik
-21133	flegma
-21134	flek
-21135	flesz
-21136	flesza
-21141	flet
-21142	flik
-21143	flint
-21144	flinta
-21145	flirt
-21146	flis
-21151	flisak
-21152	fliz
-21153	floks
-21154	flora
-21155	floren
-21156	flores
-21161	floret
-21162	flota
-21163	flower
-21164	fluor
-21165	fobia
-21166	fochy
-21211	foczka
-21212	foczy
-21213	fokowy
-21214	foks
-21215	foksik
-21216	fokus
-21221	folder
-21222	folga
-21223	folia
-21224	fonem
-21225	font
-21226	foot
-21231	forcik
-21232	forint
-21233	forma
-21234	format
-21235	fornir
-21236	forsa
-21241	fort
-21242	forta
-21243	fortel
-21244	forum
-21245	forynt
-21246	fosa
-21251	fosfat
-21252	fosfon
-21253	fosfor
-21254	fosgen
-21255	fota
-21256	foton
-21261	fotos
-21262	fracht
-21263	frajda
-21264	frajer
-21265	frak
-21266	frank
-21311	frant
-21312	fraza
-21313	frazes
-21314	frencz
-21315	freon
-21316	fresk
-21321	fretka
-21322	frez
-21323	frezer
-21324	fronda
-21325	front
-21326	froter
-21331	fryc
-21332	fryga
-21333	frykas
-21334	frytek
-21335	frytka
-21336	fryz
-21341	fryza
-21342	fryzka
-21343	ftanit
-21344	fucha
-21345	fuga
-21346	fujara
-21351	fukoid
-21352	fuks
-21353	fukus
-21354	fular
-21355	fulmar
-21356	fumy
-21361	funcik
-21362	funda
-21363	funt
-21364	fura
-21365	furgon
-21366	furia
-21411	furka
-21412	furkot
-21413	furman
-21414	furora
-21415	furta
-21416	fusy
-21421	fuszer
-21422	futbol
-21423	futor
-21424	futro
-21425	fuzja
-21426	fuzyt
-21431	gacek
-21432	gach
-21433	gacie
-21434	gacki
-21435	gadany
-21436	gadget
-21441	gadka
-21442	gafa
-21443	gafel
-21444	gaga
-21445	gagat
-21446	gagman
-21451	gagowy
-21452	gaik
-21453	gajda
-21454	gajowy
-21455	gala
-21456	galar
-21461	galena
-21462	galeon
-21463	galera
-21464	galman
-21465	galon
-21466	galop
-21511	galowy
-21512	gambir
-21513	gambit
-21514	gameta
-21515	gamma
-21516	ganek
-21521	gang
-21522	ganz
-21523	gapa
-21524	gapcia
-21525	garb
-21526	garbek
-21531	garbus
-21532	garda
-21533	garna
-21534	garnek
-21535	garowy
-21536	garson
-21541	gasik
-21542	gasiwo
-21543	gaszek
-21544	gatki
-21545	gaucho
-21546	gauczo
-21551	gawot
-21552	gawra
-21553	gawron
-21554	gaza
-21555	gazda
-21556	gazeta
-21561	gazik
-21562	gazon
-21563	gazowy
-21564	gbur
-21565	gburek
-21566	gekon
-21611	gemowy
-21612	geneza
-21613	genom
-21614	genowy
-21615	geofon
-21616	geolog
-21621	gepard
-21622	german
-21623	gest
-21624	gestia
-21625	gestor
-21626	getry
-21631	getyt
-21632	geza
-21633	giaur
-21634	gibki
-21635	gibski
-21636	gicz
-21641	gidia
-21642	giemza
-21643	gierka
-21644	giga
-21645	gigant
-21646	gigolo
-21651	gildia
-21652	gilowy
-21653	gilza
-21654	gips
-21655	gira
-21656	gitara
-21661	gitowy
-21662	giwera
-21663	glaca
-21664	glanc
-21665	glans
-21666	gleba
-22111	glej
-22112	glejak
-22113	glejt
-22114	glikol
-22115	glin
-22116	glina
-22121	glinka
-22122	glioza
-22123	glista
-22124	glob
-22125	globus
-22126	gloria
-22131	glosa
-22132	glut
-22133	gmin
-22134	gmina
-22135	gminny
-22136	gnany
-22141	gnat
-22142	gnejs
-22143	gniady
-22144	gnida
-22145	gniew
-22146	gnilny
-22151	gniot
-22152	gnity
-22153	gnojka
-22154	gnom
-22155	gnoma
-22156	gnyp
-22161	gocki
-22162	godet
-22163	godowy
-22164	gody
-22165	gogle
-22166	gojony
-22211	gokart
-22212	golarz
-22213	golec
-22214	golem
-22215	golf
-22216	goliat
-22221	gomora
-22222	gonada
-22223	gong
-22224	goniec
-22225	gont
-22226	gorol
-22231	gors
-22232	gorset
-22233	gorszy
-22234	gorycz
-22235	goryl
-22236	gorzel
-22241	gorzki
-22242	gotowy
-22243	gotyk
-22244	gouda
-22245	grab
-22246	graba
-22251	grabie
-22252	grabki
-22253	graca
-22254	gracik
-22255	gracja
-22256	gracki
-22261	gracz
-22262	grad
-22263	graf
-22264	grafik
-22265	grafit
-22266	graham
-22311	grajek
-22312	gram
-22313	granat
-22314	grand
-22315	granda
-22316	granit
-22321	grant
-22322	grany
-22323	grapa
-22324	grat
-22325	gratis
-22326	grawer
-22331	grdyka
-22332	grecki
-22333	grek
-22334	greka
-22335	grena
-22336	grill
-22341	grobek
-22342	grobla
-22343	groch
-22344	grodza
-22345	grog
-22346	grom
-22351	gromki
-22352	gronko
-22353	grono
-22354	gros
-22355	grosik
-22356	grosz
-22361	grot
-22362	grota
-22363	groza
-22364	grubas
-22365	gruber
-22366	gruby
-22411	grucki
-22412	gruda
-22413	grudka
-22414	grula
-22415	grunt
-22416	grupa
-22421	grupet
-22422	grupka
-22423	grusza
-22424	gruz
-22425	gryf
-22426	gryfon
-22431	gryka
-22432	grymas
-22433	grypa
-22434	grypka
-22435	gryps
-22436	grysik
-22441	gryz
-22442	grzdyl
-22443	grzech
-22444	grzmot
-22445	grzyb
-22446	grzywa
-22451	gula
-22452	gulasz
-22453	gulden
-22454	gulgot
-22455	gulka
-22456	guma
-22461	gumiak
-22462	gumka
-22463	gumno
-22464	gumowy
-22465	gunia
-22466	gurowy
-22511	gust
-22512	guzek
-22513	guziec
-22514	guzik
-22515	guzowy
-22516	gwar
-22521	gwara
-22522	gwarek
-22523	gwarny
-22524	gwasz
-22525	gwinea
-22526	gwint
-22531	gwizd
-22532	gwoli
-22533	gzowy
-22534	gzyms
-22535	habit
-22536	haczyk
-22541	hades
-22542	hafcik
-22543	haft
-22544	haftka
-22545	hajduk
-22546	hakata
-22551	hakowy
-22552	hala
-22553	halerz
-22554	halit
-22555	halka
-22556	halny
-22561	halowy
-22562	hals
-22563	hamak
-22564	handel
-22565	hangar
-22566	hantle
-22611	hanza
-22612	haracz
-22613	harap
-22614	harcap
-22615	hardy
-22616	harem
-22621	harfa
-22622	harpia
-22623	harpun
-22624	hasany
-22625	haski
-22626	haust
-22631	hawana
-22632	hazard
-22633	heban
-22634	heca
-22635	hektar
-22636	helowy
-22641	helski
-22642	hemant
-22643	henna
-22644	henr
-22645	herb
-22646	herold
-22651	heros
-22652	herszt
-22653	heski
-22654	hetera
-22655	hiena
-22656	hieni
-22661	hindus
-22662	hipika
-22663	hipis
-22664	hippis
-22665	hoja
-22666	hojny
-23111	hokej
-23112	holik
-23113	holizm
-23114	homar
-23115	hops
-23116	hora
-23121	hormon
-23122	hors
-23123	hossa
-23124	hotel
-23125	huba
-23126	hubka
-23131	huczny
-23132	hufiec
-23133	hufnal
-23134	hukany
-23135	hulaka
-23136	hulany
-23141	hultaj
-23142	humbug
-23143	humor
-23144	hurkot
-23145	hurma
-23146	hurt
-23151	husarz
-23152	husyta
-23153	huta
-23154	hutnik
-23155	huzar
-23156	hybryd
-23161	hycel
-23162	hydrat
-23163	hydria
-23164	hymn
-23165	ibis
-23166	ichni
-23211	idea
-23212	idejka
-23213	ideowy
-23214	idiom
-23215	idiota
-23216	idol
-23221	igelit
-23222	iglak
-23223	iglica
-23224	ignam
-23225	igrany
-23226	igrek
-23231	iguana
-23232	igumen
-23233	ikarus
-23234	ikona
-23235	ikonka
-23236	ikra
-23241	ikrzak
-23242	iloraz
-23243	iluzja
-23244	imam
-23245	imbir
-23246	imbryk
-23251	impas
-23252	impet
-23253	import
-23254	impuls
-23255	indeks
-23256	indyk
-23261	inkub
-23262	inlet
-23263	insekt
-23264	intruz
-23265	iracki
-23266	ircha
-23311	ironia
-23312	iryd
-23313	iryda
-23314	irys
-23315	irysek
-23316	iskany
-23321	iskra
-23322	islam
-23323	istny
-23324	itacki
-23325	item
-23326	izba
-23331	izbowy
-23332	izotop
-23333	jadany
-23334	jadeit
-23335	jadowy
-23336	jaga
-23341	jagoda
-23342	jaguar
-23343	jajko
-23344	jajnik
-23345	jajo
-23346	jajowy
-23351	jaki
-23352	jama
-23353	jamka
-23354	jamnik
-23355	jamowy
-23356	jantar
-23361	japa
-23362	jard
-23363	jarka
-23364	jarosz
-23365	jarowy
-23366	jary
-23411	jarzmo
-23412	jasiek
-23413	jaski
-23414	jaskra
-23415	jasno
-23416	jasny
-23421	jasyr
-23422	jawa
-23423	jawny
-23424	jawor
-23425	jazda
-23426	jazowy
-23431	jazz
-23432	jeden
-23433	jednia
-23434	jedwab
-23435	jedyny
-23436	jegier
-23441	jehowa
-23442	jelec
-23443	jeleni
-23444	jelito
-23445	jeniec
-23446	jenot
-23451	jesion
-23452	jezdny
-23453	jodowy
-23454	jodyna
-23455	joga
-23456	jogin
-23461	jogurt
-23462	joker
-23463	jolka
-23464	jonowy
-23465	jota
-23466	jotowy
-23511	jubel
-23512	jubka
-23513	jucha
-23514	jucht
-23515	juczny
-23516	judasz
-23521	judok
-23522	judoka
-23523	jugol
-23524	juhas
-23525	juhasi
-23526	junak
-23531	jung
-23532	junior
-23533	jura
-23534	jurny
-23535	juror
-23536	jurta
-23541	juszka
-23542	juta
-23543	jutowy
-23544	jutro
-23545	kaban
-23546	kabat
-23551	kabe
-23552	kabel
-23553	kabina
-23554	kabul
-23555	kabura
-23556	kabza
-23561	kacap
-23562	kacet
-23563	kaci
-23564	kacyk
-23565	kaczan
-23566	kaczka
-23611	kaczy
-23612	kadet
-23613	kadr
-23614	kadra
-23615	kadryl
-23616	kaduk
-23621	kafar
-23622	kafel
-23623	kaftan
-23624	kajak
-23625	kajany
-23626	kajet
-23631	kajmak
-23632	kajuta
-23633	kajzer
-23634	kaki
-23635	kaktus
-23636	kalcyt
-23641	kaleka
-23642	kaleki
-23643	kaleta
-23644	kalium
-23645	kalka
-23646	kalmar
-23651	kalwin
-23652	kamasz
-23653	kambuz
-23654	kamera
-23655	kamica
-23656	kamlot
-23661	kampus
-23662	kamrat
-23663	kamski
-23664	kamyk
-23665	kanada
-23666	kanar
-24111	kancik
-24112	kandyz
-24113	kanele
-24114	kangur
-24115	kania
-24116	kanka
-24121	kankan
-24122	kanon
-24123	kanopa
-24124	kant
-24125	kantar
-24126	kanton
-24131	kantor
-24132	kantyk
-24133	kanwa
-24134	kapa
-24135	kapany
-24136	kapar
-24141	kapcan
-24142	kapec
-24143	kapela
-24144	kaper
-24145	kapka
-24146	kaplin
-24151	kapok
-24152	kapot
-24153	kapota
-24154	kaprys
-24155	kapsel
-24156	kapski
-24161	kapsla
-24162	kaptur
-24163	kapuza
-24164	karany
-24165	karat
-24166	karb
-24211	karbol
-24212	karcz
-24213	kardan
-24214	kares
-24215	kareta
-24216	karier
-24221	kark
-24222	karli
-24223	karma
-24224	karmel
-24225	karmik
-24226	karnet
-24231	karnik
-24232	karny
-24233	karo
-24234	karoca
-24235	karota
-24236	karowy
-24241	karp
-24242	karpa
-24243	karpi
-24244	karpik
-24245	karski
-24246	kart
-24251	karta
-24252	kartel
-24253	kartka
-24254	karton
-24255	kartuz
-24256	karuk
-24261	kary
-24262	kasa
-24263	kasak
-24264	kasata
-24265	kaseta
-24266	kasjer
-24311	kasjop
-24312	kask
-24313	kasowy
-24314	kastet
-24315	kastor
-24316	kasyda
-24321	kasza
-24322	kaszka
-24323	katar
-24324	katoda
-24325	kaucja
-24326	kausza
-24331	kawa
-24332	kawas
-24333	kawczy
-24334	kawior
-24335	kawka
-24336	kawon
-24341	kawowy
-24342	kazus
-24343	kebab
-24344	keczup
-24345	kedyw
-24346	kefir
-24351	keja
-24352	keks
-24353	kelner
-24354	kenel
-24355	kepi
-24356	keson
-24361	ketmia
-24362	kibic
-24363	kibuc
-24364	kicany
-24365	kicha
-24366	kicia
-24411	kicz
-24412	kiecka
-24413	kiedy
-24414	kiep
-24415	kier
-24416	kierat
-24421	kiesa
-24422	kieska
-24423	kifoza
-24424	kijek
-24425	kijowy
-24426	kijski
-24431	kiks
-24432	kikut
-24433	kila
-24434	kilim
-24435	kilka
-24436	kilo
-24441	kilof
-24442	kilowy
-24443	kilt
-24444	kimany
-24445	kinaza
-24446	king
-24451	kino
-24452	kinol
-24453	kinowy
-24454	kiosk
-24455	kiper
-24456	kipiel
-24461	kipu
-24462	kircha
-24463	kirkut
-24464	kirowy
-24465	kirys
-24466	kisiel
-24511	kiszka
-24512	kita
-24513	kitara
-24514	kitel
-24515	kitka
-24516	kitla
-24521	kitowy
-24522	kiwany
-24523	kizia
-24524	klacz
-24525	klag
-24526	klaka
-24531	klamka
-24532	klamot
-24533	klamra
-24534	klan
-24535	klang
-24536	klanik
-24541	klapa
-24542	klapek
-24543	klapka
-24544	klaps
-24545	klapsa
-24546	klasa
-24551	klaser
-24552	klata
-24553	klatka
-24554	klaun
-24555	klawy
-24556	klecha
-24561	kleik
-24562	klej
-24563	klekot
-24564	kleks
-24565	klepak
-24566	klepka
-24611	kler
-24612	kleryk
-24613	kleszy
-24614	klient
-24615	klif
-24616	klika
-24621	klimat
-24622	klin
-24623	klincz
-24624	klinga
-24625	klinik
-24626	klipa
-24631	kliper
-24632	klips
-24633	klisza
-24634	klita
-24635	klitka
-24636	klizma
-24641	kloaka
-24642	kloc
-24643	klocek
-24644	klomb
-24645	klon
-24646	klonik
-24651	klops
-24652	klosik
-24653	klosz
-24654	klot
-24655	klown
-24656	klozet
-24661	klub
-24662	kluba
-24663	klubik
-24664	kluch
-24665	klucha
-24666	klucki
-25111	klucz
-25112	klupa
-25113	klusek
-25114	kluska
-25115	kmiecy
-25116	kminek
-25121	knajak
-25122	knajpa
-25123	knebel
-25124	knecht
-25125	knedel
-25126	knel
-25131	knieja
-25132	knot
-25133	knowie
-25134	knur
-25135	knurek
-25136	knuty
-25141	knyp
-25142	knypel
-25143	kobalt
-25144	kobold
-25145	kobuz
-25146	kobuzi
-25151	kobyli
-25152	kobza
-25153	kocher
-25154	koci
-25155	kociak
-25156	kocica
-25161	kocina
-25162	kocki
-25163	kocony
-25164	kocur
-25165	kocyk
-25166	koczek
-25211	koczyk
-25212	kodak
-25213	kodeks
-25214	kodon
-25215	kodowy
-25216	koga
-25221	koguci
-25222	kogut
-25223	koja
-25224	kojec
-25225	kojony
-25226	kojot
-25231	koka
-25232	koker
-25233	kokon
-25234	kokos
-25235	kokota
-25236	kokpit
-25241	koks
-25242	koksa
-25243	kola
-25244	kolano
-25245	kolarz
-25246	kolasa
-25251	kolba
-25252	kolbka
-25253	koleba
-25254	kolec
-25255	kolega
-25256	kolej
-25261	kolia
-25262	kolon
-25263	kolor
-25264	kolos
-25265	kolski
-25266	kolt
-25311	koma
-25312	komar
-25313	komat
-25314	komers
-25315	kometa
-25316	komik
-25321	komika
-25322	komiks
-25323	komin
-25324	komis
-25325	komoda
-25326	komora
-25331	kompan
-25332	kompas
-25333	komput
-25334	komtur
-25335	komuch
-25336	komuna
-25341	komysz
-25342	konany
-25343	konar
-25344	koncha
-25345	kondor
-25346	konew
-25351	koniak
-25352	koniec
-25353	konik
-25354	konina
-25355	konny
-25356	konsul
-25361	konsum
-25362	kontra
-25363	kontur
-25364	konus
-25365	kopa
-25366	kopacz
-25411	kopal
-25412	kopany
-25413	koper
-25414	kopia
-25415	kopica
-25416	kopiec
-25421	kopka
-25422	kopny
-25423	kopra
-25424	kora
-25425	korab
-25426	koral
-25431	korba
-25432	korbka
-25433	kord
-25434	kordon
-25435	korek
-25436	kornet
-25441	kornik
-25442	korona
-25443	korowy
-25444	korpus
-25445	kort
-25446	korund
-25451	koryto
-25452	korzec
-25453	kosa
-25454	kosarz
-25455	koser
-25456	kosmos
-25461	kosmyk
-25462	koso
-25463	kostka
-25464	kostny
-25465	kostur
-25466	kosy
-25511	kosz
-25512	koszer
-25513	koszt
-25514	koszyk
-25515	kotara
-25516	kotek
-25521	kotew
-25522	kotka
-25523	kotlet
-25524	kotu
-25525	kotwa
-25526	kotwica
-25531	kowal
-25532	kowboj
-25533	koza
-25534	kozak
-25535	kozera
-25536	kozeta
-25541	kozi
-25542	kozica
-25543	kozik
-25544	kozub
-25545	kozuba
-25546	kpiarz
-25551	kpina
-25552	kpiony
-25553	krab
-25554	krach
-25555	kraik
-25556	kraina
-25561	kraj
-25562	krajak
-25563	krajan
-25564	kraksa
-25565	krakus
-25566	kram
-25611	kramik
-25612	kran
-25613	kranik
-25614	kras
-25615	krasa
-25616	krasny
-25621	krata
-25622	krater
-25623	kratka
-25624	kraul
-25625	krawat
-25626	krecha
-25631	kreci
-25632	krecik
-25633	kreda
-25634	kredka
-25635	kredo
-25636	krem
-25641	kremik
-25642	kreol
-25643	krepon
-25644	kres
-25645	kresa
-25646	kreska
-25651	kresny
-25652	kret
-25653	kreton
-25654	kretyn
-25655	krew
-25656	krewa
-25661	krewki
-25662	krewny
-25663	kreza
-25664	krezus
-25665	krocie
-25666	krocz
-26111	krocze
-26112	krok
-26113	krokus
-26114	kromka
-26115	kropa
-26116	kropka
-26121	kropla
-26122	krosta
-26123	krotny
-26124	kroton
-26125	krowi
-26126	kruchy
-26131	kruczy
-26132	kruk
-26133	krupa
-26134	krupon
-26135	krwawy
-26136	krwiak
-26141	kryg
-26142	kryl
-26143	krymka
-26144	krypa
-26145	krypta
-26146	kryska
-26151	kryty
-26152	krytyk
-26153	kryzka
-26154	kryzys
-26155	krzak
-26156	krzem
-26161	krzew
-26162	krzta
-26163	krzyca
-26164	krzyk
-26165	krzywy
-26166	ksenon
-26211	ksieni
-26212	ksiuty
-26213	ksylen
-26214	ksywa
-26215	kszyk
-26216	kubas
-26221	kubek
-26222	kubrak
-26223	kubryk
-26224	kucany
-26225	kuch
-26226	kuchta
-26231	kucja
-26232	kucki
-26233	kucyk
-26234	kufel
-26235	kufer
-26236	kugiel
-26241	kugler
-26242	kuguar
-26243	kujny
-26244	kujon
-26245	kujot
-26246	kukany
-26251	kuks
-26252	kula
-26253	kulany
-26254	kulas
-26255	kulawy
-26256	kulbak
-26261	kulfon
-26262	kulig
-26263	kulis
-26264	kulisa
-26265	kulka
-26266	kulony
-26311	kult
-26312	kuma
-26313	kumany
-26314	kumcia
-26315	kumka
-26316	kumpel
-26321	kumys
-26322	kundel
-26323	kundys
-26324	kuni
-26325	kunszt
-26326	kupa
-26331	kuper
-26332	kupiec
-26333	kupla
-26334	kupler
-26335	kupno
-26336	kupny
-26341	kupon
-26342	kupryt
-26343	kura
-26344	kurant
-26345	kurara
-26346	kurek
-26351	kurhan
-26352	kuria
-26353	kurier
-26354	kurka
-26355	kurnik
-26356	kurny
-26361	kurort
-26362	kurp
-26363	kurs
-26364	kurski
-26365	kursor
-26366	kurtka
-26411	kurz
-26412	kurzy
-26413	kusak
-26414	kusy
-26415	kusza
-26416	kuter
-26421	kutia
-26422	kutner
-26423	kuty
-26424	kuweta
-26425	kuzyn
-26426	kwadra
-26431	kwant
-26432	kwarc
-26433	kwarta
-26434	kwas
-26435	kwasek
-26436	kwef
-26441	kweres
-26442	kwesta
-26443	kwiat
-26444	kwinta
-26445	kwit
-26446	kwitek
-26451	kwoczy
-26452	kwota
-26453	laba
-26454	lacha
-26455	laczek
-26456	lada
-26461	laga
-26462	lagier
-26463	laguna
-26464	laicki
-26465	laik
-26466	laikat
-26511	laka
-26512	lakier
-26513	lakmus
-26514	lakowy
-26515	lala
-26516	lalka
-26521	lama
-26522	lambda
-26523	lament
-26524	lamer
-26525	lameta
-26526	lamna
-26531	lampa
-26532	lampka
-26533	lamus
-26534	lanca
-26535	lancet
-26536	lando
-26541	lany
-26542	lapsus
-26543	larwa
-26544	lasek
-26545	laser
-26546	laska
-26551	laski
-26552	lasso
-26553	latany
-26554	lateks
-26555	lato
-26556	laufer
-26561	laur
-26562	laurka
-26563	lawa
-26564	laweta
-26565	lawina
-26566	lazur
-26611	leciwy
-26612	ledwie
-26613	ledwo
-26614	legat
-26615	legatu
-26616	legawy
-26621	legia
-26622	legion
-26623	leja
-26624	lejarz
-26625	lejba
-26626	lejbik
-26631	lejc
-26632	lejek
-26633	lejnia
-26634	lejowy
-26635	lekarz
-26636	lekcja
-26641	lekki
-26642	lekowy
-26643	lektor
-26644	lekusi
-26645	lelek
-26646	lemat
-26651	leming
-26652	leniwy
-26653	lennik
-26654	lenno
-26655	lepik
-26656	lepnik
-26661	lepowy
-26662	lepszy
-26663	lepta
-26664	leser
-26665	leski
-26666	less
-31111	leszcz
-31112	letarg
-31113	letni
-31114	letnik
-31115	leucyt
-31116	lewa
-31121	lewak
-31122	lewar
-31123	lewek
-31124	lewica
-31125	lewita
-31126	lewy
-31131	liana
-31132	lice
-31133	liceum
-31134	licho
-31135	lichwa
-31136	lichy
-31141	lico
-31142	licowy
-31143	liczba
-31144	liczko
-31145	liczny
-31146	lider
-31151	lidyt
-31152	lidzki
-31153	liga
-31154	ligand
-31155	ligowy
-31156	likier
-31161	liktor
-31162	likwor
-31163	lilia
-31164	liman
-31165	limba
-31166	limit
-31211	limski
-31212	lina
-31213	lincki
-31214	lincz
-31215	linek
-31216	linga
-31221	linia
-31222	linka
-31223	linowy
-31224	lipa
-31225	lipid
-31226	lipiec
-31231	lipina
-31232	lipka
-31233	lipny
-31234	lipowy
-31235	lipski
-31236	lirka
-31241	lirnik
-31242	liryk
-31243	liryka
-31244	lisek
-31245	lisi
-31246	lisica
-31251	lisp
-31252	list
-31253	lista
-31254	listek
-31255	listny
-31256	listwa
-31261	liszaj
-31262	liszka
-31263	litera
-31264	litr
-31265	litwak
-31266	lity
-31311	liwr
-31312	liwski
-31313	lizak
-31314	lizany
-31315	lizol
-31316	lizuch
-31321	lizus
-31322	lniany
-31323	lnisko
-31324	locha
-31325	loczek
-31326	loden
-31331	lodowy
-31332	lodzik
-31333	logika
-31334	logos
-31335	lokaj
-31336	lokal
-31341	lokata
-31342	lokaut
-31343	loko
-31344	loncik
-31345	lont
-31346	loran
-31351	lorka
-31352	losowy
-31353	loszek
-31354	loszka
-31355	lotka
-31356	lotnia
-31361	lotnik
-31362	lotny
-31363	lubski
-31364	luby
-31365	ludek
-31366	ludny
-31411	ludowy
-31412	ludwik
-31413	ludyzm
-31414	ludzi
-31415	ludzie
-31416	ludzik
-31421	ludzki
-31422	lufa
-31423	lufcik
-31424	lufka
-31425	luft
-31426	luidor
-31431	luka
-31432	lukier
-31433	luksus
-31434	lulany
-31435	lulek
-31436	lulka
-31441	lumen
-31442	lump
-31443	luna
-31444	lunatyk
-31445	luneta
-31446	lupa
-31451	lupka
-31452	lura
-31453	lurka
-31454	lustr
-31455	lustro
-31456	lutnia
-31461	lutnik
-31462	lutowy
-31463	luty
-31464	luzak
-31465	lwisko
-31466	lycra
-31511	lynch
-31512	maca
-31513	macany
-31514	macewa
-31515	mach
-31516	macher
-31521	macka
-31522	maczek
-31523	madera
-31524	madowy
-31525	mafia
-31526	magia
-31531	magiel
-31532	magik
-31533	magma
-31534	magnal
-31535	magnat
-31536	magnes
-31541	magnez
-31542	majdan
-31543	majony
-31544	major
-31545	majowy
-31546	majtek
-31551	majtki
-31552	makak
-31553	makata
-31554	makler
-31555	makro
-31556	makuch
-31561	malaga
-31562	malarz
-31563	malec
-31564	malina
-31565	malusi
-31566	malwa
-31611	mama
-31612	mamba
-31613	mamer
-31614	maminy
-31615	mamka
-31616	mamona
-31621	mamrot
-31622	mamuci
-31623	mamut
-31624	mandat
-31625	manela
-31626	manewr
-31631	mangan
-31632	mania
-31633	maniak
-31634	manko
-31635	manna
-31636	manta
-31641	manto
-31642	mantra
-31643	maoizm
-31644	mapa
-31645	mapnik
-31646	mapowy
-31651	mara
-31652	marazm
-31653	marek
-31654	marina
-31655	marka
-31656	market
-31661	marmur
-31662	marny
-31663	maron
-31664	mars
-31665	marsz
-31666	marten
-32111	martwy
-32112	maruda
-32113	mary
-32114	marzec
-32115	masa
-32116	masarz
-32121	maser
-32122	maset
-32123	maska
-32124	mason
-32125	mastyf
-32126	masyw
-32131	maszop
-32132	maszt
-32133	mata
-32134	matacz
-32135	maties
-32136	matka
-32141	matma
-32142	matnia
-32143	matowy
-32144	matros
-32145	matula
-32146	matura
-32151	mauzer
-32152	mazaja
-32153	mazak
-32154	mazany
-32155	mazer
-32156	mazgaj
-32161	mazur
-32162	mazut
-32163	mecyja
-32164	mecz
-32165	meczet
-32166	medal
-32211	medium
-32212	meduza
-32213	medyk
-32214	mehr
-32215	mejoza
-32216	mekka
-32221	meksyk
-32222	melasa
-32223	melba
-32224	meleks
-32225	melex
-32226	melika
-32231	melon
-32232	memuar
-32233	menada
-32234	menda
-32235	mendel
-32236	menhir
-32241	menisk
-32242	mensa
-32243	mentol
-32244	mentor
-32245	menuet
-32246	merk
-32251	merla
-32252	mesa
-32253	mesz
-32254	meszka
-32255	meszt
-32256	meszta
-32261	meta
-32262	metal
-32263	metan
-32264	meteor
-32265	metkal
-32266	metoda
-32311	metr
-32312	metro
-32313	metron
-32314	metrum
-32315	metyl
-32316	mewa
-32321	mewi
-32322	miano
-32323	miany
-32324	miarka
-32325	miasto
-32326	miazga
-32331	micha
-32332	miech
-32333	miecz
-32334	miedza
-32335	mierny
-32336	migacz
-32341	migany
-32342	migiel
-32343	migot
-32344	migowy
-32345	mijany
-32346	mika
-32351	mikado
-32352	mikowy
-32353	mikrob
-32354	mikron
-32355	mikrus
-32356	mikry
-32361	mikser
-32362	mila
-32363	milion
-32364	milowy
-32365	milszy
-32366	milusi
-32411	mimik
-32412	mimika
-32413	mimu
-32414	mina
-32415	miner
-32416	minier
-32421	minka
-32422	minor
-32423	minowy
-32424	minus
-32425	minuta
-32426	miodek
-32431	miodny
-32432	mion
-32433	miopia
-32434	mira
-32435	mirra
-32436	mirza
-32441	misa
-32442	misio
-32443	miska
-32444	mistyk
-32445	mitel
-32446	mitoza
-32451	mitra
-32452	mityng
-32453	mizdra
-32454	mlecz
-32455	mleko
-32456	mnich
-32461	mniej
-32462	mnisi
-32463	mniszy
-32464	mocarz
-32465	mocno
-32466	mocny
-32511	moczar
-32512	moda
-32513	model
-32514	modem
-32515	modena
-32516	modny
-32521	modrak
-32522	modry
-32523	mohair
-32524	moher
-32525	mojra
-32526	mokiet
-32531	mokka
-32532	mokry
-32533	moksa
-32534	molik
-32535	molino
-32536	molo
-32541	moloch
-32542	molowy
-32543	molton
-32544	moment
-32545	monada
-32546	moneta
-32551	monit
-32552	mono
-32553	monokl
-32554	monsun
-32555	monter
-32556	mopan
-32561	moped
-32562	mops
-32563	mopsi
-32564	mopsik
-32565	mora
-32566	mord
-32611	morda
-32612	morela
-32613	morena
-32614	mores
-32615	morga
-32616	morion
-32621	mormon
-32622	mors
-32623	morski
-32624	mortus
-32625	moru
-32626	morus
-32631	morwa
-32632	moskal
-32633	moskit
-32634	mospan
-32635	most
-32636	mostek
-32641	moszcz
-32642	moszna
-32643	motacz
-32644	motany
-32645	motek
-32646	motel
-32651	motto
-32652	motyka
-32653	motyl
-32654	motyli
-32655	motyw
-32656	mowa
-32661	mowny
-32662	mrok
-32663	mrowie
-32664	mrozek
-32665	mrozik
-32666	mruk
-33111	mszak
-33112	mszar
-33113	mucha
-33114	muezin
-33115	mufka
-33116	muflon
-33121	mukoid
-33122	mularz
-33123	mulat
-33124	muleta
-33125	muli
-33126	mulica
-33131	mulit
-33132	mulnik
-33133	mulony
-33134	mumia
-33135	mundur
-33136	murarz
-33141	murawa
-33142	murek
-33143	murowy
-33144	murza
-33145	murzyn
-33146	musowy
-33151	muszka
-33152	muszla
-33153	muszny
-33154	muszy
-33155	mutra
-33156	muza
-33161	muzeum
-33162	muzyk
-33163	muzyka
-33164	mycka
-33165	mydlik
-33166	myjka
-33211	myjnia
-33212	mylny
-33213	mylony
-33214	mysi
-33215	mysz
-33216	myszka
-33221	myty
-33222	nabab
-33223	nabak
-33224	nabiec
-33225	nabity
-33226	nabyty
-33231	naciec
-33232	naciek
-33233	nacios
-33234	nacisk
-33235	nacja
-33236	nacyzm
-33241	naczes
-33242	nadany
-33243	nadlew
-33244	nadpis
-33245	nadruk
-33246	nafta
-33251	nagan
-33252	nagana
-33253	nagar
-33254	nagi
-33255	nahaj
-33256	naiwny
-33261	najazd
-33262	nakaz
-33263	nalany
-33264	nalepa
-33265	nalot
-33266	namiar
-33311	namiot
-33312	namowa
-33313	napad
-33314	napalm
-33315	napar
-33316	napiec
-33321	napis
-33322	napity
-33323	narada
-33324	narcyz
-33325	narost
-33326	narta
-33331	narwal
-33332	nary
-33333	narzut
-33334	nasada
-33335	nasiad
-33336	nasty
-33341	natka
-33342	natron
-33343	natura
-33344	nauka
-33345	nawa
-33346	nawias
-33351	nawis
-33352	nawlec
-33353	nawowy
-33354	nawrot
-33355	nawyk
-33356	nazizm
-33361	nazwa
-33362	nefryt
-33363	negus
-33364	nektar
-33365	nelson
-33366	neolit
-33411	neon
-33412	neonik
-33413	neptun
-33414	nera
-33415	nerka
-33416	nerw
-33421	neska
-33422	nestor
-33423	neta
-33424	neuron
-33425	neuryt
-33426	newski
-33431	niania
-33432	nidzki
-33433	niebo
-33434	niecka
-33435	nielot
-33436	niemy
-33441	nieuk
-33442	nijaki
-33443	nikiel
-33444	nimb
-33445	nimfa
-33446	nioska
-33451	niski
-33452	nisza
-33453	niter
-33454	nitka
-33455	nitowy
-33456	niuans
-33461	niuch
-33462	niwa
-33463	nizany
-33464	nizina
-33465	nocek
-33466	nochal
-33511	nocja
-33512	nocka
-33513	nocleg
-33514	nocnik
-33515	nocny
-33516	noga
-33521	nogal
-33522	nokaut
-33523	nomada
-33524	nora
-33525	norbid
-33526	nordyk
-33531	norka
-33532	norma
-33533	nosal
-33534	nosaty
-33535	nosek
-33536	nosiwo
-33541	nosowy
-33542	nosze
-33543	nota
-33544	notabl
-33545	notes
-33546	notka
-33551	noumen
-33552	nowela
-33553	nowik
-33554	nowina
-33555	nowszy
-33556	nowy
-33561	nubuk
-33562	nucony
-33563	nuda
-33564	nudny
-33565	nudyzm
-33566	nugat
-33611	nulka
-33612	numer
-33613	nurek
-33614	nurka
-33615	nurt
-33616	nuta
-33621	nutka
-33622	nutowy
-33623	nygus
-33624	nylon
-33625	nysa
-33626	nyski
-33631	nywka
-33632	oaza
-33633	oazowy
-33634	obawa
-33635	obciec
-33636	obcios
-33641	obcy
-33642	obecny
-33643	obejma
-33644	obelga
-33645	oberek
-33646	obfity
-33651	obiad
-33652	obiata
-33653	obibok
-33654	obiec
-33655	obieg
-33656	obiekt
-33661	obity
-33662	objaw
-33663	objazd
-33664	oblany
-33665	oblat
-33666	oblec
-34111	obligo
-34112	oblot
-34113	obmiar
-34114	obmowa
-34115	obmyty
-34116	obol
-34121	obora
-34122	obrada
-34123	obrany
-34124	obraz
-34125	obraza
-34126	obrok
-34131	obrona
-34132	obrus
-34133	obrys
-34134	obryty
-34135	obryw
-34136	obrzut
-34141	obsada
-34142	obsiew
-34143	obszar
-34144	obuch
-34145	obuty
-34146	obuwie
-34151	obwity
-34152	obycie
-34153	obyty
-34154	ocelot
-34155	ocena
-34156	ocet
-34161	ochlaj
-34162	ochota
-34163	ochra
-34164	ociec
-34165	oclony
-34166	octan
-34211	oczep
-34212	oczko
-34213	oczny
-34214	odarty
-34215	odbiec
-34216	odbity
-34221	odbyt
-34222	odbyty
-34223	odciec
-34224	odciek
-34225	odcisk
-34226	odczyn
-34231	odczyt
-34232	oddany
-34233	oddech
-34234	odeon
-34235	odezwa
-34236	odjazd
-34241	odkop
-34242	odkup
-34243	odkuty
-34244	odlany
-34245	odlew
-34246	odlot
-34251	odma
-34252	odmach
-34253	odmowa
-34254	odmyty
-34255	odnoga
-34256	odnowa
-34261	odorek
-34262	odpad
-34263	odpas
-34264	odpity
-34265	odpust
-34266	odra
-34311	odraza
-34312	odrost
-34313	odruch
-34314	odrys
-34315	odrzec
-34316	odrzut
-34321	odsada
-34322	odsiew
-34323	odskok
-34324	odsuw
-34325	odwach
-34326	odwaga
-34331	odwet
-34332	odwlec
-34333	odwyk
-34334	odzew
-34335	odzysk
-34336	oferma
-34341	oferta
-34342	offset
-34343	ofiara
-34344	oficer
-34345	oflag
-34346	ogar
-34351	ogarek
-34352	ogier
-34353	ognany
-34354	ognik
-34355	ognity
-34356	ogniwo
-34361	ogon
-34362	ogonek
-34363	ograny
-34364	ohyda
-34365	ohydny
-34366	ojciec
-34411	ojcowy
-34412	ojczym
-34413	ojoj
-34414	ojra
-34415	okap
-34416	okay
-34421	okaz
-34422	oklask
-34423	okno
-34424	okonek
-34425	okop
-34426	okorek
-34431	okowa
-34432	okrasa
-34433	okres
-34434	okruch
-34435	okryty
-34436	okrywa
-34441	okrzyk
-34442	oktawa
-34443	oktet
-34444	oktoda
-34445	okular
-34446	okup
-34451	okuty
-34452	okuwka
-34453	olany
-34454	olcha
-34455	olej
-34456	olejek
-34461	olejny
-34462	oleski
-34463	oliwa
-34464	oliwin
-34465	oliwka
-34466	olstro
-34511	olsza
-34512	omacek
-34513	omam
-34514	omar
-34515	omasta
-34516	omega
-34521	omlet
-34522	omylny
-34523	omyty
-34524	ondyna
-34525	onuca
-34526	onyks
-34531	opacki
-34532	opad
-34533	opal
-34534	opar
-34535	oparty
-34536	opas
-34541	opaska
-34542	opat
-34543	opcja
-34544	opeer
-34545	opel
-34546	opelek
-34551	opera
-34552	operat
-34553	opiec
-34554	opieka
-34555	opijus
-34556	opilca
-34561	opinia
-34562	opinka
-34563	opioid
-34564	opis
-34565	opity
-34566	oplot
-34611	opluty
-34612	opodal
-34613	opoka
-34614	opole
-34615	opona
-34616	oporny
-34621	oprany
-34622	oprawa
-34623	oprych
-34624	oprysk
-34625	optant
-34626	optyk
-34631	optyka
-34632	opus
-34633	opust
-34634	oracja
-34635	oracz
-34636	oralny
-34641	orany
-34642	orator
-34643	orbita
-34644	orczyk
-34645	order
-34646	orfik
-34651	orfika
-34652	orfizm
-34653	organ
-34654	orgazm
-34655	orgia
-34656	orient
-34661	orka
-34662	orkan
-34663	orkisz
-34664	orli
-34665	orlica
-34666	orlik
-35111	ornat
-35112	orny
-35113	orogen
-35114	orszak
-35115	ortyt
-35116	oryl
-35121	orzec
-35122	orzech
-35123	osad
-35124	osada
-35125	osadka
-35126	osep
-35131	osesek
-35132	oset
-35133	osiany
-35134	osiec
-35135	osika
-35136	osina
-35141	osiowy
-35142	oskard
-35143	oskoma
-35144	osmoza
-35145	osnowa
-35146	osnuty
-35151	osoba
-35152	osobny
-35153	osocze
-35154	ospa
-35155	ospowy
-35156	ostany
-35161	ostew
-35162	ostka
-35163	ostny
-35164	ostoja
-35165	ostrew
-35166	ostry
-35211	ostrze
-35212	osutka
-35213	osuw
-35214	oszust
-35215	otarty
-35216	otawa
-35221	otok
-35222	otoka
-35223	otruty
-35224	otucha
-35225	otunit
-35226	outy
-35231	owacja
-35232	owad
-35233	owadzi
-35234	owal
-35235	owalny
-35236	owca
-35241	owczy
-35242	owiany
-35243	owies
-35244	owijak
-35245	owijka
-35246	owity
-35251	owoc
-35252	owocek
-35253	owocny
-35254	owsik
-35255	ozdoba
-35256	ozimy
-35261	oznaka
-35262	ozon
-35263	ozorek
-35264	ozuty
-35265	ozwany
-35266	paca
-35311	pacha
-35312	pacht
-35313	packa
-35314	pacyna
-35315	paczka
-35316	padany
-35321	padok
-35322	padowy
-35323	paduna
-35324	pagaj
-35325	pager
-35326	pagina
-35331	pagoda
-35332	pagon
-35333	pajac
-35334	pajda
-35335	pajdka
-35336	pajeta
-35341	paka
-35342	pakiet
-35343	pakowy
-35344	pakt
-35345	palacz
-35346	palant
-35351	palba
-35352	paleta
-35353	palik
-35354	paliwo
-35355	palma
-35356	palnik
-35361	palny
-35362	palony
-35363	palowy
-35364	paltko
-35365	paltot
-35366	paluch
-35411	pamfil
-35412	pampa
-35413	panama
-35414	panda
-35415	pandit
-35416	panek
-35421	panel
-35422	panew
-35423	pangen
-35424	pani
-35425	panicz
-35426	panier
-35431	panika
-35432	paniny
-35433	panna
-35434	papa
-35435	papaja
-35436	papcio
-35441	papizm
-35442	papka
-35443	papla
-35444	papowy
-35445	papuga
-35446	papuzi
-35451	parada
-35452	parafa
-35453	parany
-35454	parcie
-35455	pardon
-35456	parias
-35461	park
-35462	parka
-35463	parkan
-35464	parnas
-35465	parnia
-35466	parnik
-35511	parny
-35512	paroch
-35513	parol
-35514	parowy
-35515	parsek
-35516	parter
-35521	partia
-35522	pasany
-35523	pasat
-35524	pascha
-35525	pasek
-35526	paser
-35531	pasiak
-35532	pasja
-35533	paso
-35534	pasowy
-35535	passa
-35536	passus
-35541	pasta
-35542	pastor
-35543	pastwa
-35544	pasu
-35545	pasywa
-35546	pasza
-35551	patent
-35552	patera
-35553	patio
-35554	patol
-35555	patos
-35556	patowy
-35561	patrol
-35562	patron
-35563	patyna
-35564	paulin
-35565	pauper
-35566	pauza
-35611	pawi
-35612	pawian
-35613	pazik
-35614	pazur
-35615	pchacz
-35616	pchany
-35621	pchli
-35622	pecet
-35623	pech
-35624	pecyna
-35625	pedant
-35626	pejcz
-35631	pejotl
-35632	pejs
-35633	peleng
-35634	pelisa
-35635	peluga
-35636	pelur
-35641	penaty
-35642	pensja
-35643	pensum
-35644	pentra
-35645	pepegi
-35646	pepik
-35651	pepita
-35652	peplum
-35653	peptyd
-35654	period
-35655	perkal
-35656	perkoz
-35661	perlit
-35662	perlon
-35663	perm
-35664	perora
-35665	pers
-35666	perski
-36111	persz
-36112	perta
-36113	peruka
-36114	perz
-36115	pesel
-36116	peseta
-36121	pestka
-36122	petit
-36123	petrel
-36124	pewien
-36125	pewnik
-36126	pewny
-36131	peyotl
-36132	piach
-36133	piana
-36134	pianka
-36135	piany
-36136	piarg
-36141	piasta
-36142	piastr
-36143	piec
-36144	piecyk
-36145	piecza
-36146	pieg
-36151	piegus
-36152	pielik
-36153	pienie
-36154	pienny
-36155	pieprz
-36156	pierog
-36161	pieron
-36162	pierun
-36163	pierze
-36164	pies
-36165	piesak
-36166	piesek
-36211	pieski
-36212	pieszy
-36213	pieta
-36214	pieter
-36215	piewca
-36216	piewik
-36221	pigmej
-36222	pigwa
-36223	pijak
-36224	pijany
-36225	pijar
-36226	pika
-36231	pikap
-36232	pikle
-36233	pikot
-36234	pikowy
-36235	piksel
-36236	pilarz
-36241	pilaw
-36242	pilch
-36243	pilnik
-36244	pilno
-36245	pilny
-36246	pilon
-36251	pilony
-36252	pilot
-36253	pilski
-36254	piment
-36255	pinda
-36256	pinia
-36261	pinka
-36262	pion
-36263	pionek
-36264	piorun
-36265	pipeta
-36266	pirat
-36311	piroga
-36312	piruet
-36313	pisak
-36314	pisany
-36315	pisarz
-36316	pisk
-36321	pismak
-36322	pismo
-36323	pistol
-36324	piston
-36325	pisuar
-36326	pitny
-36331	pity
-36332	piuska
-36333	piwko
-36334	piwny
-36335	piwo
-36336	piwosz
-36341	piwsko
-36342	pizza
-36343	plac
-36344	placek
-36345	placyk
-36346	plafon
-36351	plaga
-36352	plajta
-36353	plakat
-36354	plama
-36355	plan
-36356	planeta
-36361	plant
-36362	planty
-36363	plask
-36364	platan
-36365	plater
-36366	plazma
-36411	pleban
-36412	plebs
-36413	plecak
-36414	plecki
-36415	plener
-36416	plenny
-36421	plenum
-36422	plewa
-36423	plewka
-36424	plik
-36425	pliska
-36426	plomba
-36431	plon
-36432	plota
-36433	ploter
-36434	plotka
-36435	plucha
-36436	pludry
-36441	plujka
-36442	plum
-36443	plus
-36444	plusk
-36445	plusz
-36446	pluton
-36451	pluty
-36452	plwacz
-36453	pniowy
-36454	pobiec
-36455	pobity
-36456	pobyt
-36461	pobyty
-36462	pochwa
-36463	pociec
-36464	pocisk
-36465	poczet
-36466	poczta
-36511	podany
-36512	podest
-36513	podium
-36514	podkop
-36515	podlec
-36516	podlew
-36521	podlot
-36522	podmyk
-36523	podpis
-36524	podryg
-36525	podryw
-36526	podtyp
-36531	podwis
-36532	poemat
-36533	poeta
-36534	poezja
-36535	pogoda
-36536	pogrom
-36541	pogwar
-36542	pointa
-36543	pojazd
-36544	pojnik
-36545	pojony
-36546	pokarm
-36551	pokaz
-36552	poker
-36553	pokoik
-36554	pokora
-36555	pokos
-36556	pokost
-36561	pokot
-36562	pokup
-36563	pokusa
-36564	pokuta
-36565	polana
-36566	polano
-36611	polder
-36612	pole
-36613	polec
-36614	polepa
-36615	poler
-36616	polewa
-36621	polio
-36622	polip
-36623	polisa
-36624	polka
-36625	polny
-36626	polon
-36631	polor
-36632	polowy
-36633	polski
-36634	pomada
-36635	pomiar
-36636	pomiot
-36641	pomnik
-36642	pomny
-36643	pomoc
-36644	pomost
-36645	pompa
-36646	pompka
-36651	pompon
-36652	pomruk
-36653	pomsta
-36654	pomyje
-36655	poncho
-36656	poncz
-36661	ponowa
-36662	ponton
-36663	ponury
-36664	pony
-36665	popart
-36666	popers
-41111	popiec
-41112	popis
-41113	popity
-41114	poplon
-41115	popyt
-41116	pora
-41121	porada
-41122	porcik
-41123	porcja
-41124	porek
-41125	porfir
-41126	porno
-41131	porowy
-41132	port
-41133	portal
-41134	porter
-41135	portki
-41136	porto
-41141	portyk
-41142	poruta
-41143	poryty
-41144	poryw
-41145	posada
-41146	posag
-41151	posiec
-41152	posiew
-41153	poskok
-41154	posmak
-41155	post
-41156	postaw
-41161	poster
-41162	postny
-41163	posusz
-41164	posuw
-41165	poszum
-41166	poszwa
-41211	potas
-41212	potnik
-41213	potny
-41214	potok
-41215	potop
-41216	potowy
-41221	potraw
-41222	potwal
-41223	poufny
-41224	powab
-41225	powaga
-41226	powiat
-41231	powiew
-41232	powity
-41233	powlec
-41234	poza
-41235	pozer
-41236	pozew
-41241	poziom
-41242	prabyt
-41243	praca
-41244	pracz
-41245	pragaz
-41246	pralas
-41251	pralka
-41252	pralud
-41253	pranko
-41254	prany
-41255	prasa
-41256	praska
-41261	praski
-41262	prawda
-41263	prawny
-41264	prawo
-41265	prawy
-41266	praz
-41311	precel
-41312	premia
-41313	preria
-41314	pretor
-41315	prezes
-41316	prion
-41321	proca
-41322	proces
-41323	proch
-41324	profag
-41325	profan
-41326	profil
-41331	profit
-41332	prolog
-41333	promil
-41334	promyk
-41335	propan
-41336	propyl
-41341	prorok
-41342	proso
-41343	prosto
-41344	prosty
-41345	proton
-41346	prowok
-41351	prukwa
-41352	prusak
-41353	pruski
-41354	pruty
-41355	prycza
-41356	pryk
-41361	prym
-41362	prymas
-41363	prymat
-41364	prymus
-41365	pryzma
-41366	przeor
-41411	psalm
-41412	pseudo
-41413	psiak
-41414	psiarz
-41415	psik
-41416	psikus
-41421	psina
-41422	psinka
-41423	psota
-41424	psotka
-41425	psotny
-41426	pstry
-41431	pstryk
-41432	psuj
-41433	psuty
-41434	psyk
-41435	ptak
-41436	ptasi
-41441	pubowy
-41442	pucha
-41443	puchar
-41444	pucki
-41445	pucz
-41446	pudel
-41451	puder
-41452	pudli
-41453	puenta
-41454	pukany
-41455	pukiel
-41456	pula
-41461	pulman
-41462	pulpa
-41463	pulpet
-41464	puma
-41465	pumeks
-41466	pumi
-41511	pumpy
-41512	punca
-41513	punkt
-41514	pupa
-41515	pupil
-41516	pupka
-41521	puryzm
-41522	pustak
-41523	pusty
-41524	puszek
-41525	puszka
-41526	puzdro
-41531	puzon
-41532	pych
-41533	pycha
-41534	pykany
-41535	pylny
-41536	pylony
-41541	pyra
-41542	pyrka
-41543	pysia
-41544	pysk
-41545	pyszny
-41546	pytany
-41551	pytel
-41552	pytka
-41553	pyza
-41554	pyzaty
-41555	raban
-41556	rabat
-41561	rabata
-41562	rabin
-41563	rabski
-41564	raca
-41565	racja
-41566	racuch
-41611	raczek
-41612	rada
-41613	radca
-41614	radian
-41615	radio
-41616	radny
-41621	radon
-41622	radowy
-41623	rady
-41624	rafa
-41625	rafia
-41626	rafka
-41631	rafla
-41632	rafowy
-41633	raga
-41634	raglan
-41635	rajca
-41636	rajd
-41641	rajer
-41642	rajfur
-41643	rajony
-41644	rajski
-41645	rajtar
-41646	rajza
-41651	rajzer
-41652	rakarz
-41653	rakija
-41654	rakowy
-41655	raksa
-41656	rama
-41661	ramia
-41662	ramka
-41663	ramol
-41664	ramota
-41665	ramowy
-41666	rampa
-42111	rana
-42112	rancho
-42113	ranczo
-42114	randka
-42115	ranek
-42116	ranga
-42121	ranka
-42122	rankor
-42123	ranny
-42124	rano
-42125	rant
-42126	raper
-42131	rapier
-42132	rapsod
-42133	rapt
-42134	raptus
-42135	rasizm
-42136	rasowy
-42141	raster
-42142	raszka
-42143	rata
-42144	rataj
-42145	ratka
-42146	ratler
-42151	ratrak
-42152	ratusz
-42153	raucik
-42154	rausz
-42155	raut
-42156	rawski
-42161	rdest
-42162	rdza
-42163	rdzawy
-42164	realia
-42165	realny
-42166	rebus
-42211	reces
-42212	rechot
-42213	reda
-42214	redowy
-42215	reduta
-42216	redyk
-42221	refowy
-42222	refren
-42223	regaty
-42224	regens
-42225	regent
-42226	regest
-42231	regiel
-42232	region
-42233	reglan
-42234	regres
-42235	reja
-42236	rejent
-42241	rejon
-42242	rejowy
-42243	rejs
-42244	rekcja
-42245	rekin
-42246	rekord
-42251	rekrut
-42252	rektor
-42253	rekuza
-42254	relaks
-42255	relief
-42256	relikt
-42261	remis
-42262	remiz
-42263	remiza
-42264	remont
-42265	rena
-42266	reneta
-42311	renoma
-42312	renons
-42313	renta
-42314	repeta
-42315	report
-42316	resor
-42321	resort
-42322	resurs
-42323	reszka
-42324	reszta
-42325	retman
-42326	retor
-42331	retusz
-42332	retyk
-42333	rewers
-42334	rewia
-42335	rewir
-42336	rezeda
-42341	rezon
-42342	rezun
-42343	rezus
-42344	riksza
-42345	ring
-42346	robak
-42351	robal
-42352	robol
-42353	robot
-42354	robota
-42355	roczek
-42356	roczny
-42361	rodak
-42362	rodeo
-42363	rodnia
-42364	rodnik
-42365	rodowy
-42366	rodzaj
-42411	rodzic
-42412	rogacz
-42413	rogaty
-42414	rogowy
-42415	rojek
-42416	rojny
-42421	rojony
-42422	rojowy
-42423	rojst
-42424	rokada
-42425	rokiet
-42426	rokita
-42431	rokoko
-42432	rokosz
-42433	rolada
-42434	roleta
-42435	rolka
-42436	rolnik
-42441	rolny
-42442	rolowy
-42443	romans
-42444	romb
-42445	rond
-42446	rondel
-42451	rondko
-42452	rondo
-42453	ropa
-42454	ropny
-42455	ropowy
-42456	roraty
-42461	rosa
-42462	rotor
-42463	rowek
-42464	rower
-42465	rowiak
-42466	rowowy
-42511	rozejm
-42512	rozeta
-42513	rozjem
-42514	rozlec
-42515	rozlew
-42516	rozmaz
-42521	rozpad
-42522	rozsyp
-42523	roztop
-42524	rozum
-42525	rubel
-42526	rubin
-42531	ruch
-42532	ruczaj
-42533	ruda
-42534	rudawy
-42535	rudel
-42536	rudera
-42541	rudny
-42542	rudy
-42543	rudzik
-42544	rudzki
-42545	ruga
-42546	rugany
-42551	rugowy
-42552	ruina
-42553	ruja
-42554	rukiew
-42555	ruleta
-42556	rulon
-42561	rumak
-42562	rumba
-42563	rumian
-42564	rumor
-42565	rumowy
-42566	runko
-42611	runo
-42612	runowy
-42613	runy
-42614	rura
-42615	rurarz
-42616	rurka
-42621	rurowy
-42622	ruski
-42623	ruszt
-42624	ruta
-42625	ruten
-42626	rutka
-42631	rutyl
-42632	rutyna
-42633	rwany
-42634	rwetes
-42635	rybak
-42636	rybi
-42641	rybik
-42642	rybka
-42643	rybny
-42644	rycerz
-42645	rycina
-42646	rycyna
-42651	rydel
-42652	rydwan
-42653	rydz
-42654	rydzyk
-42655	rygiel
-42656	rygor
-42661	ryjec
-42662	ryjek
-42663	ryksza
-42664	rylec
-42665	rylski
-42666	rymarz
-43111	rymowy
-43112	ryms
-43113	rynek
-43114	rynka
-43115	rynna
-43116	rysak
-43121	rysi
-43122	rysica
-43123	ryski
-43124	rytm
-43125	ryty
-43126	rywal
-43131	ryza
-43132	ryzyko
-43133	rzec
-43134	rzecz
-43135	rzegot
-43136	rzeka
-43141	rzep
-43142	rzepa
-43143	rzepak
-43144	rzepik
-43145	rzepka
-43146	rzesza
-43151	rzewny
-43152	rzezak
-43153	rzucik
-43154	rzut
-43155	rzutek
-43156	rzutka
-43161	rzutki
-43162	rzyg
-43163	sabat
-43164	sabot
-43165	sacrum
-43166	sadek
-43211	sadnik
-43212	sadowy
-43213	sadyba
-43214	sadyzm
-43215	sadz
-43216	sadza
-43221	sadzak
-43222	sadzyk
-43223	safian
-43224	saflor
-43225	saga
-43226	sagan
-43231	sago
-43232	sagowy
-43233	sahib
-43234	sainit
-43235	sajdak
-43236	sajka
-43241	sake
-43242	sako
-43243	sakowy
-43244	saksy
-43245	sakwa
-43246	sala
-43251	saldo
-43252	salina
-43253	salka
-43254	salon
-43255	salopa
-43256	salowa
-43261	salowy
-43262	salto
-43263	salut
-43264	salwa
-43265	samczy
-43266	samiec
-43311	samica
-43312	samouk
-43313	samson
-43314	sanie
-43315	sanna
-43316	sapany
-43321	saper
-43322	sapka
-43323	sargas
-43324	sari
-43325	sarmat
-43326	sarna
-43331	sarni
-43332	sarong
-43333	satyna
-43334	satyr
-43335	sauna
-43336	scena
-43341	scenka
-43342	schab
-43343	scheda
-43344	schody
-43345	schron
-43346	scysja
-43351	seans
-43352	secans
-43353	sedan
-43354	sedes
-43355	sedno
-43356	sejf
-43361	sejm
-43362	sejmik
-43363	sekcja
-43364	sekret
-43365	seks
-43366	sekta
-43411	selen
-43412	seler
-43413	selsyn
-43414	selwa
-43415	selwas
-43416	semita
-43421	senat
-43422	senior
-43423	sennik
-43424	senny
-43425	sens
-43426	sensat
-43431	sensor
-43432	sepia
-43433	serce
-43434	serdak
-43435	serek
-43436	seria
-43441	serial
-43442	sernik
-43443	sero
-43444	serowy
-43445	serw
-43446	serwer
-43451	serwis
-43452	sesja
-43453	seta
-43454	setbol
-43455	setka
-43456	setny
-43461	seton
-43462	setowy
-43463	sezam
-43464	sezon
-43465	sfera
-43466	sfinks
-43511	sfora
-43512	sforny
-43513	siaki
-43514	sianko
-43515	siano
-43516	siany
-43521	siara
-43522	siata
-43523	siatka
-43524	sieja
-43525	siejba
-43526	sienny
-43531	sierp
-43532	siew
-43533	siewca
-43534	siewka
-43535	siewny
-43536	sigma
-43541	sikacz
-43542	sikora
-43543	silan
-43544	silit
-43545	silnia
-43546	silnik
-43551	silny
-43552	silony
-43553	silos
-43554	sinawy
-43555	siniak
-43556	sinica
-43561	siniec
-43562	siny
-43563	sionka
-43564	sitarz
-43565	sitek
-43566	sitko
-43611	sito
-43612	sitowy
-43613	sitwa
-43614	siup
-43615	siwak
-43616	siwawy
-43621	siwek
-43622	siwo
-43623	siwy
-43624	sjesta
-43625	skaj
-43626	skala
-43631	skalar
-43632	skald
-43633	skalny
-43634	skalp
-43635	skarb
-43636	skarga
-43641	skarpa
-43642	skat
-43643	skaut
-43644	skay
-43645	skaza
-43646	skecz
-43651	skiba
-43652	skibka
-43653	skin
-43654	skip
-43655	sklep
-43656	sknera
-43661	skobel
-43662	skoda
-43663	skojec
-43664	skok
-43665	skon
-43666	skop
-44111	skopek
-44112	skory
-44113	skos
-44114	skowa
-44115	skowyt
-44116	skra
-44121	skraj
-44122	skrecz
-44123	skryba
-44124	skrypt
-44125	skrzat
-44126	skucha
-44131	skunks
-44132	skup
-44133	skurcz
-44134	skutek
-44135	skuter
-44136	skuty
-44141	skwar
-44142	skwer
-44143	slajd
-44144	slalom
-44145	slipki
-44146	slipy
-44151	slogan
-44152	slot
-44153	smak
-44154	smalec
-44155	smar
-44156	smardz
-44161	smark
-44162	smarny
-44163	smoczy
-44164	smog
-44165	smok
-44166	smolak
-44211	smolny
-44212	smrek
-44213	smuga
-44214	smutek
-44215	smutny
-44216	smycz
-44221	smyk
-44222	snob
-44223	snop
-44224	sobek
-44225	soboli
-44226	sobota
-44231	socha
-44232	soczek
-44233	sodka
-44234	sodoma
-44235	sodowy
-44236	sofa
-44241	sofka
-44242	soja
-44243	sojowy
-44244	sojusz
-44245	sokoli
-44246	sokora
-44251	sokowy
-44252	sola
-44253	solarz
-44254	sold
-44255	solny
-44256	solony
-44261	solowy
-44262	solski
-44263	sonar
-44264	sonata
-44265	sonda
-44266	sonet
-44311	song
-44312	sopel
-44313	sopran
-44314	sorbet
-44315	sorek
-44316	sort
-44321	sosik
-44322	sosna
-44323	sotnia
-44324	sowa
-44325	sowi
-44326	sowity
-44331	spacer
-44332	spacja
-44333	spad
-44334	spadek
-44335	spany
-44336	spaszt
-44341	spazm
-44342	spicz
-44343	spiec
-44344	spiker
-44345	spinel
-44346	spinka
-44351	spinor
-44352	spis
-44353	spisek
-44354	spity
-44355	splot
-44356	spluwa
-44361	spodek
-44362	spodni
-44363	spoiwo
-44364	spora
-44365	sporek
-44366	sporny
-44411	sport
-44412	spory
-44413	sprany
-44414	sprawa
-44415	sprint
-44416	spruty
-44421	spryt
-44422	spust
-44423	spytki
-44424	sroczy
-44425	srogi
-44426	sroka
-44431	stacja
-44432	stadko
-44433	stadny
-44434	staje
-44435	stal
-44436	stan
-44441	stanik
-44442	star
-44443	starka
-44444	start
-44445	starty
-44446	stary
-44451	statek
-44452	statua
-44453	status
-44454	statut
-44455	statyk
-44456	statyw
-44461	staw
-44462	stawa
-44463	stawek
-44464	stawka
-44465	stawny
-44466	stek
-44511	stela
-44512	sten
-44513	ster
-44514	stercz
-44515	sterta
-44516	stewa
-44521	stiuk
-44522	stlony
-44523	stoik
-44524	stojak
-44525	stok
-44526	stolec
-44531	stolik
-44532	stolon
-44533	stonka
-44534	stop
-44535	stopa
-44536	stoper
-44541	stopka
-44542	stora
-44543	stos
-44544	stosik
-44545	strach
-44546	strajk
-44551	stras
-44552	strata
-44553	strawa
-44554	strefa
-44555	stres
-44556	strofa
-44561	stroik
-44562	stromy
-44563	strona
-44564	strop
-44565	struga
-44566	struna
-44611	strup
-44612	strusi
-44613	struty
-44614	strych
-44615	strzyc
-44616	studio
-44621	stuk
-44622	stukot
-44623	stuoki
-44624	sturak
-44625	stwora
-44626	styk
-44631	styl
-44632	stylon
-44633	stynka
-44634	stypa
-44635	subkod
-44636	suchar
-44641	suchy
-44642	suczka
-44643	sueski
-44644	sufit
-44645	sufler
-44646	suflet
-44651	suita
-44652	suka
-44653	sukces
-44654	sukno
-44655	sukurs
-44656	sulki
-44661	suma
-44662	sumik
-44663	sumka
-44664	sumpt
-44665	surdut
-44666	surowy
-45111	susz
-45112	susza
-45113	sutasz
-45114	sutek
-45115	sutka
-45116	sutszy
-45121	suty
-45122	suwak
-45123	suwany
-45124	suwny
-45125	swada
-45126	swat
-45131	swoi
-45132	swoich
-45133	swoim
-45134	swoimi
-45135	swoja
-45136	swoje
-45141	swojej
-45142	sycony
-45143	syfon
-45144	sygnet
-45145	sylaba
-45146	symbol
-45151	syndyk
-45152	synek
-45153	synod
-45154	synowa
-45155	sypany
-45156	sypki
-45161	syrena
-45162	syreni
-45163	syrop
-45164	system
-45165	sytny
-45166	syto
-45211	syty
-45212	szabas
-45213	szabat
-45214	szaber
-45215	szabla
-45216	szach
-45221	szafa
-45222	szafel
-45223	szafir
-45224	szafka
-45225	szafot
-45226	szajba
-45231	szajka
-45232	szal
-45233	szala
-45234	szalej
-45235	szalet
-45236	szalik
-45241	szalka
-45242	szaman
-45243	szambo
-45244	szansa
-45245	szanta
-45246	szarak
-45251	szarfa
-45252	szary
-45253	szaser
-45254	szata
-45255	szatan
-45256	szatka
-45261	szatyn
-45262	szczaw
-45263	szczek
-45264	szczur
-45265	szczyl
-45266	szczyr
-45311	szczyt
-45312	szedyt
-45313	szef
-45314	szejk
-45315	szekla
-45316	szelf
-45321	szelit
-45322	szelka
-45323	szelma
-45324	szept
-45325	szer
-45326	szereg
-45331	szeryf
-45332	szew
-45333	szewc
-45334	szewek
-45335	szkapa
-45336	szkic
-45341	szkoda
-45342	szkop
-45343	szkrab
-45344	szkuta
-45345	szlag
-45346	szlak
-45351	szlaka
-45352	szlam
-45353	szleja
-45354	szlif
-45355	szloch
-45356	szmal
-45361	szmat
-45362	szmata
-45363	szmelc
-45364	szmira
-45365	sznaps
-45366	sznur
-45411	sznyt
-45412	szodon
-45413	szofer
-45414	szok
-45415	szop
-45416	szopa
-45421	szopka
-45422	szor
-45423	szorty
-45424	szos
-45425	szosa
-45426	szpada
-45431	szpan
-45432	szpara
-45433	szpic
-45434	szpica
-45435	szpieg
-45436	szpik
-45441	szpon
-45442	szpona
-45443	szprot
-45444	szpula
-45445	szpunt
-45446	szrama
-45451	szron
-45452	sztab
-45453	sztaba
-45454	sztama
-45455	sztok
-45456	sztorc
-45461	sztorm
-45462	sztuba
-45463	sztuka
-45464	szturm
-45465	sztych
-45466	sztyft
-45511	szufla
-45512	szuja
-45513	szuler
-45514	szum
-45515	szumny
-45516	szupin
-45521	szurf
-45522	szuwar
-45523	szwab
-45524	szwacz
-45525	szwank
-45526	szyb
-45531	szyba
-45532	szybik
-45533	szybka
-45534	szybki
-45535	szych
-45536	szycha
-45541	szyfon
-45542	szyfr
-45543	szyja
-45544	szyjka
-45545	szyjny
-45546	szyk
-45551	szyld
-45552	szynk
-45553	szynka
-45554	szyper
-45555	szypot
-45556	tabaka
-45561	tabela
-45562	tabor
-45563	tabun
-45564	taca
-45565	tacka
-45566	tacowy
-45611	taczka
-45612	tafla
-45613	tafta
-45614	tajfun
-45615	tajnia
-45616	tajnik
-45621	tajny
-45622	tajony
-45623	taki
-45624	takowy
-45625	taksa
-45626	takt
-45631	taktyk
-45632	talar
-45633	talent
-45634	talerz
-45635	talia
-45636	talion
-45641	talon
-45642	talowy
-45643	tama
-45644	tamka
-45645	tamowy
-45646	tampon
-45651	tamta
-45652	tamten
-45653	tandem
-45654	taniec
-45655	tantal
-45656	taoizm
-45661	tapet
-45662	tapeta
-45663	tapir
-45664	tara
-45665	tarant
-45666	tarcie
-46111	tarcza
-46112	targ
-46113	tarka
-46114	tarlak
-46115	tarnka
-46116	tarok
-46121	tarot
-46122	tarpan
-46123	tartak
-46124	tartan
-46125	tarty
-46126	taryfa
-46131	tasak
-46132	tata
-46133	tatar
-46134	tatko
-46135	tatra
-46136	tatryt
-46141	teatr
-46142	teatyn
-46143	teczka
-46144	teflon
-46145	teina
-46146	teista
-46151	teizm
-46152	teka
-46153	tekowy
-46154	teksas
-46155	tekst
-46156	tektyt
-46161	temat
-46162	tembr
-46163	tempo
-46164	tenis
-46165	tenit
-46166	tenor
-46211	tensor
-46212	tent
-46213	tenuta
-46214	teolog
-46215	teoria
-46216	teozof
-46221	tercet
-46222	tercja
-46223	teren
-46224	terier
-46225	terkot
-46226	terma
-46231	termik
-46232	termin
-46233	termon
-46234	termos
-46235	ternar
-46236	terno
-46241	terowy
-46242	terpen
-46243	terror
-46244	tesla
-46245	test
-46246	tester
-46251	tetra
-46252	tetryk
-46253	tetryl
-46254	teza
-46255	tezowy
-46256	tiara
-46261	tiazol
-46262	tikowy
-46263	tilaka
-46264	tilit
-46265	tiokol
-46266	tips
-46311	titr
-46312	tiul
-46313	tiulka
-46314	tkacki
-46315	tkacz
-46316	tkanka
-46321	tkany
-46322	tkliwy
-46323	tlen
-46324	tlenek
-46325	tlony
-46326	toast
-46331	toczek
-46332	toczny
-46333	toga
-46334	tokaj
-46335	tokarz
-46336	tokowy
-46341	tombak
-46342	tomik
-46343	tomizm
-46344	tomowy
-46345	tomski
-46346	tona
-46351	toner
-46352	tonik
-46353	tonika
-46354	tonowy
-46355	topaz
-46356	topian
-46361	topiel
-46362	topika
-46363	toples
-46364	topola
-46365	topos
-46366	torana
-46411	torba
-46412	torcik
-46413	torf
-46414	torlen
-46415	toros
-46416	torowy
-46421	tors
-46422	tort
-46423	torus
-46424	torys
-46425	toryt
-46426	toryzm
-46431	tost
-46432	toster
-46433	totek
-46434	totem
-46435	totus
-46436	tous
-46441	towar
-46442	towot
-46443	tracki
-46444	tracz
-46445	traf
-46446	trafik
-46451	trafny
-46452	tragi
-46453	tragik
-46454	trakt
-46455	tralka
-46456	trama
-46461	tramp
-46462	tran
-46463	trans
-46464	trapa
-46465	trapez
-46466	tras
-46511	trasa
-46512	traser
-46513	trata
-46514	tratwa
-46515	trawa
-46516	trawka
-46521	trefl
-46522	trefny
-46523	trel
-46524	trema
-46525	tremo
-46526	tren
-46531	trencz
-46532	trend
-46533	trener
-46534	trep
-46535	trepak
-46536	trepek
-46541	tres
-46542	treska
-46543	trezor
-46544	triada
-46545	trias
-46546	trick
-46551	trier
-46552	triera
-46553	trik
-46554	trio
-46555	trioda
-46556	triumf
-46561	trocki
-46562	trojka
-46563	trolit
-46564	troll
-46565	tron
-46566	trop
-46611	tropik
-46612	troska
-46613	trotyl
-46614	trucht
-46615	trud
-46616	trudno
-46621	trudny
-46622	trufla
-46623	truizm
-46624	trumf
-46625	trumna
-46626	trunek
-46631	trup
-46632	trupa
-46633	trupek
-46634	trupi
-46635	trusia
-46636	truty
-46641	truwer
-46642	trwoga
-46643	tryb
-46644	tryba
-46645	trybik
-46646	trybun
-46651	tryjer
-46652	tryk
-46653	trykot
-46654	trylit
-46655	trym
-46656	trymer
-46661	tryper
-46662	trypla
-46663	tryt
-46664	tryton
-46665	tryzna
-46666	trzask
-51111	trzeci
-51112	trzon
-51113	tuba
-51114	tubing
-51115	tubka
-51116	tubowy
-51121	tucz
-51122	tuczny
-51123	tufowy
-51124	tuja
-51125	tuka
-51126	tukan
-51131	tuleja
-51132	tulony
-51133	tulski
-51134	tuman
-51135	tumor
-51136	tumski
-51141	tumult
-51142	tundra
-51143	tunel
-51144	tuner
-51145	tunika
-51146	tupet
-51151	tupot
-51152	tupu
-51153	tura
-51154	turak
-51155	turban
-51156	turkos
-51161	turkus
-51162	turma
-51163	turnia
-51164	turnus
-51165	tusz
-51166	tusza
-51211	tuszka
-51212	tutka
-51213	tutor
-51214	tuzin
-51215	twardy
-51216	twarz
-51221	tybet
-51222	tyci
-51223	tyczka
-51224	tyczny
-51225	tyfus
-51226	tygiel
-51231	tygrys
-51232	tyka
-51233	tykany
-51234	tykot
-51235	tykwa
-51236	tylda
-51241	tylec
-51242	tylny
-51243	tymian
-51244	tynf
-51245	tynk
-51246	tynkal
-51251	typa
-51252	typowy
-51253	tyrada
-51254	tyran
-51255	tyski
-51256	tytan
-51261	tytel
-51262	ubaw
-51263	ubecja
-51264	ubecki
-51265	ubek
-51266	ubiec
-51311	ubijak
-51312	ubity
-51313	ubocze
-51314	ubogi
-51315	ubytek
-51316	uchaty
-51321	ucho
-51322	uchwyt
-51323	uciec
-51324	ucios
-51325	ucisk
-51326	uczep
-51331	uczony
-51332	uczta
-51333	udany
-51334	udar
-51335	udarty
-51336	udatny
-51341	udko
-51342	udowy
-51343	udry
-51344	ufny
-51345	ufolog
-51346	ugier
-51351	ugoda
-51352	ugorek
-51353	ugrany
-51354	ugrowy
-51355	ujemny
-51356	ujma
-51361	ukaz
-51362	ukleja
-51363	ukos
-51364	ukrop
-51365	ukryty
-51366	ukuty
-51411	ukwap
-51412	ulany
-51413	ulec
-51414	ulem
-51415	ulema
-51416	ulena
-51421	ulepek
-51422	ulewa
-51423	ulewny
-51424	ulga
-51425	ulgowy
-51426	ulica
-51431	ulik
-51432	ulotka
-51433	ulotny
-51434	ulowy
-51435	ulster
-51436	umiar
-51441	umizg
-51442	umowa
-51443	umowny
-51444	umrzyk
-51445	umyty
-51446	uncja
-51451	unia
-51452	unijny
-51453	unik
-51454	unikat
-51455	unison
-51456	unita
-51461	unos
-51462	unum
-51463	unus
-51464	uowy
-51465	upadek
-51466	upalny
-51511	uparty
-51512	upiec
-51513	upiek
-51514	upity
-51515	upojny
-51516	uprany
-51521	uprawa
-51522	upust
-51523	uralit
-51524	uran
-51525	uraz
-51526	uraza
-51531	urlop
-51532	urna
-51533	urobek
-51534	uroczy
-51535	urodny
-51536	urok
-51541	urolog
-51542	ursus
-51543	ururka
-51544	urwany
-51545	urwis
-51546	uryna
-51551	urywek
-51552	urzec
-51553	usiany
-51554	usiec
-51555	usilny
-51556	uskok
-51561	usnuty
-51562	usrany
-51563	usta
-51564	ustany
-51565	ustawa
-51566	ustnik
-51611	ustny
-51612	usus
-51613	usuw
-51614	usuwak
-51615	uszak
-51616	uszko
-51621	uszny
-51622	uszyty
-51623	utarg
-51624	utarty
-51625	utkany
-51626	utopia
-51631	utrata
-51632	uwaga
-51633	uwiert
-51634	uwity
-51635	uzda
-51636	uziom
-51641	uznany
-51642	uzysk
-51643	wabik
-51644	wachta
-51645	waciak
-51646	wacik
-51651	wada
-51652	wadery
-51653	wadis
-51654	wadium
-51655	wadu
-51656	wafel
-51661	wagary
-51662	wagon
-51663	wagowy
-51664	wahany
-51665	wajcha
-51666	wakans
-52111	wakat
-52112	walany
-52113	walc
-52114	walec
-52115	walet
-52116	waliza
-52121	walka
-52122	walny
-52123	walor
-52124	waluta
-52125	wamp
-52126	wampir
-52131	wanad
-52132	wanna
-52133	wanta
-52134	wapno
-52135	wapor
-52136	warga
-52141	wariat
-52142	warkot
-52143	wartki
-52144	warty
-52145	waruga
-52146	warwa
-52151	wasal
-52152	wata
-52153	wataha
-52154	watka
-52155	watra
-52156	waza
-52161	wazka
-52162	wazon
-52163	wazowy
-52164	wbiec
-52165	wbijak
-52166	wbity
-52211	wciec
-52212	wcinak
-52213	wcinka
-52214	wcios
-52215	wcisk
-52216	wczasy
-52221	wczep
-52222	wczuty
-52223	wdany
-52224	wdarty
-52225	wdech
-52226	wdowa
-52231	wdowi
-52232	weck
-52233	wedeta
-52234	weka
-52235	weksel
-52236	wektor
-52241	welin
-52242	welon
-52243	welur
-52244	welwet
-52245	wena
-52246	wenta
-52251	wentyl
-52252	werk
-52253	wermut
-52254	wers
-52255	wersal
-52256	werset
-52261	wersja
-52262	wertep
-52263	werwa
-52264	weryzm
-52265	wesele
-52266	weseli
-52311	wesz
-52312	weto
-52313	wezyr
-52314	wgrany
-52315	wiadro
-52316	wianek
-52321	wiano
-52322	wiany
-52323	wiara
-52324	wiarus
-52325	wiata
-52326	wiatr
-52331	wicher
-52332	wicina
-52333	widmo
-52334	widny
-52335	widok
-52336	widomy
-52341	wiec
-52342	wiecha
-52343	wiedza
-52344	wiek
-52345	wieko
-52346	wiele
-52351	wielki
-52352	wielu
-52353	wieprz
-52354	wierch
-52355	wiersz
-52356	wigwam
-52361	wiking
-52362	wikler
-52363	wikt
-52364	wilga
-52365	wilia
-52366	wilk
-52411	willys
-52412	wimpel
-52413	wina
-52414	winda
-52415	winiak
-52416	winko
-52421	winny
-52422	wino
-52423	winowy
-52424	winyl
-52425	wiocha
-52426	wiola
-52431	wioska
-52432	wiosna
-52433	wiotki
-52434	wirowy
-52435	wiroza
-52436	wirus
-52441	wisior
-52442	wist
-52443	wistra
-52444	witka
-52445	wity
-52446	wiwat
-52451	wizg
-52452	wizja
-52453	wizjer
-52454	wizowy
-52455	wizyta
-52456	wjazd
-52461	wkop
-52462	wkuty
-52463	wlany
-52464	wlec
-52465	wlew
-52466	wlewka
-52511	wlot
-52512	wmarsz
-52513	wnorka
-52514	wnuk
-52515	wnusia
-52516	wnyk
-52521	woal
-52522	woalka
-52523	woda
-52524	wodnik
-52525	wodny
-52526	wodza
-52531	wodzak
-52532	wojak
-52533	wojna
-52534	wojski
-52535	wojsko
-52536	wola
-52541	wolak
-52542	wolant
-52543	wolany
-52544	wole
-52545	wolej
-52546	wolina
-52551	wolny
-52552	wolski
-52553	wolt
-52554	wolta
-52555	wonny
-52556	worek
-52561	wosk
-52562	wotum
-52563	wozak
-52564	wozowy
-52565	wpadka
-52566	wpis
-52611	wpity
-52612	wprawa
-52613	wrak
-52614	wredny
-52615	wrogi
-52616	wrona
-52621	wroni
-52622	wrota
-52623	wrotka
-52624	wryty
-52625	wrzask
-52626	wrzawa
-52631	wrzos
-52632	wrzut
-52633	wsad
-52634	wsadka
-52635	wsiany
-52636	wsiowy
-52641	wskaz
-52642	wskok
-52643	wspora
-52644	wstyd
-52645	wsyp
-52646	wsypa
-52651	wsypka
-52652	wtarty
-52653	wtorek
-52654	wtrysk
-52655	wtyk
-52656	wujcio
-52661	wujek
-52662	wulkan
-52663	wlec
-52664	wybiec
-52665	wybieg
-52666	wybity
-53111	wybryk
-53112	wybuch
-53113	wycena
-53114	wyciec
-53115	wyciek
-53116	wycier
-53121	wycior
-53122	wycisk
-53123	wyczyn
-53124	wydany
-53125	wydech
-53126	wydma
-53131	wyga
-53132	wygoda
-53133	wyimek
-53134	wyjazd
-53135	wyjec
-53136	wykaz
-53141	wykop
-53142	wykot
-53143	wykres
-53144	wykrot
-53145	wykup
-53146	wykusz
-53151	wykwit
-53152	wylany
-53153	wylec
-53154	wylew
-53155	wylot
-53156	wymiar
-53161	wymowa
-53162	wymyty
-53163	wynik
-53164	wypad
-53165	wypas
-53166	wypiec
-53211	wypiek
-53212	wypis
-53213	wypity
-53214	wypust
-53215	wyrko
-53216	wyro
-53221	wyrok
-53222	wyrost
-53223	wyryty
-53224	wyrzec
-53225	wyrzut
-53226	wysad
-53231	wysiec
-53232	wysiew
-53233	wyskok
-53234	wysoki
-53235	wyspa
-53236	wysyp
-53241	wytop
-53242	wywiad
-53243	wywiew
-53244	wywlec
-53245	wyziew
-53246	wyzuty
-53251	wyzysk
-53252	wzbity
-53253	wzlot
-53254	wznios
-53255	wznowa
-53256	wzorek
-53261	wzrok
-53262	wzrost
-53263	wzuty
-53264	zabawa
-53265	zabiec
-53266	zabieg
-53311	zabity
-53312	zaciec
-53313	zaciek
-53314	zacios
-53315	zacisk
-53316	zacny
-53321	zaczep
-53322	zaczyn
-53323	zadany
-53324	zadek
-53325	zadra
-53326	zadruk
-53331	zaduch
-53332	zadyma
-53333	zagaj
-53334	zagon
-53335	zaimek
-53336	zajad
-53341	zajazd
-53342	zajem
-53343	zajob
-53344	zakaz
-53345	zakole
-53346	zakon
-53351	zakres
-53352	zakup
-53353	zakusy
-53354	zakuty
-53355	zakwas
-53356	zakwit
-53361	zalany
-53362	zalec
-53363	zaleta
-53364	zalew
-53365	zalewa
-53366	zaloty
-53411	zamach
-53412	zamek
-53413	zamiar
-53414	zamtuz
-53415	zanik
-53416	zapach
-53421	zapad
-53422	zapas
-53423	zapian
-53424	zapiec
-53425	zapis
-53426	zapity
-53431	zapole
-53432	zapora
-53433	zapust
-53434	zaraza
-53435	zarost
-53436	zarys
-53441	zarzec
-53442	zarzut
-53443	zasada
-53444	zasiec
-53445	zasiek
-53446	zasiew
-53451	zaspa
-53452	zastaw
-53453	zasuwa
-53454	zasyp
-53455	zatarg
-53456	zatoka
-53461	zator
-53462	zatrat
-53463	zatwar
-53464	zawada
-53465	zawias
-53466	zawis
-53511	zawity
-53512	zawlec
-53513	zawora
-53514	zbawca
-53515	zbiec
-53516	zbieg
-53521	zbijak
-53522	zbir
-53523	zbitka
-53524	zbity
-53525	zbocze
-53526	zborny
-53531	zbroja
-53532	zbuk
-53533	zbyt
-53534	zbytni
-53535	zbyty
-53536	zdalny
-53541	zdanko
-53542	zdany
-53543	zdarty
-53544	zdatny
-53545	zdobny
-53546	zdolny
-53551	zdrada
-53552	zdrowy
-53553	zdunek
-53554	zecer
-53555	zefir
-53556	zegar
-53561	zelant
-53562	zemsta
-53563	zero
-53564	zerowy
-53565	zeskok
-53566	zestaw
-53611	zeszyt
-53612	zezuty
-53613	zgaga
-53614	zgnany
-53615	zgniot
-53616	zgnity
-53621	zgoda
-53622	zgodny
-53623	zgon
-53624	zgraja
-53625	zgrany
-53626	zgred
-53631	zgroza
-53632	zgrywa
-53633	zgryz
-53634	zgrzyt
-53635	zguba
-53636	zgubny
-53641	ziany
-53642	ziarno
-53643	ziele
-53644	zielny
-53645	ziemia
-53646	ziemny
-53651	zima
-53652	zimno
-53653	zimowy
-53654	ziomek
-53655	zipany
-53656	zjawa
-53661	zjazd
-53662	zlepek
-53663	zlepka
-53664	zlew
-53665	zlewek
-53666	zlewka
-54111	zlewny
-54112	zlot
-54113	zmaza
-54114	zmiana
-54115	zmora
-54116	zmowa
-54121	zmrok
-54122	zmyty
-54123	zmywak
-54124	znajda
-54125	znak
-54126	znany
-54131	znawca
-54132	znicz
-54133	znojny
-54134	zodiak
-54135	zombi
-54136	zomowy
-54141	zona
-54142	zoolog
-54143	zorany
-54144	zorza
-54145	zraz
-54146	zrazik
-54151	zrost
-54152	zryty
-54153	zrywka
-54154	zrywny
-54155	zrzec
-54156	zrzez
-54161	zrzut
-54162	zsuw
-54163	zsyp
-54164	zsypny
-54165	zszyty
-54166	zuch
-54211	zupa
-54212	zupak
-54213	zupka
-54214	zwarty
-54215	zwiad
-54216	zwiany
-54221	zwid
-54222	zwijka
-54223	zwinny
-54224	zwis
-54225	zwitek
-54226	zwlec
-54231	zwora
-54232	zworka
-54233	zwrot
-54234	zydel
-54235	zygota
-54236	zygzak
-54241	zysk
+absurd
+absynt
+adept
+adidas
+adonis
+adres
+adwent
+aerob
+afekt
+afera
+afgan
+afisz
+afro
+agat
+agenda
+agent
+agitka
+agonia
+agrest
+akacja
+akapit
+akces
+akcja
+akcyza
+akord
+akryl
+akson
+aktor
+alarm
+alba
+album
+aleja
+alejka
+alert
+alga
+alians
+alkowa
+alpaga
+altana
+alumn
+aluzja
+amant
+amator
+ambona
+ameba
+ameryka
+amfora
+amok
+amonit
+amor
+amulet
+analog
+ananas
+andrut
+anemia
+anemik
+angina
+anglik
+anonim
+anons
+antena
+antyk
+aorta
+aparat
+apatia
+apel
+apetyt
+aplauz
+aport
+apteka
+arab
+arbuz
+arena
+areszt
+aria
+arka
+arkan
+arkusz
+armada
+armata
+aromat
+aronia
+asceta
+asceza
+asesor
+asfalt
+aspekt
+astma
+asysta
+atak
+ateizm
+atencja
+atest
+ateusz
+atlant
+atlas
+atleta
+atol
+atom
+atrapa
+atrium
+atut
+aukcja
+aula
+aura
+autko
+auto
+autor
+autyzm
+awans
+awaria
+awers
+awizo
+azbest
+azjata
+azor
+azot
+aztek
+azyl
+azymut
+baba
+babcia
+babka
+baca
+bachor
+bacik
+baczek
+badacz
+badyl
+bagnet
+bagno
+baja
+bajarz
+bajer
+bajka
+bajoro
+bajkowy
+bajt
+bakcyl
+bala
+balast
+balia
+balkon
+balon
+balsam
+bambus
+banan
+banda
+bania
+banita
+bank
+barak
+baran
+bard
+barek
+bark
+barka
+barman
+barok
+baron
+barwa
+barwny
+bary
+basen
+baszta
+baton
+batuta
+baza
+bazar
+bazia
+bebech
+beczka
+bejca
+bekas
+bekon
+beksa
+bela
+belfer
+belka
+bemol
+berek
+beret
+beryl
+bessa
+bestia
+beta
+beton
+beza
+bezlik
+bezoki
+bias
+biba
+bibka
+biblia
+biceps
+bicykl
+bicz
+biczyk
+bidet
+bidon
+bieda
+biedak
+bieg
+biel
+bielmo
+bierka
+bierny
+bies
+bigos
+bila
+bilans
+bilard
+bilet
+bilion
+bilon
+bimber
+bingo
+biodro
+biogaz
+biolog
+bionik
+biorca
+biskup
+bitka
+bitnik
+bitwa
+biurko
+biuro
+biust
+biwak
+biznes
+bizon
+blacha
+blacik
+blady
+blaga
+blank
+blanka
+blansz
+blask
+blant
+blat
+blef
+blin
+bliski
+blizna
+blotka
+bluza
+bluzg
+bluzka
+bobas
+bobek
+bober
+bochen
+bocian
+bociek
+boczek
+boczny
+bogacz
+bogaty
+bogini
+boisko
+bojer
+bojka
+bojkot
+bojler
+bojowy
+boks
+bokser
+boksyt
+bolec
+bolero
+bolid
+bomba
+bombka
+borsuk
+boruta
+borygo
+bosak
+boski
+bosman
+bosy
+botek
+bozon
+brach
+bracia
+brajl
+brak
+brama
+bramin
+bramka
+branka
+brat
+bratek
+bratni
+brawo
+breja
+brelok
+brew
+broda
+brokat
+broker
+broszka
+browar
+brud
+brudek
+brudny
+bruk
+brunet
+brutal
+bruzda
+bryk
+bryka
+brytan
+bryza
+brzask
+brzeg
+brzuch
+bucior
+buczek
+buda
+budka
+budowa
+budzik
+bufet
+bufon
+bufor
+buhaj
+bujak
+bujny
+bukiet
+bulaj
+buldog
+bulgot
+bulion
+bulla
+bulwa
+bulwar
+bulwka
+burak
+burda
+burka
+bursa
+burta
+bury
+burza
+burzyk
+buski
+busola
+busz
+buta
+butan
+butik
+butla
+butny
+buza
+buzia
+buziak
+byczek
+bzdura
+bzik
+cacko
+cadyk
+caryca
+cebula
+cecha
+cedr
+cedzak
+cekin
+cela
+celny
+cement
+cena
+cencik
+cennik
+cenny
+cent
+center
+centra
+centym
+cenzor
+cenzus
+cerata
+cerber
+ceres
+cesarz
+cesja
+cewka
+cewnik
+cezura
+chaber
+chadek
+cham
+chan
+chaos
+chart
+chasyd
+chata
+chatka
+chciwy
+chemia
+chemik
+chlapa
+chlew
+chlor
+chluba
+chlust
+chmara
+chmiel
+chmura
+chodak
+choina
+chojrak
+chomik
+chory
+chrap
+chrom
+chromy
+chrust
+chryja
+chrypa
+chuch
+chudy
+chusta
+chwast
+chwila
+chwyt
+chybki
+chybot
+chytry
+ciacho
+ciapa
+ciapka
+ciarka
+ciasno
+ciasny
+ciasto
+cichy
+ciecz
+cielak
+cielec
+cielny
+ciemno
+ciemny
+cienki
+cierny
+ciocia
+cios
+ciotka
+cisza
+ckliwy
+cudak
+cudo
+cugle
+cukier
+cuma
+cyborg
+cybuch
+cyfra
+cygan
+cygaro
+cyjan
+cykada
+cykl
+cyklon
+cyklop
+cykor
+cykuta
+cynik
+cynizm
+cynk
+cypel
+cyprys
+cyrk
+cytat
+cytrus
+cytryna
+cywil
+czacha
+czador
+czajka
+czapa
+czapka
+czapla
+czar
+czara
+czarka
+czarny
+czart
+czas
+czasza
+czek
+czekan
+czelny
+czep
+czepek
+czepny
+czerep
+czeski
+czkawka
+czort
+czub
+czubek
+czuj
+czujka
+czujny
+czynny
+czynsz
+czyrak
+czysto
+czysty
+dach
+daktyl
+daleka
+daleki
+dalia
+dama
+damka
+damski
+daniel
+danina
+darcie
+daszek
+data
+datek
+dawca
+dawka
+debata
+debel
+debet
+debil
+dech
+decha
+deista
+deizm
+dekada
+dekarz
+dekiel
+dekolt
+dekret
+delfin
+delia
+delta
+demon
+denar
+denat
+denko
+denny
+deptak
+derma
+desant
+deser
+deska
+deszcz
+detal
+dewiza
+dewotka
+diadem
+diakon
+dialog
+diasek
+diesel
+dieta
+dioda
+dipol
+diwa
+doba
+dobosz
+dobro
+dobry
+docisk
+dogmat
+dojazd
+doker
+doktor
+dola
+dolar
+dolec
+dolina
+dolny
+domek
+domena
+domiar
+domino
+domyty
+donor
+donos
+doping
+dopust
+dorsz
+dorzut
+dotyk
+dowcip
+doza
+drab
+dragon
+draka
+drama
+dramat
+drapak
+dratwa
+dres
+drewno
+drobny
+droga
+drops
+drozd
+drucik
+drugi
+druh
+druhna
+druk
+drut
+drwa
+drwal
+drwina
+dryf
+dryg
+drzewo
+drzwi
+dubler
+dublet
+duch
+dudy
+dudek
+dukat
+duma
+dumny
+durny
+dusza
+duszek
+duszny
+dworak
+dworek
+dworny
+dwusuw
+dyby
+dycha
+dygot
+dykcja
+dykta
+dyktat
+dymarz
+dymek
+dymka
+dynamo
+dynia
+dyplom
+dyptyk
+dysk
+dysza
+dyszel
+dyszka
+dywan
+dzban
+dziad
+dzicz
+dzida
+dzieje
+dzik
+dziura
+dzwon
+ebonit
+echo
+eden
+edycja
+edykt
+edytor
+efeb
+efekt
+efendi
+egida
+egoizm
+ekler
+ekonom
+ekran
+eksces
+elegia
+elekt
+elita
+emeryt
+emfaza
+emir
+emirat
+emisja
+emiter
+emocja
+empik
+empora
+encja
+endek
+enigma
+enter
+enzym
+epicki
+epik
+epika
+epilog
+epitet
+epizod
+epoka
+epos
+eros
+erotyk
+erozja
+errata
+esej
+ester
+esteta
+estyma
+etanol
+etap
+etat
+eter
+etiuda
+etolog
+etos
+etui
+etyk
+etyka
+eunuch
+facet
+fach
+fagot
+faja
+fajans
+fajer
+fajka
+fajny
+fakir
+faks
+fakt
+faktor
+fala
+falka
+falset
+fanga
+fanka
+fant
+fantom
+fara
+faraon
+farba
+farbka
+farma
+farmer
+farsa
+farsz
+fart
+fasola
+fason
+fatum
+fatyga
+faul
+faun
+fauna
+fawor
+faza
+fazka
+febra
+feler
+felga
+feniks
+ferie
+festyn
+feta
+fetor
+fetysz
+fiacik
+fiasko
+fiat
+fiesta
+fifka
+figa
+figiel
+figura
+fiks
+fikus
+filc
+filet
+filia
+film
+filmik
+filtr
+finisz
+finka
+fiok
+fiolet
+fiolka
+fiord
+fircyk
+firma
+fiskus
+fiszka
+fizyk
+fizyka
+flacha
+flaga
+flak
+flakon
+flanca
+flanka
+flara
+flasza
+flecik
+flegma
+flek
+flet
+flinta
+flirt
+flisak
+flora
+floren
+flores
+floret
+flota
+fluor
+fobia
+fochy
+foczka
+foczy
+fokus
+folder
+folga
+folia
+fonem
+font
+forcik
+forint
+forma
+format
+forsa
+fort
+fortel
+forum
+fosa
+fosfat
+fosfor
+fota
+foton
+fotos
+fracht
+frajda
+frajer
+frak
+frank
+frant
+fraza
+frazes
+freon
+fresk
+fretka
+frez
+frezer
+fronda
+front
+froter
+fryga
+frykas
+frytek
+frytka
+fryz
+fryza
+fucha
+fuga
+fujara
+fuks
+funt
+fura
+furgon
+furia
+furkot
+furman
+furora
+furta
+fusy
+fuszer
+futbol
+futro
+fuzja
+gacek
+gach
+gacie
+gacki
+gadget
+gadka
+gafa
+gagatek
+gajda
+gajowy
+gala
+galeon
+galera
+galon
+galop
+galowy
+gambit
+gameta
+gamma
+ganek
+gang
+gapa
+gapcia
+garb
+garbek
+garbus
+garda
+garnek
+gatki
+gawra
+gawron
+gaza
+gazda
+gazeta
+gazik
+gbur
+gburek
+gekon
+geneza
+genom
+geolog
+gepard
+getry
+giaur
+gibki
+gicz
+gierka
+gigant
+gildia
+gips
+gitara
+giwera
+glaca
+glanc
+gleba
+glejak
+glejt
+glina
+glinka
+glista
+glob
+globus
+gloria
+gmina
+gnat
+gniady
+gnida
+gniew
+gnilny
+gniot
+gnom
+gnyp
+gody
+gogle
+gokart
+golarz
+golec
+golem
+golf
+goliat
+gonada
+gong
+goniec
+gont
+gorol
+gorset
+gorycz
+goryl
+gorzel
+gorzki
+gotyk
+gouda
+grab
+graba
+grabie
+grabki
+graca
+gracik
+gracja
+gracz
+grad
+graf
+grafik
+grafit
+graham
+grajek
+gram
+granat
+granda
+granit
+grant
+grapa
+grat
+gratis
+grawer
+grdyka
+grecki
+grek
+greka
+grill
+grobek
+grobla
+groch
+grog
+grom
+gromki
+grono
+gros
+grosik
+grosz
+grot
+grota
+groza
+grubas
+gruby
+gruda
+grudka
+grunt
+grupa
+grupka
+grusza
+gruz
+gryf
+gryfon
+gryka
+grymas
+grypa
+grypka
+gryps
+grysik
+gryz
+grzech
+grzmot
+grzyb
+grzywa
+gula
+gulasz
+gulgot
+guma
+gumiak
+gumka
+gumno
+gust
+guzek
+guziec
+guzik
+gwar
+gwara
+gwarek
+gwarny
+gwint
+gwizd
+gzyms
+habit
+haczyk
+hades
+hafcik
+haft
+haftka
+hajduk
+hala
+halka
+halny
+hamak
+handel
+hangar
+hantle
+haracz
+hardy
+harem
+harfa
+harpia
+harpun
+haust
+hazard
+heban
+heca
+hektar
+henna
+herb
+herold
+heros
+herszt
+hetera
+hiena
+hindus
+hipika
+hipis
+hojny
+hokej
+homar
+hormon
+hossa
+hotel
+huba
+hubka
+huczny
+hufiec
+hufnal
+hulaka
+hultaj
+humbug
+humor
+hurkot
+hurt
+husarz
+husyta
+huta
+hutnik
+huzar
+hybryda
+hycel
+hymn
+ibis
+ichni
+idea
+idiom
+idiota
+idol
+iglak
+iglica
+igrek
+iguana
+ikarus
+ikona
+ikonka
+ikra
+iloraz
+iluzja
+imam
+imbir
+imbryk
+impas
+impet
+import
+impuls
+indeks
+indyk
+inkub
+insekt
+intruz
+iracki
+ircha
+ironia
+iryd
+iryda
+irys
+irysek
+iskra
+islam
+istny
+izba
+izotop
+jadeit
+jadowy
+jaga
+jagoda
+jaguar
+jajko
+jajnik
+jajo
+jaki
+jama
+jamnik
+jantar
+japa
+jard
+jarosz
+jary
+jarzmo
+jasiek
+jaski
+jaskra
+jasno
+jasny
+jasyr
+jawa
+jawor
+jazda
+jazz
+jeden
+jednia
+jedwab
+jedyny
+jegier
+jehowa
+jelec
+jeleni
+jelito
+jeniec
+jenot
+jesion
+jodyna
+joga
+jogin
+jogurt
+joker
+jolka
+jucha
+juczny
+judasz
+judok
+judoka
+jugol
+juhas
+junak
+junior
+jura
+jurny
+juror
+jurta
+juta
+jutro
+kabel
+kabina
+kabul
+kabura
+kabza
+kacap
+kacet
+kacyk
+kaczan
+kaczka
+kaczy
+kadet
+kadr
+kadra
+kafar
+kafel
+kaftan
+kajak
+kajet
+kajmak
+kajuta
+kajzer
+kaktus
+kaleka
+kaleki
+kaleta
+kalka
+kalmar
+kalwin
+kamasz
+kamera
+kamica
+kampus
+kamrat
+kamyk
+kanar
+kancik
+kangur
+kania
+kankan
+kanon
+kant
+kanton
+kantor
+kanwa
+kapec
+kapela
+kapok
+kapota
+kaprys
+kapsel
+kaptur
+karat
+karb
+kareta
+kariera
+kark
+karma
+karmel
+karmik
+karnet
+karny
+karo
+karoca
+karp
+karpik
+kartel
+kartka
+karton
+kary
+kasa
+kaseta
+kasjer
+kask
+kastet
+kastor
+kasza
+kaszka
+katar
+katoda
+kaucja
+kawa
+kawior
+kawka
+kazus
+kebab
+keczup
+kefir
+keja
+keks
+kelner
+kepi
+keson
+kibic
+kibuc
+kicha
+kicia
+kicz
+kiecka
+kiedy
+kiep
+kier
+kierat
+kiesa
+kijek
+kiks
+kikut
+kila
+kilka
+kilo
+kilof
+kilt
+kino
+kiosk
+kiper
+kipiel
+kipu
+kircha
+kirkut
+kirys
+kisiel
+kiszka
+kita
+kitel
+kitka
+klacz
+klamka
+klamot
+klamra
+klan
+klapa
+klapek
+klaps
+klasa
+klaser
+klata
+klatka
+klaun
+klawy
+klecha
+kleik
+klej
+klekot
+kleks
+klepka
+kler
+kleryk
+klient
+klif
+klika
+klimat
+klin
+klincz
+klinga
+klinika
+klips
+klisza
+klita
+klitka
+kloaka
+kloc
+klocek
+klomb
+klon
+klonik
+klops
+klosik
+klosz
+klozet
+klub
+kluba
+klubik
+kluch
+klucha
+klucz
+kluska
+kminek
+knajpa
+knebel
+knedel
+knieja
+knot
+knur
+kobalt
+kobold
+kobza
+koci
+kociak
+kocica
+kocur
+kocyk
+koczek
+kodeks
+kogut
+koja
+kojec
+kojot
+kokon
+kokos
+kokota
+kokpit
+koks
+koksa
+kolano
+kolarz
+kolasa
+kolba
+kolbka
+kolec
+kolega
+kolej
+kolia
+kolon
+kolor
+kolos
+komar
+komers
+kometa
+komik
+komiks
+komin
+komis
+komoda
+kompan
+kompas
+komputer
+komtur
+komuch
+komuna
+konar
+kondor
+konewka
+koniak
+koniec
+konik
+konina
+konny
+konsul
+kontra
+kontur
+konus
+kopa
+kopacz
+koper
+kopia
+kopiec
+kora
+koral
+korba
+korbka
+kordon
+korek
+kornik
+korona
+korpus
+kort
+koryto
+korzec
+kosa
+kosarz
+kosmos
+kosmyk
+kostka
+kostny
+kostur
+kosy
+kosz
+koszt
+koszyk
+kotara
+kotek
+kotka
+kotlet
+kotwa
+kotwica
+kowal
+kowboj
+koza
+kozak
+kozera
+kozeta
+kozi
+kozica
+kozik
+kpiarz
+kpina
+krab
+krach
+kraina
+kraj
+krajan
+kraksa
+krakus
+kram
+kramik
+kran
+kranik
+krata
+krater
+kratka
+kraul
+krawat
+krecha
+krecik
+kreda
+kredka
+krem
+kremik
+kreol
+kres
+kreska
+kret
+kretyn
+krew
+krewki
+krezus
+krocie
+krocze
+krok
+krokus
+kromka
+kropka
+kropla
+krosta
+kroton
+krowi
+kruchy
+kruczy
+kruk
+krupa
+krwawy
+krwiak
+kryl
+krypta
+kryska
+kryty
+krytyk
+kryzys
+krzak
+krzem
+krzew
+krzta
+krzyca
+krzyk
+krzywy
+ksenon
+ksywa
+kubas
+kubek
+kubrak
+kubryk
+kuch
+kuchta
+kucja
+kucki
+kucyk
+kufel
+kufer
+kujon
+kula
+kulawy
+kulfon
+kulig
+kulka
+kulony
+kult
+kumpel
+kumys
+kuna
+kundel
+kunszt
+kupa
+kuper
+kupiec
+kupler
+kupno
+kupon
+kura
+kurczak
+kurant
+kurek
+kurhan
+kuria
+kurier
+kurka
+kurnik
+kurny
+kurort
+kurs
+kursor
+kurtka
+kurz
+kurzy
+kusy
+kusza
+kuter
+kutia
+kuty
+kuweta
+kuzyn
+kwant
+kwarc
+kwarta
+kwas
+kwasek
+kwesta
+kwiat
+kwit
+kwitek
+kwota
+laba
+lacha
+laczek
+lada
+laga
+lagier
+laguna
+laik
+lakier
+lakmusowy
+lala
+lalka
+lama
+lambda
+lament
+lameta
+lampa
+lampka
+lanca
+lancet
+lapsus
+larwa
+laser
+laska
+lasso
+lateks
+lato
+laufer
+laur
+laurka
+lawa
+laweta
+lawina
+lazur
+leciwy
+legat
+legia
+legion
+lejek
+lekarz
+lekcja
+lekki
+lektor
+leming
+leniwy
+lennik
+lenno
+lepszy
+leser
+leszcz
+letarg
+letni
+letnik
+leucyt
+lewa
+lewak
+lewar
+lewek
+lewica
+lewy
+liana
+liceum
+licho
+lichwa
+lichy
+lico
+liczba
+liczny
+lider
+liga
+likier
+likwor
+lilia
+limit
+lina
+lincz
+linia
+linka
+lipa
+lipid
+lipiec
+lipny
+lipowy
+liryk
+liryka
+lisek
+lisi
+lisica
+list
+lista
+listek
+listwa
+liszaj
+liszka
+litera
+litr
+lizak
+lizus
+lnisko
+locha
+loczek
+lodowy
+lodzik
+logika
+logos
+lokaj
+lokal
+lokata
+lont
+losowy
+loszka
+lotka
+lotnia
+lotnik
+lotny
+ludwik
+ludzie
+ludzik
+lufcik
+lufka
+luft
+luidor
+luka
+lukier
+luksus
+lumen
+lump
+luna
+lunatyk
+luneta
+lupa
+lura
+lustro
+lutnia
+lutnik
+luty
+luzak
+lwisko
+mach
+macka
+maczek
+madera
+mafia
+magia
+magiel
+magik
+magma
+magnat
+magnes
+magnez
+majdan
+major
+majowy
+majtek
+majtki
+makata
+makler
+makro
+malaga
+malarz
+malec
+malina
+malwa
+mama
+mamba
+mamona
+mamut
+mandat
+manewr
+mangan
+mania
+maniak
+manko
+manna
+manta
+manto
+mantra
+maoizm
+mapa
+mara
+marazm
+marina
+marka
+market
+marmur
+marny
+mars
+marsz
+martwy
+maruda
+marzec
+masa
+masarz
+maser
+maska
+mason
+masyw
+maszt
+mata
+matka
+matma
+matnia
+matowy
+matula
+matura
+mazak
+mazgaj
+mazur
+mazut
+mecz
+meczet
+medal
+medium
+meduza
+medyk
+meksyk
+melasa
+melika
+melon
+memuar
+mendel
+menhir
+menisk
+mensa
+mentol
+mentor
+menuet
+meta
+metal
+metan
+meteor
+metka
+metoda
+metr
+metro
+metyl
+mewa
+miano
+miarka
+miasto
+miazga
+micha
+miech
+miecz
+miedza
+mierny
+migacz
+migiel
+migot
+migowy
+mika
+mikrob
+mikron
+mikrus
+mikry
+mikser
+mila
+milion
+milszy
+milusi
+mimika
+mina
+miner
+minka
+minus
+minuta
+miodek
+miodny
+mirra
+misa
+misio
+miska
+mistyk
+mlecz
+mleko
+mnich
+mocarz
+mocno
+mocny
+moczary
+moda
+model
+modem
+modny
+modry
+moher
+mokry
+molo
+moloch
+moment
+monada
+moneta
+monit
+mono
+monokl
+monsun
+monter
+moped
+mops
+mopsi
+mopsik
+mora
+mord
+morda
+morela
+morena
+mores
+morga
+mormon
+mors
+morski
+morwa
+moskal
+moskit
+most
+mostek
+motek
+motel
+motto
+motyka
+motyl
+motyw
+mrok
+mrowie
+mruk
+mucha
+muezin
+muflon
+mulat
+mumia
+mundur
+murarz
+murawa
+murek
+murzyn
+muszka
+muszla
+muza
+muzeum
+muzyk
+muzyka
+myjka
+myjnia
+mysz
+myszka
+naciek
+nacisk
+nacja
+nacyzm
+nadruk
+nafta
+nagan
+nagana
+nagar
+nagi
+nahaj
+najazd
+nakaz
+nalepa
+nalot
+namiar
+namiot
+namowa
+napad
+napalm
+napar
+napis
+napity
+narada
+narcyz
+narta
+narwal
+narzut
+nasada
+nasiad
+natka
+natura
+nauka
+nawa
+nawias
+nawis
+nawlec
+nawyk
+nazizm
+nazwa
+nefryt
+nektar
+neolit
+neon
+neptun
+nera
+nerka
+nerw
+nestor
+neuron
+neuryt
+niania
+niebo
+niecka
+nielot
+niemy
+nieuk
+nikiel
+nimb
+nimfa
+nioska
+niski
+nisza
+nitka
+niuans
+niuch
+niwa
+nizina
+nochal
+nocka
+nocleg
+nocnik
+nocny
+noga
+nokaut
+nora
+nordyk
+norka
+norma
+nosek
+nosze
+nota
+notabl
+notes
+notka
+nowela
+nowina
+nowszy
+nowy
+nubuk
+nuda
+nudny
+nudyzm
+nugat
+numer
+nurek
+nurka
+nurt
+nuta
+nutka
+nygus
+nylon
+nysa
+oaza
+obawa
+obcy
+obecny
+obejma
+obelga
+oberek
+obfity
+obiad
+obibok
+obiec
+obieg
+obiekt
+obity
+objaw
+objazd
+oblec
+obora
+obraz
+obraza
+obrok
+obrona
+obrus
+obrys
+obryw
+obrzut
+obsada
+obszar
+obuch
+obuty
+obuwie
+obwity
+obycie
+obyty
+ocelot
+ocena
+ocet
+ochota
+ochra
+oczko
+odcisk
+odczyn
+odczyt
+oddech
+odezwa
+odjazd
+odlew
+odlot
+odma
+odmowa
+odnoga
+odnowa
+odpad
+odpust
+odraza
+odrost
+odruch
+odrzut
+odskok
+odsuw
+odwaga
+odwet
+odwyk
+odzew
+odzysk
+oferma
+oferta
+ofiara
+oficer
+ogar
+ogarek
+ogier
+ognik
+ogniwo
+ogon
+ogonek
+ohyda
+ohydny
+ojciec
+ojczym
+okap
+okaz
+oklask
+okno
+okonek
+okop
+okowa
+okrasa
+okres
+okruch
+okryty
+okrywa
+okrzyk
+oktawa
+oktet
+okulary
+okup
+okuty
+olcha
+olej
+olejek
+olejny
+oliwa
+oliwka
+omar
+omega
+omlet
+omylny
+onyks
+opad
+opal
+opar
+oparty
+opas
+opaska
+opat
+opcja
+opera
+opiec
+opieka
+opinia
+opioid
+opis
+oplot
+opluty
+opodal
+opoka
+opona
+oporny
+oprawa
+oprych
+oprysk
+optyk
+optyka
+opust
+orator
+orbita
+orczyk
+order
+orient
+orka
+orkan
+orkisz
+orlica
+orlik
+ornat
+orny
+orogen
+orszak
+oryl
+orzec
+orzech
+osad
+osada
+osadka
+osep
+osesek
+oset
+osika
+oskard
+osnowa
+osoba
+osobny
+osocze
+ospa
+ostoja
+ostry
+ostrze
+oszust
+otarty
+otruty
+owacja
+owad
+owadzi
+owal
+owalny
+owca
+owczy
+owies
+owijak
+owijka
+owoc
+owocek
+owocny
+owsik
+ozdoba
+oznaka
+ozon
+ozorek
+ozuty
+pacha
+packa
+paczka
+padok
+pagoda
+pajac
+pajda
+paka
+pakiet
+pakt
+palacz
+palant
+paleta
+palik
+paliwo
+palma
+palnik
+palony
+paluch
+panda
+panek
+panel
+pani
+panicz
+panika
+panna
+papa
+papka
+papla
+papuga
+parada
+parafa
+parcie
+parias
+park
+parka
+parkan
+parnas
+parnik
+parol
+parsek
+parter
+partia
+pasat
+pascha
+pasek
+paser
+pasiak
+pasja
+pasta
+pastor
+pastwa
+pasywa
+pasza
+patent
+patera
+patio
+patologia
+patos
+patrol
+patron
+patyna
+paulin
+pauza
+pawian
+pazur
+pchacz
+pecet
+pech
+pedant
+pejcz
+pejotl
+pejs
+pensja
+perkoz
+pers
+peruka
+pesel
+peseta
+pestka
+piach
+piana
+pianka
+piasta
+piec
+piecyk
+pieg
+piegus
+pieprz
+pierog
+pierun
+pierze
+pies
+piesek
+pieszy
+piewca
+pigmej
+pigwa
+pijak
+pikle
+piksel
+pilarz
+pilnik
+pilot
+pion
+pionek
+piorun
+pipeta
+pirat
+piroga
+piruet
+pisak
+pisarz
+pisk
+pismak
+pismo
+pistol
+pisuar
+piuska
+piwko
+piwo
+piwosz
+pizza
+plac
+placek
+placyk
+plaga
+plajta
+plakat
+plama
+plan
+planeta
+planty
+platan
+plater
+plazma
+pleban
+plebs
+plecak
+plecki
+plener
+plenum
+plik
+plomba
+plon
+ploter
+plotka
+plucha
+plujka
+plum
+plus
+plusk
+pluton
+pobyt
+pochwa
+pocisk
+poczet
+poczta
+podest
+podium
+podkop
+podlec
+podpis
+podryw
+podtyp
+poemat
+poeta
+poezja
+pogoda
+pogrom
+pojazd
+pokarm
+pokaz
+poker
+pokoik
+pokora
+pokot
+pokusa
+pokuta
+polana
+polano
+polder
+pole
+polec
+poler
+polewa
+polio
+polip
+polisa
+polka
+polny
+polon
+polski
+pomada
+pomiar
+pomiot
+pomnik
+pomny
+pomoc
+pomost
+pompa
+pompka
+pompon
+pomruk
+pomsta
+pomyje
+poncz
+ponton
+ponury
+popis
+popyt
+pora
+porada
+porcik
+porcja
+porek
+porno
+port
+portal
+porter
+portki
+portyk
+poryty
+poryw
+posada
+posag
+posiec
+posiew
+poskok
+posmak
+post
+postawa
+poster
+poszwa
+potas
+potny
+potok
+potop
+poufny
+powab
+powaga
+powiat
+powiew
+powity
+powlec
+poza
+pozer
+pozew
+poziom
+praca
+pracz
+pralka
+prasa
+praska
+prawda
+prawo
+prawy
+precel
+premia
+preria
+pretor
+prezes
+proca
+proces
+proch
+profan
+profil
+profit
+prolog
+promil
+promyk
+propan
+prorok
+proso
+prosto
+prosty
+proton
+prusak
+pruski
+prycza
+prym
+prymas
+prymat
+prymus
+pryzma
+przeor
+psalm
+pseudo
+psiak
+psiarz
+psik
+psikus
+psina
+psinka
+psota
+psotka
+psotny
+pstryk
+psuj
+ptak
+ptasi
+pucha
+puchar
+pucki
+pucz
+pudel
+puder
+puenta
+pukiel
+pula
+pulpa
+pulpet
+puma
+pumeks
+punkt
+pupa
+pupil
+pupka
+puryzm
+pustak
+pusty
+puszek
+puszka
+puzdro
+puzon
+pych
+pycha
+pyra
+pysk
+pyszny
+pyza
+pyzaty
+raban
+rabat
+rabin
+raca
+racja
+racuch
+raczek
+rada
+radca
+radian
+radio
+radny
+radon
+rady
+rafa
+rafia
+rafka
+rajca
+rajd
+rajer
+rakija
+rama
+ramka
+ramol
+rampa
+rana
+rancho
+ranczo
+randka
+ranek
+ranga
+ranka
+ranny
+rano
+rant
+raper
+rapier
+rapsod
+raptus
+rasizm
+raster
+rata
+ratler
+ratrak
+ratusz
+rausz
+raut
+rdest
+rdza
+rdzawy
+realia
+realny
+rebus
+recesja
+rechot
+reda
+reduta
+refren
+regaty
+regent
+region
+regres
+reja
+rejent
+rejon
+rejs
+rekin
+rekord
+rekrut
+rektor
+rekuza
+relaks
+relief
+relikt
+remis
+remiz
+remiza
+remont
+rena
+reneta
+renoma
+renta
+repeta
+report
+resor
+resort
+resurs
+reszka
+reszta
+retman
+retor
+retusz
+retyk
+rewers
+rewia
+rewir
+rezon
+riksza
+ring
+robak
+robal
+robol
+robot
+robota
+roczek
+roczny
+rodak
+rodeo
+rodnia
+rodnik
+rodzaj
+rodzic
+rogacz
+rogaty
+rojek
+rokita
+rokoko
+rokosz
+rolada
+roleta
+rolka
+rolnik
+romans
+romb
+rondo
+ropa
+roraty
+rosa
+rotor
+rowek
+rower
+rozejm
+rozeta
+rozjemca
+rozlec
+rozlew
+rozmaz
+rozpad
+rozsyp
+roztop
+rozum
+rubel
+rubin
+ruch
+ruczaj
+ruda
+rudawy
+rudera
+rudy
+ruina
+ruja
+ruleta
+rulon
+rumak
+rumba
+rumianek
+rumor
+runo
+runy
+rura
+rurarz
+rurka
+ruski
+ruszt
+rutyna
+rwetes
+rybak
+rybi
+rybik
+rybka
+rybny
+rycerz
+rycina
+rycyna
+rydwan
+rydz
+rydzyk
+rygiel
+rygor
+ryjec
+ryjek
+rylec
+rymarz
+rynek
+rynna
+rytm
+rywal
+ryza
+ryzyko
+rzecz
+rzeka
+rzep
+rzepa
+rzepak
+rzepka
+rzesza
+rzezak
+rzucik
+rzut
+rzutek
+rzutka
+rzutki
+rzyg
+sabat
+sadyzm
+sadza
+saga
+sagan
+sake
+saksy
+sakwa
+sala
+saldo
+salka
+salon
+salowa
+salto
+salut
+salwa
+samczy
+samiec
+samica
+samouk
+sanie
+saper
+sari
+sarmata
+sarna
+satyna
+satyr
+sauna
+scena
+scenka
+schab
+scheda
+schody
+schron
+scysja
+seans
+sedan
+sedes
+sedno
+sejf
+sejm
+sejmik
+sekcja
+sekret
+sekta
+selen
+seler
+semita
+senat
+senior
+sennik
+senny
+sens
+sensat
+sensor
+sepia
+serce
+serdak
+serek
+seria
+serial
+sernik
+sero
+serowy
+serw
+serwer
+serwis
+sesja
+seta
+setka
+setny
+sezam
+sezon
+sfera
+sfinks
+sfora
+sforny
+sianko
+siano
+siara
+siata
+siatka
+sieja
+siejba
+sienny
+sierp
+siew
+siewca
+siewka
+sigma
+sikacz
+sikora
+silnia
+silnik
+silny
+silony
+silos
+siniak
+sinica
+siniec
+siny
+sitko
+sito
+sitwa
+siup
+siwek
+siwy
+sjesta
+skaj
+skala
+skalar
+skald
+skalny
+skalp
+skarb
+skarga
+skarpa
+skaut
+skaza
+skecz
+skiba
+sklep
+sknera
+skobel
+skoda
+skojec
+skok
+skory
+skos
+skowa
+skowyt
+skra
+skraj
+skrecz
+skryba
+skrypt
+skrzat
+skucha
+skunks
+skup
+skurcz
+skutek
+skuter
+skuty
+skwar
+skwer
+slajd
+slalom
+slipki
+slipy
+slogan
+slot
+smak
+smalec
+smar
+smardz
+smark
+smoczy
+smog
+smok
+smrek
+smuga
+smutek
+smutny
+smycz
+smyk
+snob
+snop
+sobek
+sobol
+sobota
+socha
+soczek
+sodoma
+sofa
+sofka
+soja
+sojowy
+sojusz
+sola
+solarz
+solny
+solony
+sonar
+sonata
+sonda
+sonet
+song
+sopel
+sopran
+sorbet
+sorek
+sort
+sosik
+sosna
+sotnia
+sowa
+sowity
+spacer
+spacja
+spad
+spadek
+spazm
+spiec
+spiker
+spinka
+spis
+spisek
+spity
+splot
+spluwa
+spodek
+spodnie
+spoiwo
+sporny
+sport
+spory
+sprawa
+sprint
+spruty
+spryt
+spust
+srogi
+sroka
+stacja
+stado
+stal
+stan
+stanik
+start
+stary
+statek
+statua
+status
+statut
+statyw
+staw
+stek
+stela
+ster
+sterta
+stoik
+stojak
+stok
+stolik
+stonka
+stop
+stopa
+stoper
+stopka
+stora
+stos
+stosik
+strach
+strajk
+strata
+strawa
+strefa
+stres
+strofa
+stroik
+stromy
+strona
+strop
+struga
+struna
+strup
+strusi
+struty
+strych
+strzyc
+studio
+stuk
+stukot
+styk
+styl
+stypa
+suchar
+suchy
+suczka
+sueski
+sufit
+sufler
+suflet
+suita
+suka
+sukces
+sukno
+sukurs
+suma
+sumik
+sumka
+sumpt
+surdut
+surowy
+susza
+sutek
+suty
+suwak
+swat
+swoi
+syfon
+sygnet
+sylaba
+symbol
+syndyk
+synek
+synod
+synowa
+sypki
+syrena
+syrop
+system
+sytny
+syto
+syty
+szabas
+szabat
+szaber
+szabla
+szach
+szafa
+szafel
+szafir
+szafka
+szafot
+szajba
+szajka
+szal
+szala
+szalej
+szalet
+szalik
+szalka
+szaman
+szambo
+szansa
+szanta
+szarak
+szarfa
+szary
+szaser
+szata
+szatan
+szatka
+szatyn
+szczaw
+szczek
+szczur
+szczyl
+szczyt
+szef
+szejk
+szelf
+szelka
+szelma
+szept
+szereg
+szeryf
+szew
+szewc
+szewek
+szkapa
+szkic
+szkoda
+szkop
+szkrab
+szkuta
+szlag
+szlak
+szlam
+szleja
+szlif
+szloch
+szmal
+szmata
+szmelc
+szmira
+sznaps
+sznur
+sznyt
+szofer
+szok
+szop
+szopa
+szopka
+szorty
+szosa
+szpada
+szpan
+szpara
+szpic
+szpica
+szpieg
+szpik
+szpon
+szpona
+szprot
+szpula
+szpunt
+szrama
+szron
+sztab
+sztaba
+sztama
+sztok
+sztorc
+sztorm
+sztuba
+sztuka
+szturm
+sztych
+sztyft
+szufla
+szuja
+szuler
+szum
+szumny
+szupin
+szuwary
+szwab
+szwacz
+szwank
+szyb
+szyba
+szybik
+szybka
+szybki
+szycha
+szyfr
+szyja
+szyjka
+szyk
+szyld
+szynka
+szyper
+tabaka
+tabela
+tabor
+tabun
+taca
+tacka
+taczka
+tafla
+tajfun
+tajnik
+tajny
+taksa
+takt
+taktyk
+talar
+talent
+talerz
+talia
+talon
+tama
+tampon
+tandem
+taniec
+taoizm
+tapeta
+tapir
+tarcie
+tarcza
+targ
+tarka
+tarok
+tarot
+tarpan
+tartak
+tartan
+tarty
+taryfa
+tasak
+tata
+tatar
+tatko
+tatra
+teatr
+teczka
+teflon
+teczka
+teksas
+tekst
+temat
+tembr
+tempo
+tenis
+tenor
+tensor
+tent
+teolog
+teoria
+tercet
+tercja
+teren
+terier
+terkot
+terma
+termin
+termon
+termos
+terror
+tesla
+test
+tester
+tetra
+tetryk
+teza
+tiara
+tips
+tiul
+tkacz
+tkanka
+tlen
+tlenek
+toast
+toga
+tokaj
+tokarz
+tombak
+tomik
+tomizm
+tona
+toner
+tonik
+topaz
+topiel
+toples
+topola
+topos
+torba
+torcik
+torf
+tors
+tort
+torus
+tost
+toster
+totek
+totem
+towar
+towot
+tracki
+tracz
+traf
+trafik
+trafny
+tragik
+trakt
+trama
+tran
+trans
+trapez
+tras
+trasa
+traser
+trata
+tratwa
+trawa
+trawka
+trefl
+trefny
+trel
+trema
+tremo
+tren
+trencz
+trend
+trener
+trep
+triada
+trik
+trio
+triumf
+trocki
+trojka
+trolit
+troll
+tron
+trop
+tropik
+troska
+trotyl
+trucht
+trud
+trudno
+trudny
+trufla
+truizm
+trumf
+trumna
+trunek
+trup
+trupa
+trupek
+trupi
+trusia
+truty
+trwoga
+tryb
+tryba
+trybik
+trybun
+trykot
+trym
+trymer
+tryt
+tryton
+trzask
+trzeci
+trzon
+tuba
+tubka
+tuja
+tukan
+tuleja
+tuman
+tumult
+tundra
+tunel
+tuner
+tunika
+tupet
+tupot
+tura
+turban
+turkus
+turnus
+tusz
+tusza
+tuszka
+tutka
+tutor
+tuzin
+twardy
+twarz
+tybet
+tyci
+tyczka
+tyczny
+tyfus
+tygiel
+tygrys
+tyka
+tykot
+tykwa
+tylda
+tylny
+tymian
+tynk
+typowy
+tyrada
+tyran
+tyski
+tytan
+ubaw
+ubiec
+ubijak
+ubity
+ubocze
+ubogi
+ubytek
+uchaty
+ucho
+uchwyt
+uciec
+ucisk
+uczep
+uczony
+uczta
+udar
+udko
+ufny
+ufolog
+ugoda
+ugorek
+ujemny
+ujma
+ukaz
+ukleja
+ukos
+ukrop
+ukryty
+ukuty
+ulec
+ulem
+ulepek
+ulewa
+ulga
+ulgowy
+ulica
+ulotka
+ulotny
+umiar
+umizg
+umowa
+umrzyk
+umyty
+uncja
+unia
+unik
+unikat
+upadek
+upalny
+uparty
+upiec
+upiek
+uprawa
+upust
+uralit
+uran
+uraz
+uraza
+urlop
+urna
+urobek
+uroczy
+urodny
+urok
+urolog
+ursus
+urwis
+uryna
+urywek
+uskok
+usta
+ustawa
+ustnik
+ustny
+uszak
+uszko
+uszny
+uszyty
+utarg
+utarty
+utopia
+utrata
+uwaga
+uwity
+uzda
+uzysk
+wabik
+wachta
+waciak
+wacik
+wada
+wadery
+wadium
+wafel
+wagary
+wagon
+wajcha
+wakat
+walc
+walec
+walet
+waliza
+walka
+walny
+walor
+waluta
+wamp
+wampir
+wanna
+wapno
+warga
+wariat
+warkot
+wartki
+warty
+wasal
+wata
+wataha
+watka
+waza
+wazon
+wbijak
+wbity
+wczasy
+wczep
+wdech
+wdowa
+weksel
+wektor
+welon
+welur
+wena
+wentyl
+wers
+wersal
+werset
+wersja
+wertep
+werwa
+weryzm
+wesele
+wesz
+weto
+wezyr
+wiadro
+wianek
+wiano
+wiara
+wiarus
+wiata
+wiatr
+wicher
+widmo
+widny
+widok
+widomy
+wiec
+wiecha
+wiedza
+wiek
+wieko
+wiele
+wielki
+wielu
+wieprz
+wierch
+wiersz
+wigwam
+wiking
+wikler
+wikt
+wilga
+wilia
+wilk
+wina
+winda
+winiak
+winko
+wino
+winyl
+wiocha
+wiola
+wioska
+wiosna
+wiotki
+wiroza
+wirus
+wisior
+wist
+wistra
+witka
+wity
+wiwat
+wizg
+wizja
+wizjer
+wizyta
+wjazd
+wkop
+wlew
+wlot
+wmarsz
+wnuk
+wnusia
+wnyk
+woal
+woalka
+woda
+wodnik
+wojak
+wojna
+wojsko
+wola
+wolej
+wolny
+wolt
+wolta
+wonny
+worek
+wosk
+wotum
+wozak
+wpadka
+wpis
+wrak
+wredny
+wrogi
+wrona
+wrota
+wrotka
+wryty
+wrzask
+wrzawa
+wrzos
+wrzut
+wsad
+wstyd
+wsyp
+wtorek
+wtrysk
+wtyk
+wujek
+wulkan
+wlec
+wybieg
+wybryk
+wybuch
+wycena
+wyciek
+wycior
+wycisk
+wyczyn
+wydech
+wydma
+wyga
+wygoda
+wyjazd
+wyjec
+wykaz
+wykop
+wykres
+wykup
+wykwit
+wylew
+wylot
+wymiar
+wymowa
+wymyty
+wynik
+wypad
+wypas
+wypiec
+wypiek
+wypis
+wypity
+wypust
+wyrok
+wyrzut
+wyskok
+wysoki
+wyspa
+wysyp
+wytop
+wywiad
+wywiew
+wywlec
+wyziew
+wyzuty
+wyzysk
+wzlot
+wznowa
+wzorek
+wzrok
+wzrost
+wzuty
+zabawa
+zabieg
+zabity
+zaciek
+zacisk
+zacny
+zaczep
+zaczyn
+zadek
+zadra
+zadruk
+zaduch
+zadyma
+zagon
+zaimek
+zajad
+zajazd
+zajob
+zakaz
+zakole
+zakon
+zakres
+zakup
+zakwas
+zakwit
+zaleta
+zalew
+zalewa
+zaloty
+zamach
+zamek
+zamiar
+zamtuz
+zanik
+zapach
+zapas
+zapis
+zapora
+zaraza
+zarost
+zarys
+zarzut
+zasada
+zasiek
+zaspa
+zastaw
+zasuwa
+zatoka
+zator
+zawias
+zawora
+zbawca
+zbieg
+zbir
+zbitka
+zbity
+zbocze
+zbroja
+zbuk
+zdalny
+zdarty
+zdatny
+zdobny
+zdolny
+zdrada
+zecer
+zefir
+zegar
+zemsta
+zero
+zeskok
+zestaw
+zeszyt
+zgaga
+zgniot
+zgnity
+zgoda
+zgon
+zgraja
+zgred
+zgrywa
+zgryz
+zgrzyt
+zguba
+ziarno
+ziele
+zielny
+ziemia
+zima
+zimno
+ziomek
+zjawa
+zjazd
+zlepek
+zlepka
+zlew
+zlewka
+zlot
+zmiana
+zmora
+zmowa
+zmrok
+zmyty
+zmywak
+znajda
+znak
+znawca
+znicz
+zodiak
+zombi
+zona
+zoolog
+zorza
+zraz
+zrazik
+zrost
+zryty
+zrywka
+zrzec
+zrzez
+zrzut
+zsuw
+zsyp
+zszyty
+zuch
+zupa
+zupka
+zwarty
+zwiad
+zwid
+zwijka
+zwinny
+zwis
+zwitek
+zwora
+zworka
+zwrot
+zydel
+zygota
+zygzak
+zysk
