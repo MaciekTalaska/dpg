@@ -3,6 +3,7 @@ extern crate dpg;
 use dpg::DicewareInfo;
 use std::env; 
 use std::collections::HashMap;
+use std::process;
 
 fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInfo>) -> DicewareInfo {
     match language.to_lowercase().as_str() {
@@ -27,10 +28,12 @@ source: github.com/MaciekTalaska/dpg \r
 \r
 options:
 -l:<language>       - language (en or pl) - en is the default \r
--s:<number>         - the number of words to be generated - default is 4 \r
+-w:<number>         - the number of words to be generated - default is 4 \r
+-s:<char>           - (not implemented!) separator to be used to separate words. By default '-' is used as a separator
 -p:<number>         - (not implemented!) how many passwords to generate (up to 255)\r
 -c                  - (not implemented!) copy generated password to clipboard\r 
 -i:<path_to_file>   - (not implemented!) use external file with word list\r
+-
 -h                  - this help\r
 -?                  - this help
 \n";
@@ -63,17 +66,29 @@ fn parse_command_line() -> (String, usize) {
     }
 
     let language = opts.get("l").unwrap().to_string();
-    let words_count = opts.get("s")
+    let words_count = opts.get("w")
         .unwrap_or(&"4".to_string())
         .parse::<usize>()
         .unwrap_or(4);
     (language, words_count)
 }
 
+fn check_parameters(language: &String, password_length: usize) {
+    if password_length < 1 || password_length  > 255 {
+       println!("password should consist of at least 1 and max 255 words"); 
+       process::exit(1);
+    }
+    if language != "en" && language != "pl" {
+        println!("language: '{}' is not supported!", language);
+        process::exit(1);
+    }
+}
+
 
 fn main() {
     let (language, password_length) = parse_command_line();
-	
+	check_parameters(&language, password_length);
+
     let all_diceware = dpg::read_all_diceware_lists();
     let mut words: Vec<String> = Vec::new();
     for _i in {0..password_length} {
