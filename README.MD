@@ -26,7 +26,11 @@ Security
 
 Dpg uses OsRng from rand crate (https://crates.io/crates/rand). Rand crate documentation states that: ["An application that requires an entropy source for cryptographic purposes must use OsRng, which reads randomness from the source that the operating system provides (e.g. /dev/urandom on Unixes or CryptGenRandom() on Windows). The other random number generators provided by this module are not suitable for such purposes."](https://docs.rs/rand/0.4.2/rand/#cryptographic-security) 
 
-Commands and switches
----------------------
+Options
+-------
 
-(not implemented yet)
+- l:<language>       language (currently only en or pl). In case a value different than 'en' or 'pl' is specified - 'en' is used. 'en' is also used by default - i.e. for generating passwords consisting of English words this option does not have to be explicitly specified
+- w:<number>        the number of words to be generated.
+                    Minumum: 1
+                    Maximum: 255
+
