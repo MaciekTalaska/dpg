@@ -62,8 +62,7 @@ fn get_option_key_value(option: &str) -> (String, String) {
     (k.to_string(), v.replace(":",""))
 }
 
-fn parse_command_line() -> (String, usize) {
-    let args: Vec<String> = env::args().collect();
+fn parse_command_line(args: Vec<String>) -> (String, usize) {
     let mut opts: HashMap<String, String> = HashMap::new();
 
     match args.len() {
@@ -99,7 +98,8 @@ fn check_parameters(language: &String, password_length: usize) {
 
 
 fn main() {
-    let (language, password_length) = parse_command_line();
+    let args: Vec<String> = env::args().collect();
+    let (language, password_length) = parse_command_line(args);
 	check_parameters(&language, password_length);
 
     let all_diceware = dpg::read_all_diceware_lists();
