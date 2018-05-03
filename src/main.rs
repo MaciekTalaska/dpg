@@ -40,46 +40,59 @@ options:
     print!("{}",info);
 }
 
+fn check_argument_format(option: &str) {
+    if !option.starts_with("-") {
+        println!("unrecognized option: {}", option);
+        println!("  are you missing a '-' prefix?");
+        process::exit(1);
+    }
+}
+
+fn get_option_key_value(option: &str) -> (String, String) {
+    check_argument_format(option);
+
+    let input = match option.starts_with("-") {
+        true => option[1..].to_ascii_lowercase(),
+        false => option[..].to_ascii_lowercase(),
+    };
+
+    let index = input.find(":").unwrap_or(input.len());
+    let (k,v) = input.split_at(index);
+    println!("k/v: {:?}", (k,v));
+    (k.to_string(), v.replace(":",""))
+}
+
 fn parse_command_line() -> (String, usize) {
     let args: Vec<String> = env::args().collect();
     let mut opts: HashMap<String, String> = HashMap::new();
 
     match args.len() {
-        1 => {
-            info();
-        },
+        1 => info(),
         2...5 => {
             for i in {1..args.len()} {
-                let t = &args[i]
-                    .as_str()
-                    .replace("-", "")
-                    .to_ascii_lowercase().clone();
-                let (k, v) = t.split_at(t
-                                        .find(":")
-                                        .unwrap_or(t.len()));
-                opts.insert(k.to_string().clone(), v.replace(":","").to_string().clone());
+                let (k,v) =  get_option_key_value(&args[i]);
+                opts.insert(k, v);
             }
         },
-        _ => {
-            info();
-        }
+        _ => info()
     }
 
     let language = opts.get("l").unwrap().to_string();
     let words_count = opts.get("w")
         .unwrap_or(&"4".to_string())
         .parse::<usize>()
-        .unwrap_or(4);
+        .unwrap_or(0);
     (language, words_count)
 }
 
 fn check_parameters(language: &String, password_length: usize) {
+    println!("[passed parameter to check] language: {} password: {}", language, password_length);
     if password_length < 1 || password_length  > 255 {
-       println!("password should consist of at least 1 and max 255 words"); 
+       println!("error: password should consist of at least 1 and max 255 words");
        process::exit(1);
     }
     if language != "en" && language != "pl" {
-        println!("language: '{}' is not supported!", language);
+        println!("error: language: '{}' is not supported!", language);
         process::exit(1);
     }
 }
