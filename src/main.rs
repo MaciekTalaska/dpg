@@ -28,7 +28,7 @@ source: github.com/MaciekTalaska/dpg \r
 \r
 options:
 -l:<language>       - language (en or pl) - en is the default \r
--w:<number>         - the number of words to be generated - default is 4 \r
+-w:<number>         - the number of words to be generated (range: 1-255)\r
 -s:<char>           - (not implemented!) separator to be used to separate words. By default '-' is used as a separator
 -p:<number>         - (not implemented!) how many passwords to generate (up to 255)\r
 -c                  - (not implemented!) copy generated password to clipboard\r 
