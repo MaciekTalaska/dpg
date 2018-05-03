@@ -43,6 +43,7 @@ fn read_diceware_list(language: &str) -> DicewareInfo {
     return info;
 }
 
+#[cfg(debug_assertions)]
 pub fn print_diceware_info(info: DicewareInfo) {
     println!("---- print diceware info ----");
     println!("language: {:?}", info.language);

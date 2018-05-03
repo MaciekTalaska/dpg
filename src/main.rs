@@ -14,10 +14,14 @@ fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInf
 
 fn get_random_word(language: &str, diceware_data: &Vec<DicewareInfo>) -> String {
     let info: DicewareInfo = get_diceware_info_by_language(language, diceware_data.as_ref());
-    //println!("number of dice rolls: {:?}", info.num_dices);
+
+    #[cfg(debug_assertions)]
+    println!("number of dice rolls: {:?}", info.num_dices);
+
     let result = dpg::mrandom::roll_dices(info.num_dices);
 
-    //println!("index: {:?}", result);
+    #[cfg(debug_assertions)]
+    println!("index: {:?}", result);
     info.words[result as usize % info.words.len()].clone()
 }
 
@@ -58,6 +62,7 @@ fn get_option_key_value(option: &str) -> (String, String) {
 
     let index = input.find(":").unwrap_or(input.len());
     let (k,v) = input.split_at(index);
+    #[cfg(debug_assertions)]
     println!("k/v: {:?}", (k,v));
     (k.to_string(), v.replace(":",""))
 }
@@ -85,6 +90,7 @@ fn parse_command_line(args: Vec<String>) -> (String, usize) {
 }
 
 fn check_parameters(language: &String, password_length: usize) {
+    #[cfg(debug_assertions)]
     println!("[passed parameter to check] language: {} password: {}", language, password_length);
     if password_length < 1 || password_length  > 255 {
        println!("error: password should consist of at least 1 and max 255 words");
