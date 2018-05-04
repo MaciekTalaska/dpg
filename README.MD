@@ -28,9 +28,9 @@ Dpg uses OsRng from rand crate (https://crates.io/crates/rand). Rand crate docum
 
 Options
 -------
+`-l:<language>`     language list to use - currently only 'en' (English) or 'pl' (Polish) are supported. 'en' is used by default - i.e. for generating passwords consisting of English words this option does not have to be explicitly specified
 
-- l:<language>       language (currently only en or pl). In case a value different than 'en' or 'pl' is specified - 'en' is used. 'en' is also used by default - i.e. for generating passwords consisting of English words this option does not have to be explicitly specified
-- w:<number>        the number of words to be generated.
-                    Minumum: 1
-                    Maximum: 255
+`-w:<number>`       the number of words (password length in words) to be generated.<br>
+                    &emsp;Minumum: 1<br>
+                    &emsp;Maximum: 255<br>
 
