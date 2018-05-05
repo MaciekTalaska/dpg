@@ -5,6 +5,9 @@ use std::env;
 use std::collections::HashMap;
 use std::process;
 
+static MIN_WORDS_COUNT: usize = 1;
+static MAX_WORDS_COUNT: usize = 255;
+
 fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInfo>) -> DicewareInfo {
     match language.to_lowercase().as_str() {
         "pl" => diceware_data[1].clone(),
@@ -22,6 +25,8 @@ fn get_random_word(language: &str, diceware_data: &Vec<DicewareInfo>) -> String 
 
     #[cfg(debug_assertions)]
     println!("index: {:?}", result);
+    println!("selected word: {}", info.words[result as usize % info.words.len()]);
+
     info.words[result as usize % info.words.len()].clone()
 }
 
@@ -92,8 +97,8 @@ fn parse_command_line(args: Vec<String>) -> (String, usize) {
 fn check_parameters(language: &String, password_length: usize) {
     #[cfg(debug_assertions)]
     println!("[passed parameter to check] language: {} password: {}", language, password_length);
-    if password_length < 1 || password_length  > 255 {
-       println!("error: password should consist of at least 1 and max 255 words");
+    if password_length < MIN_WORDS_COUNT || password_length  > MAX_WORDS_COUNT {
+       println!("error: password should consist of at least {} and max {} words", MIN_WORDS_COUNT, MAX_WORDS_COUNT);
        process::exit(1);
     }
     if language != "en" && language != "pl" {
