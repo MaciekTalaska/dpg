@@ -5,6 +5,8 @@ use std::env;
 use std::collections::HashMap;
 use std::process;
 
+static ERR_ARGUMENT_PARSING: i32 = 1;
+
 static MIN_WORDS_COUNT: usize = 1;
 static MAX_WORDS_COUNT: usize = 255;
 
@@ -53,7 +55,7 @@ fn check_argument_format(option: &str) {
     if !option.starts_with("-") {
         println!("unrecognized option: {}", option);
         println!("  are you missing a '-' prefix?");
-        process::exit(1);
+        process::exit(ERR_ARGUMENT_PARSING);
     }
 }
 
@@ -69,6 +71,7 @@ fn get_option_key_value(option: &str) -> (String, String) {
     let (k,v) = input.split_at(index);
     #[cfg(debug_assertions)]
     println!("k/v: {:?}", (k,v));
+
     (k.to_string(), v.replace(":",""))
 }
 
@@ -99,11 +102,11 @@ fn check_parameters(language: &String, password_length: usize) {
     println!("[passed parameter to check] language: {} password: {}", language, password_length);
     if password_length < MIN_WORDS_COUNT || password_length  > MAX_WORDS_COUNT {
        println!("error: password should consist of at least {} and max {} words", MIN_WORDS_COUNT, MAX_WORDS_COUNT);
-       process::exit(1);
+       process::exit(ERR_ARGUMENT_PARSING);
     }
     if language != "en" && language != "pl" {
         println!("error: language: '{}' is not supported!", language);
-        process::exit(1);
+        process::exit(ERR_ARGUMENT_PARSING);
     }
 }
 
