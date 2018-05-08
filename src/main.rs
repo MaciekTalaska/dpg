@@ -111,19 +111,23 @@ fn check_parameters(language: &String, password_length: usize) {
     }
 }
 
-
+fn create_password(password_length: usize, language: String, all_diceware: &Vec<DicewareInfo>) -> String {
+    let mut words: Vec<String> = Vec::new();
+    for _i in {0..password_length} {
+        let mut w = get_random_word(&language[..], all_diceware);
+        words.push(w);
+    }
+    let password = words.join(&DEFAULT_DELIMITER);
+    password
+}
 
 fn main() {
     let args: Vec<String> = env::args().collect();
     let (language, password_length) = parse_command_line(args);
 	check_parameters(&language, password_length);
-
     let all_diceware = dpg::read_all_diceware_lists();
-    let mut words: Vec<String> = Vec::new();
-    for _i in {0..password_length} {
-        let mut w = get_random_word(&language[..], &all_diceware);
-        words.push(w);
-    }
-    let password = words.join(&DEFAULT_DELIMITER);
+
+    let password = create_password(password_length, language, &all_diceware);
+
     println!("generated password: {}", password);
 }
