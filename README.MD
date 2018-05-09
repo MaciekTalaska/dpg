@@ -34,3 +34,4 @@ Options
                     &emsp;Minumum: 1<br>
                     &emsp;Maximum: 255<br>
 
+`-c`                copy generated password to clipboard
