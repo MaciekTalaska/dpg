@@ -20,7 +20,7 @@ pub struct Options {
     language:           String,
     separator:          String,
     password_length:    usize,
-    count:              usize,
+    password_count:     usize,
     verbose:            bool,
     clipboard:          bool,
     file_path:          String,
@@ -54,10 +54,13 @@ author: Maciek Talaska <maciek.talaska@gmail.com> \r
 source: github.com/MaciekTalaska/dpg \r
 \r
 options:
--l:<language>       - language (en or pl) - en is the default \r
+-l:<language>       - language (en or pl)\r\
+                      Default: en\r
 -w:<number>         - the number of words to be generated (range: 1-255)\r
--s:<char>           - (not implemented!) separator to be used to separate words. By default '-' is used as a separator
--p:<number>         - (not implemented!) how many passwords to generate (up to 255)\r
+-s:<char>           - (not implemented!) separator to be used to separate words.\r
+                      Default: '-'\r
+-p:<number>         - number of passwords to generate (up to 255)\r\
+                      Default: 1\r
 -c                  - copy generated password to clipboard\r
 -i:<path_to_file>   - (not implemented!) use external file with word list\r
 -
@@ -110,7 +113,7 @@ fn parse_command_line(args: Vec<String>) -> Options {
         password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
         verbose : false,
         clipboard : opts.contains_key("c"),
-        count : DEFAULT_PASSWORD_COUNT,
+        password_count: opts.get("p").unwrap().parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
         separator : DEFAULT_DELIMITER.to_string(),
         file_path: String::new(),
     }
@@ -129,7 +132,7 @@ fn check_parameters(language: &String, password_length: usize) {
     }
 }
 
-fn create_password(password_length: usize, language: String, all_diceware: &Vec<DicewareInfo>) -> String {
+fn create_password(password_length: usize, language: &str, all_diceware: &Vec<DicewareInfo>) -> String {
     let mut words: Vec<String> = Vec::new();
     for _i in {0..password_length} {
         let mut w = get_random_word(&language[..], all_diceware);
@@ -152,7 +155,11 @@ fn main() {
 	check_parameters(&options.language, options.password_length);
     let all_diceware = dpg::read_all_diceware_lists();
 
-    let password = create_password(options.password_length, options.language, &all_diceware);
+    let mut password = String::new();
+    for _i in {0..options.password_count} {
+        let new_password = create_password(options.password_length, &options.language, &all_diceware);
+        password = [new_password, password].join("\n");
+    }
 
     if options.clipboard {
         copy_to_clipboard(password.clone());

@@ -35,3 +35,5 @@ Options
                     &emsp;Maximum: 255<br>
 
 `-c`                copy generated password to clipboard
+
+`-p:<number>`       number of passwords to generate at once
