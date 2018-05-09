@@ -161,7 +161,7 @@ fn copy_to_clipboard(password: String) {
 
 fn validate_parameters_count(args: &Vec<String>) {
     if args.len() < 2 {
-        println!("error: insuffictient parameters. Type 'dpg -h' for help.");
+        println!("error: insufficient parameters. Type 'dpg -h' for help.");
         process::exit(ERR_NO_ARGUMENTS);
     }
 }
@@ -181,5 +181,3 @@ fn main() {
     }
     println!("generated password(s):\n{}", password);
 }
-
-
