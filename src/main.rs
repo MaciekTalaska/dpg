@@ -11,9 +11,20 @@ use std::{thread, time};
 
 static ERR_ARGUMENT_PARSING: i32 = 1;
 static DEFAULT_DELIMITER:&'static str = "-";
+static DEFAULT_PASSWORD_COUNT: usize = 1;
 
 static MIN_WORDS_COUNT: usize = 1;
 static MAX_WORDS_COUNT: usize = 255;
+
+pub struct Options {
+    language:           String,
+    separator:          String,
+    password_length:    usize,
+    count:              usize,
+    verbose:            bool,
+    clipboard:          bool,
+    file_path:          String,
+}
 
 fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInfo>) -> DicewareInfo {
     match language.to_lowercase().as_str() {
@@ -47,7 +58,7 @@ options:
 -w:<number>         - the number of words to be generated (range: 1-255)\r
 -s:<char>           - (not implemented!) separator to be used to separate words. By default '-' is used as a separator
 -p:<number>         - (not implemented!) how many passwords to generate (up to 255)\r
--c                  - (not implemented!) copy generated password to clipboard\r 
+-c                  - copy generated password to clipboard\r
 -i:<path_to_file>   - (not implemented!) use external file with word list\r
 -
 -h                  - this help\r
@@ -80,7 +91,7 @@ fn get_option_key_value(option: &str) -> (String, String) {
     (k.to_string(), v.replace(":",""))
 }
 
-fn parse_command_line(args: Vec<String>) -> (String, usize) {
+fn parse_command_line(args: Vec<String>) -> Options {
     let mut opts: HashMap<String, String> = HashMap::new();
 
     match args.len() {
@@ -94,12 +105,15 @@ fn parse_command_line(args: Vec<String>) -> (String, usize) {
         _ => info()
     }
 
-    let language = opts.get("l").unwrap().to_string();
-    let words_count = opts.get("w")
-        .unwrap_or(&"4".to_string())
-        .parse::<usize>()
-        .unwrap_or(0);
-    (language, words_count)
+    Options {
+        language : opts.get("l").unwrap().to_string(),
+        password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
+        verbose : false,
+        clipboard : opts.contains_key("c"),
+        count : DEFAULT_PASSWORD_COUNT,
+        separator : DEFAULT_DELIMITER.to_string(),
+        file_path: String::new(),
+    }
 }
 
 fn check_parameters(language: &String, password_length: usize) {
@@ -134,11 +148,11 @@ fn copy_to_clipboard(password: String) {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let (language, password_length) = parse_command_line(args);
-	check_parameters(&language, password_length);
+    let options = parse_command_line(args);
+	check_parameters(&options.language, options.password_length);
     let all_diceware = dpg::read_all_diceware_lists();
 
-    let password = create_password(password_length, language, &all_diceware);
+    let password = create_password(options.password_length, options.language, &all_diceware);
 
     copy_to_clipboard(password.clone());
     println!("generated password: {}", password);
