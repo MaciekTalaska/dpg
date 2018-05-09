@@ -21,7 +21,7 @@ pub struct Options {
     separator:          String,
     password_length:    usize,
     password_count:     usize,
-    verbose:            bool,
+//    verbose:            bool,
     clipboard:          bool,
     file_path:          String,
 }
@@ -111,7 +111,7 @@ fn parse_command_line(args: Vec<String>) -> Options {
     Options {
         language : opts.get("l").unwrap().to_string(),
         password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
-        verbose : false,
+        //verbose : false,
         clipboard : opts.contains_key("c"),
         password_count: opts.get("p").unwrap().parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
         separator : DEFAULT_DELIMITER.to_string(),
@@ -132,7 +132,7 @@ fn check_parameters(language: &String, password_length: usize) {
     }
 }
 
-fn create_password(password_length: usize, language: &str, all_diceware: &Vec<DicewareInfo>) -> String {
+fn generate_single_password(password_length: usize, language: &str, all_diceware: &Vec<DicewareInfo>) -> String {
     let mut words: Vec<String> = Vec::new();
     for _i in {0..password_length} {
         let mut w = get_random_word(&language[..], all_diceware);
@@ -140,6 +140,15 @@ fn create_password(password_length: usize, language: &str, all_diceware: &Vec<Di
     }
     let password = words.join(&DEFAULT_DELIMITER);
     password
+}
+
+fn generate_passwords(options: &Options, all_diceware: Vec<DicewareInfo>) -> String {
+    let mut p: Vec<String> = Vec::<String>::new();
+    for _i in { 0..options.password_count } {
+        let new_password = generate_single_password(options.password_length, &options.language, &all_diceware);
+        p.push(new_password);
+    }
+    p.join("\n")
 }
 
 fn copy_to_clipboard(password: String) {
@@ -155,14 +164,11 @@ fn main() {
 	check_parameters(&options.language, options.password_length);
     let all_diceware = dpg::read_all_diceware_lists();
 
-    let mut password = String::new();
-    for _i in {0..options.password_count} {
-        let new_password = create_password(options.password_length, &options.language, &all_diceware);
-        password = [new_password, password].join("\n");
-    }
+    let password = generate_passwords(&options, all_diceware);
 
     if options.clipboard {
         copy_to_clipboard(password.clone());
     }
     println!("generated password: {}", password);
 }
+
