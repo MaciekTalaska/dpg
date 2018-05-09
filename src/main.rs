@@ -1,9 +1,13 @@
 extern crate dpg;
+extern crate clipboard;
 
 use dpg::DicewareInfo;
 use std::env; 
 use std::collections::HashMap;
 use std::process;
+use clipboard::ClipboardContext;
+use clipboard::ClipboardProvider;
+use std::{thread, time};
 
 static ERR_ARGUMENT_PARSING: i32 = 1;
 static DEFAULT_DELIMITER:&'static str = "-";
@@ -121,6 +125,13 @@ fn create_password(password_length: usize, language: String, all_diceware: &Vec<
     password
 }
 
+fn copy_to_clipboard(password: String) {
+    let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
+    let _clipboard_result = ctx.set_contents(password.to_owned());
+    // wait for 100ms, so clipboard holds the content after process ends
+    thread::sleep(time::Duration::from_millis(100));
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
     let (language, password_length) = parse_command_line(args);
@@ -129,5 +140,6 @@ fn main() {
 
     let password = create_password(password_length, language, &all_diceware);
 
+    copy_to_clipboard(password.clone());
     println!("generated password: {}", password);
 }

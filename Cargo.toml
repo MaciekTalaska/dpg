@@ -9,6 +9,7 @@ description = "generate password(s) using diceware method & crypto secure random
 
 [dependencies]
 rand = "0.4.2"
+clipboard = "0.4.6"
 
 [profile.release]
 lto = true
