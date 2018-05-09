@@ -154,6 +154,8 @@ fn main() {
 
     let password = create_password(options.password_length, options.language, &all_diceware);
 
-    copy_to_clipboard(password.clone());
+    if options.clipboard {
+        copy_to_clipboard(password.clone());
+    }
     println!("generated password: {}", password);
 }
