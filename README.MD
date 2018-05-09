@@ -37,3 +37,5 @@ Options
 `-c`                copy generated password to clipboard
 
 `-p:<number>`       number of passwords to generate at once
+
+`-s:<character>`    a character to be used to separate words, by default '-' is used

@@ -11,7 +11,8 @@ use std::{thread, time};
 
 static ERR_NO_ARGUMENTS: i32 = 1;
 static ERR_ARGUMENT_PARSING: i32 = 2;
-static DEFAULT_DELIMITER:&'static str = "-";
+
+static DEFAULT_SEPARATOR:&'static str = "-";
 static DEFAULT_PASSWORD_COUNT: usize = 1;
 
 static MIN_WORDS_COUNT: usize = 1;
@@ -58,7 +59,7 @@ options:
 -l:<language>       - language (en or pl)\r\
                       Default: en\r
 -w:<number>         - the number of words to be generated (range: 1-255)\r
--s:<char>           - (not implemented!) separator to be used to separate words.\r
+-s:<char>           - separator to be used to separate words.\r
                       Default: '-'\r
 -p:<number>         - number of passwords to generate (up to 255)\r\
                       Default: 1\r
@@ -115,7 +116,7 @@ fn parse_command_line(args: Vec<String>) -> Options {
         //verbose : false,
         clipboard : opts.contains_key("c"),
         password_count: opts.get("p").unwrap_or(&"1".to_string()).parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
-        separator : DEFAULT_DELIMITER.to_string(),
+        separator : opts.get("s").unwrap_or(&DEFAULT_SEPARATOR.to_string()).to_string(),
         file_path: String::new(),
     }
 }
@@ -133,20 +134,20 @@ fn validate_parameters(language: &String, password_length: usize) {
     }
 }
 
-fn generate_single_password(password_length: usize, language: &str, all_diceware: &Vec<DicewareInfo>) -> String {
+fn generate_single_password(options: &Options, all_diceware: &Vec<DicewareInfo>) -> String {
     let mut words: Vec<String> = Vec::new();
-    for _i in {0..password_length} {
-        let mut w = get_random_word(&language[..], all_diceware);
+    for _i in {0..options.password_length} {
+        let mut w = get_random_word(&options.language[..], all_diceware);
         words.push(w);
     }
-    let password = words.join(&DEFAULT_DELIMITER);
+    let password = words.join(&options.separator);
     password
 }
 
 fn generate_passwords(options: &Options, all_diceware: Vec<DicewareInfo>) -> String {
     let mut p: Vec<String> = Vec::<String>::new();
     for _i in { 0..options.password_count } {
-        let new_password = generate_single_password(options.password_length, &options.language, &all_diceware);
+        let new_password = generate_single_password(&options, &all_diceware);
         p.push(new_password);
     }
     p.join("\n")
