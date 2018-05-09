@@ -9,7 +9,8 @@ use clipboard::ClipboardContext;
 use clipboard::ClipboardProvider;
 use std::{thread, time};
 
-static ERR_ARGUMENT_PARSING: i32 = 1;
+static ERR_NO_ARGUMENTS: i32 = 1;
+static ERR_ARGUMENT_PARSING: i32 = 2;
 static DEFAULT_DELIMITER:&'static str = "-";
 static DEFAULT_PASSWORD_COUNT: usize = 1;
 
@@ -109,17 +110,17 @@ fn parse_command_line(args: Vec<String>) -> Options {
     }
 
     Options {
-        language : opts.get("l").unwrap().to_string(),
+        language : opts.get("l").unwrap_or(&"en".to_string()).to_string(),
         password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
         //verbose : false,
         clipboard : opts.contains_key("c"),
-        password_count: opts.get("p").unwrap().parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
+        password_count: opts.get("p").unwrap_or(&"1".to_string()).parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
         separator : DEFAULT_DELIMITER.to_string(),
         file_path: String::new(),
     }
 }
 
-fn check_parameters(language: &String, password_length: usize) {
+fn validate_parameters(language: &String, password_length: usize) {
     #[cfg(debug_assertions)]
     println!("[passed parameter to check] language: {} password: {}", language, password_length);
     if password_length < MIN_WORDS_COUNT || password_length  > MAX_WORDS_COUNT {
@@ -158,10 +159,19 @@ fn copy_to_clipboard(password: String) {
     thread::sleep(time::Duration::from_millis(100));
 }
 
+fn validate_parameters_count(args: &Vec<String>) {
+    if args.len() < 2 {
+        println!("error: insuffictient parameters. Type 'dpg -h' for help.");
+        process::exit(ERR_NO_ARGUMENTS);
+    }
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
+
+    validate_parameters_count(&args);
     let options = parse_command_line(args);
-	check_parameters(&options.language, options.password_length);
+	validate_parameters(&options.language, options.password_length);
     let all_diceware = dpg::read_all_diceware_lists();
 
     let password = generate_passwords(&options, all_diceware);
@@ -169,6 +179,7 @@ fn main() {
     if options.clipboard {
         copy_to_clipboard(password.clone());
     }
-    println!("generated password: {}", password);
+    println!("generated password(s):\n{}", password);
 }
+
 
