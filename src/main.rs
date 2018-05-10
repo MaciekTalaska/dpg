@@ -11,6 +11,7 @@ use std::{thread, time};
 
 static ERR_NO_ARGUMENTS: i32 = 1;
 static ERR_ARGUMENT_PARSING: i32 = 2;
+static ERR_UNKNOWN_OPTION: i32 = 3;
 
 static DEFAULT_SEPARATOR:&'static str = "-";
 static DEFAULT_PASSWORD_COUNT: usize = 1;
@@ -18,12 +19,16 @@ static DEFAULT_PASSWORD_COUNT: usize = 1;
 static MIN_WORDS_COUNT: usize = 1;
 static MAX_WORDS_COUNT: usize = 255;
 
+const OPTION_PREFIXES :&'static str = "lwspch";
+
+#[derive(Debug)]
 pub struct Options {
     language:           String,
     separator:          String,
     password_length:    usize,
     password_count:     usize,
     clipboard:          bool,
+    help:               bool,
 }
 
 fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInfo>) -> DicewareInfo {
@@ -64,7 +69,6 @@ options:
 -c                  - copy generated password to clipboard\r
 \r
 -h                  - this help\r
--?                  - this help
 \n";
     print!("{}",info);
 }
@@ -92,6 +96,15 @@ fn get_option_key_value(option: &str) -> (String, String) {
 
     (k.to_string(), v.replace(":",""))
 }
+fn validate_arguments(opts: &HashMap<String,String>) {
+    println!("validating arguments...");
+    for k in opts.keys() {
+        if !OPTION_PREFIXES.contains(k) {
+            println!("error: unknown option: -'{}'",k);
+            process::exit(ERR_UNKNOWN_OPTION);
+        }
+    }
+}
 
 fn parse_command_line(args: Vec<String>) -> Options {
     let mut opts: HashMap<String, String> = HashMap::new();
@@ -107,16 +120,20 @@ fn parse_command_line(args: Vec<String>) -> Options {
         _ => info()
     }
 
+    validate_arguments(&opts);
     Options {
         language : opts.get("l").unwrap_or(&"en".to_string()).to_string(),
         password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
         clipboard : opts.contains_key("c"),
         password_count: opts.get("p").unwrap_or(&"1".to_string()).parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
         separator : opts.get("s").unwrap_or(&DEFAULT_SEPARATOR.to_string()).to_string(),
+        help: opts.contains_key("h"),
     }
 }
 
-fn validate_parameters(language: &String, password_length: usize) {
+fn validate_options(options: &Options) {
+    let language = options.language.clone();
+    let password_length = options.password_length.clone();
     #[cfg(debug_assertions)]
     println!("[passed parameter to check] language: {} password: {}", language, password_length);
     if password_length < MIN_WORDS_COUNT || password_length  > MAX_WORDS_COUNT {
@@ -126,6 +143,10 @@ fn validate_parameters(language: &String, password_length: usize) {
     if language != "en" && language != "pl" {
         println!("error: language: '{}' is not supported!", language);
         process::exit(ERR_ARGUMENT_PARSING);
+    }
+    if options.help {
+        info();
+        process::exit(0);
     }
 }
 
@@ -167,7 +188,11 @@ fn main() {
 
     validate_parameters_count(&args);
     let options = parse_command_line(args);
-	validate_parameters(&options.language, options.password_length);
+
+    #[cfg(debug_assertions)]
+    println!("Options: {:?}", options);
+
+    validate_options(&options);
     let all_diceware = dpg::read_all_diceware_lists();
 
     let password = generate_passwords(&options, all_diceware);
