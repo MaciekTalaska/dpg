@@ -39,3 +39,8 @@ Options
 `-p:<number>`       number of passwords to generate at once
 
 `-s:<character>`    a character to be used to separate words, by default '-' is used
+
+Todo:
+Additional options to be added:
+
+`-i:<file path>`    path to external wordlist file

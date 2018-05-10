@@ -23,9 +23,7 @@ pub struct Options {
     separator:          String,
     password_length:    usize,
     password_count:     usize,
-//    verbose:            bool,
     clipboard:          bool,
-    file_path:          String,
 }
 
 fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInfo>) -> DicewareInfo {
@@ -64,8 +62,7 @@ options:
 -p:<number>         - number of passwords to generate (up to 255)\r\
                       Default: 1\r
 -c                  - copy generated password to clipboard\r
--i:<path_to_file>   - (not implemented!) use external file with word list\r
--
+\r
 -h                  - this help\r
 -?                  - this help
 \n";
@@ -113,11 +110,9 @@ fn parse_command_line(args: Vec<String>) -> Options {
     Options {
         language : opts.get("l").unwrap_or(&"en".to_string()).to_string(),
         password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
-        //verbose : false,
         clipboard : opts.contains_key("c"),
         password_count: opts.get("p").unwrap_or(&"1".to_string()).parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
         separator : opts.get("s").unwrap_or(&DEFAULT_SEPARATOR.to_string()).to_string(),
-        file_path: String::new(),
     }
 }
 
