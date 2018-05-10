@@ -13,6 +13,5 @@ clipboard = "0.4.6"
 
 [profile.release]
 lto = true
-panic = 'abort'
 opt-level = 3
 #debuginfo = 0 
