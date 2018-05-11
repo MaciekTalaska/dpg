@@ -1,3 +1,6 @@
+
+[![Build Status](https://secure.travis-ci.org/MaciekTalaska/xmastree.png?branch=master)](https://travis-ci.org/MaciekTalaska/dpg)
+
 dpg (diceware password generator)
 =================================
 
