@@ -1,5 +1,6 @@
 
-[![Build Status](https://secure.travis-ci.org/MaciekTalaska/xmastree.png?branch=master)](https://travis-ci.org/MaciekTalaska/dpg)
+[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/MaciekTalaska/dpg)](https://ci.appveyor.com/project/MaciekTalaska/dpg)
+[![Travis Build Status](https://secure.travis-ci.org/MaciekTalaska/dpg.png?branch=master)](https://travis-ci.org/MaciekTalaska/dpg)
 
 dpg (diceware password generator)
 =================================
