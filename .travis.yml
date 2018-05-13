@@ -1,16 +1,10 @@
 language: rust
-rust:
-  - stable
-  - beta
-  - nightly
 matrix:
   include:
     - os: linux
       dist: trusty
       sudo: false
     - os: osx
-  allow_failures:
-    - rust: nightly
   fast_finish: true
 cache: cargo
 script:
