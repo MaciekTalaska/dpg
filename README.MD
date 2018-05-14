@@ -10,7 +10,11 @@ dpg is a simple executable that helps in generating strong and easy to remember 
 What is diceware?
 -----------------
 
-Common problem with strong, secure passwords is that these are hard to remember. Diceware method () aims to solve the problem. This method is based on generating password containing couple of words (4 or more). It is easier to remember couple of words, especially those that could be somehow visualized, than do the same with random string of letters, special characters, digits etc. Good explanation of diceware has been depicted in one of the xkcd comic strips: https://xkcd.com/936/
+Common problem with strong, secure passwords is that these are hard to remember. Diceware method () aims to solve the problem. This method is based on generating password containing couple of words (4 or more). It is easier to remember couple of words, especially those that could be somehow visualized, than do the same with random string of letters, special characters, digits etc. Good explanation of diceware has been depicted in one of the xkcd comic strips: 
+
+![alt text](https://imgs.xkcd.com/comics/password_strength.png "xkcd on Diceware")
+
+Diceware method is described in details by its author - Arnold G. Reinhold: http://world.std.com/~reinhold/diceware.html
 
 Why dpg?
 --------
@@ -48,3 +52,10 @@ Todo:
 Additional options to be added:
 
 `-i:<file path>`    path to external wordlist file
+
+Licenses
+--------
+
+Diceware is trademark (™) by Arnold G. Reinhold (http://world.std.com/~reinhold/diceware.html)
+
+The English word list used is created and copyrighted by Electronic Frontier Foundation (https://www.eff.org/about).
