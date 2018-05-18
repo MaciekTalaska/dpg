@@ -77,7 +77,16 @@ fn validate_arguments(opts: &HashMap<String,String>) {
     }
 }
 
+fn validate_parameters_count(args: &Vec<String>) {
+    if args.len() < 2 {
+        println!("error: insufficient parameters. Type 'dpg -h' for help.");
+        process::exit(ERR_NO_ARGUMENTS);
+    }
+}
+
 pub fn parse_command_line(args: Vec<String>) -> Options {
+    validate_parameters_count(&args);
+
     let mut opts: HashMap<String, String> = HashMap::new();
 
     match args.len() {
@@ -121,9 +130,3 @@ pub fn validate_options(options: &Options) {
     }
 }
 
-pub fn validate_parameters_count(args: &Vec<String>) {
-    if args.len() < 2 {
-        println!("error: insufficient parameters. Type 'dpg -h' for help.");
-        process::exit(ERR_NO_ARGUMENTS);
-    }
-}

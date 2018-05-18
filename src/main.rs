@@ -63,11 +63,12 @@ fn copy_to_clipboard(password: String) {
 }
 
 pub fn generate(args: Vec<String>) {
-    option_parser::validate_parameters_count(&args);
+
     let options = option_parser::parse_command_line(args);
     #[cfg(debug_assertions)]
         println!("Options: {:?}", options);
     option_parser::validate_options(&options);
+
     let diceware_repository = dpg::read_all_diceware_lists();
     let password = generate_passwords(&options, diceware_repository);
     if options.clipboard {
