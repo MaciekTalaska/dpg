@@ -3,8 +3,6 @@ extern crate clipboard;
 
 use dpg::DicewareInfo;
 use std::env; 
-//use std::collections::HashMap;
-//use std::process;
 use clipboard::ClipboardContext;
 use clipboard::ClipboardProvider;
 use std::{thread, time};
@@ -67,7 +65,6 @@ pub fn generate(args: Vec<String>) {
     let options = option_parser::parse_command_line(args);
     #[cfg(debug_assertions)]
         println!("Options: {:?}", options);
-    //option_parser::validate_options(&options);
 
     let diceware_repository = dpg::read_all_diceware_lists();
     let password = generate_passwords(&options, diceware_repository);
