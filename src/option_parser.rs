@@ -84,6 +84,19 @@ fn validate_parameters_count(args: &Vec<String>) {
     }
 }
 
+fn create_options(opts: &HashMap<String, String>) -> Options {
+    let options = Options {
+        language : opts.get("l").unwrap_or(&"en".to_string()).to_string(),
+        password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
+        clipboard : opts.contains_key("c"),
+        password_count: opts.get("p").unwrap_or(&"1".to_string()).parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
+        separator : opts.get("s").unwrap_or(&DEFAULT_SEPARATOR.to_string()).to_string(),
+        help: opts.contains_key("h"),
+    };
+    validate_options(&options);
+    return options;
+}
+
 pub fn parse_command_line(args: Vec<String>) -> Options {
     validate_parameters_count(&args);
 
@@ -101,17 +114,10 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
     }
 
     validate_arguments(&opts);
-    Options {
-        language : opts.get("l").unwrap_or(&"en".to_string()).to_string(),
-        password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
-        clipboard : opts.contains_key("c"),
-        password_count: opts.get("p").unwrap_or(&"1".to_string()).parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
-        separator : opts.get("s").unwrap_or(&DEFAULT_SEPARATOR.to_string()).to_string(),
-        help: opts.contains_key("h"),
-    }
+    create_options(&opts)
 }
 
-pub fn validate_options(options: &Options) {
+fn validate_options(options: &Options) {
     let language = options.language.clone();
     let password_length = options.password_length.clone();
     #[cfg(debug_assertions)]
