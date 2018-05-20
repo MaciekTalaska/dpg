@@ -1,4 +1,6 @@
 pub mod mrandom;
+pub mod option_parser;
+pub mod passwords;
 
 static POLISH_DICEWARE: &str = include_str!("diceware-pl.txt");
 static ENGLISH_DICEWARE: &str= include_str!("diceware-en.txt");

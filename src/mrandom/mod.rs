@@ -2,8 +2,6 @@ extern crate rand;
 
 use mrandom::rand::Rng;
 
-pub mod mrandom;
-
 fn get_rnd() -> rand::OsRng {
     let rng = match rand::OsRng::new() {
         Ok(result) => result,
