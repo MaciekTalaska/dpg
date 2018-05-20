@@ -1,14 +1,25 @@
-extern crate dpg;
 extern crate clipboard;
 
 use self::clipboard::ClipboardContext;
 use self::clipboard::ClipboardProvider;
 use std::{thread, time};
 
-use self::dpg::DicewareInfo;
 use option_parser::Options;
+use diceware_info::DicewareInfo;
 
-use option_parser;
+pub fn generate_diceware_passwords(args: Vec<String>) {
+    let options = super::option_parser::parse_command_line(args);
+
+    #[cfg(debug_assertions)]
+        println!("Options: {:?}", options);
+
+    let diceware_repository = super::diceware_info::read_all_diceware_lists();
+    let password = generate_passwords(&options, diceware_repository);
+    if options.clipboard {
+        copy_to_clipboard(password.clone());
+    }
+    println!("generated password(s):\n{}", password);
+}
 
 fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInfo>) -> DicewareInfo {
     match language.to_lowercase().as_str() {
@@ -23,7 +34,7 @@ fn get_random_word(language: &str, diceware_data: &Vec<DicewareInfo>) -> String 
     #[cfg(debug_assertions)]
     println!("number of dice rolls: {:?}", info.num_dices);
 
-    let result = dpg::mrandom::roll_dices(info.num_dices);
+    let result = super::mrandom::roll_dices(info.num_dices);
 
     #[cfg(debug_assertions)]
     println!("index: {:?}", result);
@@ -60,17 +71,3 @@ fn copy_to_clipboard(password: String) {
     thread::sleep(time::Duration::from_millis(100));
 }
 
-pub fn generate_diceware_passwords(args: Vec<String>) {
-
-    let options = option_parser::parse_command_line(args);
-
-    #[cfg(debug_assertions)]
-        println!("Options: {:?}", options);
-
-    let diceware_repository = dpg::read_all_diceware_lists();
-    let password = generate_passwords(&options, diceware_repository);
-    if options.clipboard {
-        copy_to_clipboard(password.clone());
-    }
-    println!("generated password(s):\n{}", password);
-}
