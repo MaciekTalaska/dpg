@@ -5,6 +5,7 @@ pub struct DicewareInfo {
     pub words:      Vec<String>
 }
 
+
 static POLISH_DICEWARE: &str = include_str!("diceware-pl.txt");
 static ENGLISH_DICEWARE: &str= include_str!("diceware-en.txt");
 
@@ -18,6 +19,7 @@ pub fn print_diceware_info(info: DicewareInfo) {
     println!("words.length: {:?}", info.words.len());
 }
 
+
 pub fn read_all_diceware_lists() -> Vec<DicewareInfo> {
     let languages = ["en", "pl"];
     let mut all_diceware: Vec<DicewareInfo> = Vec::new();
@@ -28,12 +30,14 @@ pub fn read_all_diceware_lists() -> Vec<DicewareInfo> {
     return all_diceware;
 }
 
+
 fn read_diceware_list(language: &str) -> DicewareInfo {
     let words = get_diceware_words_by_language(language);
     let mut info = process_diceware_words(&words);
     info.language = language.to_string();
     return info;
 }
+
 
 fn get_diceware_words_by_language(language: &str) -> &str{
     match language.to_lowercase().as_str() {
@@ -43,11 +47,13 @@ fn get_diceware_words_by_language(language: &str) -> &str{
     }
 }
 
+
 fn calculate_max_dice_count(size: usize) -> u8 {
     let fsize: f32 = size as f32;
     let result = fsize.log(6.0).abs().ceil() as u8;
     return result;
 }
+
 
 fn process_diceware_words(message: &str) -> DicewareInfo {
     let words =  message
@@ -60,5 +66,3 @@ fn process_diceware_words(message: &str) -> DicewareInfo {
         num_dices: calculate_max_dice_count(words.len()),
         words};
 }
-
-

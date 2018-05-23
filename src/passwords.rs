@@ -34,7 +34,7 @@ fn get_random_word(language: &str, diceware_data: &Vec<DicewareInfo>) -> String 
     #[cfg(debug_assertions)]
     println!("number of dice rolls: {:?}", info.num_dices);
 
-    let result = super::mrandom::roll_dices(info.num_dices);
+    let result = super::dices::roll_dices(info.num_dices);
 
     #[cfg(debug_assertions)]
     println!("index: {:?}", result);
