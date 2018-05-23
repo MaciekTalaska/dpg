@@ -1,6 +1,6 @@
 extern crate rand;
 
-use mrandom::rand::Rng;
+use self::rand::Rng;
 
 fn get_rnd() -> rand::OsRng {
     let rng = match rand::OsRng::new() {

@@ -14,7 +14,7 @@ pub fn generate_diceware_passwords(args: Vec<String>) {
         println!("Options: {:?}", options);
 
     let diceware_repository = super::diceware_info::read_all_diceware_lists();
-    let password = generate_passwords(&options, diceware_repository);
+    let password = generate_combined_password(&options, diceware_repository);
     if options.clipboard {
         copy_to_clipboard(password.clone());
     }
@@ -44,7 +44,6 @@ fn get_random_word(language: &str, diceware_data: &Vec<DicewareInfo>) -> String 
 }
 
 
-
 fn generate_single_password(options: &Options, diceware_data: &Vec<DicewareInfo>) -> String {
     let mut words: Vec<String> = Vec::new();
     for _i in {0..options.password_length} {
@@ -55,14 +54,16 @@ fn generate_single_password(options: &Options, diceware_data: &Vec<DicewareInfo>
     password
 }
 
-fn generate_passwords(options: &Options, diceware_data: Vec<DicewareInfo>) -> String {
-    let mut p: Vec<String> = Vec::<String>::new();
+
+fn generate_combined_password(options: &Options, diceware_data: Vec<DicewareInfo>) -> String {
+    let mut combined_password: Vec<String> = Vec::<String>::new();
     for _i in { 0..options.password_count } {
         let new_password = generate_single_password(&options, &diceware_data);
-        p.push(new_password);
+        combined_password.push(new_password);
     }
-    p.join("\n")
+    combined_password.join("\n")
 }
+
 
 fn copy_to_clipboard(password: String) {
     let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
