@@ -22,12 +22,12 @@ pub fn print_diceware_info(info: DicewareInfo) {
 
 pub fn read_all_diceware_lists() -> Vec<DicewareInfo> {
     let languages = ["en", "pl"];
-    let mut all_diceware: Vec<DicewareInfo> = Vec::new();
+    let mut diceware_data: Vec<DicewareInfo> = Vec::new();
     for lang in languages.iter() {
         let info = read_diceware_list(lang);
-        all_diceware.push(info);
+        diceware_data.push(info);
     }
-    return all_diceware;
+    return diceware_data;
 }
 
 

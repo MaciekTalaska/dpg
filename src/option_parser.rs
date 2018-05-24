@@ -43,12 +43,14 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
     create_options(&opts)
 }
 
+
 fn validate_parameters_count(args: &Vec<String>) {
     if args.len() < 2 {
         println!("error: insufficient parameters. Type 'dpg -h' for help.");
         process::exit(ERR_NO_ARGUMENTS);
     }
 }
+
 
 fn validate_arguments(opts: &HashMap<String,String>) {
     println!("validating arguments...");
@@ -59,6 +61,7 @@ fn validate_arguments(opts: &HashMap<String,String>) {
         }
     }
 }
+
 
 fn create_options(opts: &HashMap<String, String>) -> Options {
     let options = Options {
@@ -93,6 +96,7 @@ fn validate_options(options: &Options) {
     }
 }
 
+
 fn get_option_key_value(option: &str) -> (String, String) {
     check_argument_format(option);
 
@@ -108,6 +112,7 @@ fn get_option_key_value(option: &str) -> (String, String) {
 
     (k.to_string(), v.replace(":",""))
 }
+
 
 fn info() {
     let info_message = "dpg - diceware password generator \r
@@ -128,6 +133,7 @@ options:
 \n";
     print!("{}",info_message);
 }
+
 
 fn check_argument_format(option: &str) {
     if !option.starts_with("-") {

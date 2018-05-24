@@ -21,15 +21,15 @@ pub fn generate_diceware_passwords(args: Vec<String>) {
     println!("generated password(s):\n{}", password);
 }
 
-fn get_diceware_info_by_language(language: &str, diceware_data: &Vec<DicewareInfo>) -> DicewareInfo {
+fn get_diceware_info_by_language(language: &str, diceware_repository: &Vec<DicewareInfo>) -> DicewareInfo {
     match language.to_lowercase().as_str() {
-        "pl" => diceware_data[1].clone(),
-        _ => diceware_data[0].clone()
+        "pl" => diceware_repository[1].clone(),
+        _ => diceware_repository[0].clone()
     }
 }
 
-fn get_random_word(language: &str, diceware_data: &Vec<DicewareInfo>) -> String {
-    let info: DicewareInfo = get_diceware_info_by_language(language, diceware_data.as_ref());
+fn get_random_word(language: &str, diceware_repository: &Vec<DicewareInfo>) -> String {
+    let info: DicewareInfo = get_diceware_info_by_language(language, diceware_repository.as_ref());
 
     #[cfg(debug_assertions)]
     println!("number of dice rolls: {:?}", info.num_dices);
@@ -44,10 +44,10 @@ fn get_random_word(language: &str, diceware_data: &Vec<DicewareInfo>) -> String 
 }
 
 
-fn generate_single_password(options: &Options, diceware_data: &Vec<DicewareInfo>) -> String {
+fn generate_single_password(options: &Options, diceware_repository: &Vec<DicewareInfo>) -> String {
     let mut words: Vec<String> = Vec::new();
     for _i in {0..options.password_length} {
-        let mut w = get_random_word(&options.language[..], diceware_data);
+        let mut w = get_random_word(&options.language[..], diceware_repository);
         words.push(w);
     }
     let password = words.join(&options.separator);
@@ -55,10 +55,10 @@ fn generate_single_password(options: &Options, diceware_data: &Vec<DicewareInfo>
 }
 
 
-fn generate_combined_password(options: &Options, diceware_data: Vec<DicewareInfo>) -> String {
+fn generate_combined_password(options: &Options, diceware_repository: Vec<DicewareInfo>) -> String {
     let mut combined_password: Vec<String> = Vec::<String>::new();
     for _i in { 0..options.password_count } {
-        let new_password = generate_single_password(&options, &diceware_data);
+        let new_password = generate_single_password(&options, &diceware_repository);
         combined_password.push(new_password);
     }
     combined_password.join("\n")
