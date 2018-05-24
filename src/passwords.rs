@@ -7,18 +7,15 @@ use std::{thread, time};
 use option_parser::Options;
 use diceware_info::DicewareInfo;
 
-pub fn generate_diceware_passwords(args: Vec<String>) {
-    let options = super::option_parser::parse_command_line(args);
+pub fn generate_diceware_passwords(options: &Options,
+                                   diceware_repository: Vec<DicewareInfo>)
+ -> String {
 
-    #[cfg(debug_assertions)]
-        println!("Options: {:?}", options);
-
-    let diceware_repository = super::diceware_info::read_all_diceware_lists();
-    let password = generate_combined_password(&options, diceware_repository);
+    let password = generate_combined_password(options, diceware_repository);
     if options.clipboard {
         copy_to_clipboard(password.clone());
     }
-    println!("generated password(s):\n{}", password);
+    password
 }
 
 fn get_diceware_info_by_language(language: &str, diceware_repository: &Vec<DicewareInfo>) -> DicewareInfo {
