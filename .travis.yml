@@ -15,8 +15,7 @@ matrix:
   fast_finish: true
 cache: cargo
 script:
-  - if [ $TRAVIS_OS_NAME = linux ]; then "xvfb-run --server-args='-screen 0 1024x768x24'"; fi
-  - if [ $TRAVIS_OS_NAME = linux ]; then sleep 3; fi
-  - cargo build --verbose
-  - cargo test
+  - if [ $TRAVIS_OS_NAME == linux ]; then "xvfb-run --server-args='-screen 0 1024x768x24' cargo test"; fi
+  - if [ $TRAVIS_OS_NAME != linux ]; then "cargo build --verbose"; fi
+  - if [ $TRAVIS_OS_NAME != linux ]; then "cargo test"; fi
 
