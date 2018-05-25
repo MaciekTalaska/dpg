@@ -3,6 +3,7 @@ env:
 before_install:
   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install xorg-dev; fi
   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y libx11-xcb-dev; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install xvfb; fi
 language: rust
 rust:
   - stable
@@ -15,7 +16,7 @@ matrix:
   fast_finish: true
 cache: cargo
 script:
+  - cargo build --verbose
   - if [ $TRAVIS_OS_NAME == linux ]; then "xvfb-run --server-args='-screen 0 1024x768x24' cargo test"; fi
-  - if [ $TRAVIS_OS_NAME != linux ]; then "cargo build --verbose"; fi
   - if [ $TRAVIS_OS_NAME != linux ]; then "cargo test"; fi
 
