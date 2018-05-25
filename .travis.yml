@@ -1,7 +1,8 @@
 env:
   - RUST_BACKTRACE=full
 before_install:
-  - sudo apt-get install xorg-dev
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y libx11-xcb-dev; fi
+
 language: rust
 rust:
   - stable
