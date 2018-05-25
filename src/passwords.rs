@@ -96,7 +96,7 @@ mod passwords_tests {
     }
 
     #[test]
-    fn proper_dicewareinfo_should_be_returned() {
+    fn proper_diceware_info_should_be_returned() {
 
         let diceware_repository = build_fake_diceware_repository();
         let expected_polish = "pl";
