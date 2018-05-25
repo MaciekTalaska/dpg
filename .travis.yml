@@ -1,9 +1,10 @@
 env:
   - RUST_BACKTRACE=full
 before_install:
-  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install xorg-dev; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get -qq update; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y xorg-dev; fi
   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y libx11-xcb-dev; fi
-  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install xvfb; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y xvfb; fi
 language: rust
 rust:
   - stable
