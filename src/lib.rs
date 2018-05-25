@@ -12,7 +12,7 @@ pub fn generate_diceware_passwords(args: Vec<String>) -> String {
     #[cfg(debug_assertions)]
         println!("Options: {:?}", options);
 
-    let diceware_repository = self::diceware_info::read_all_diceware_lists();
+    let diceware_repository = self::diceware_info::build_diceware_repository();
 
     passwords::generate_diceware_passwords(&options, diceware_repository)
 }

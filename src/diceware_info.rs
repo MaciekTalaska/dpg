@@ -20,14 +20,14 @@ pub fn print_diceware_info(info: DicewareInfo) {
 }
 
 
-pub fn read_all_diceware_lists() -> Vec<DicewareInfo> {
+pub fn build_diceware_repository() -> Vec<DicewareInfo> {
     let languages = ["en", "pl"];
-    let mut diceware_data: Vec<DicewareInfo> = Vec::new();
+    let mut diceware_repository: Vec<DicewareInfo> = Vec::new();
     for lang in languages.iter() {
         let info = read_diceware_list(lang);
-        diceware_data.push(info);
+        diceware_repository.push(info);
     }
-    return diceware_data;
+    return diceware_repository;
 }
 
 
