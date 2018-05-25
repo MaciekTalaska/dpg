@@ -1,5 +1,7 @@
 env:
   - RUST_BACKTRACE=full
+before_install:
+  - sudo apt-get install xorg-dev
 language: rust
 rust:
   - stable
