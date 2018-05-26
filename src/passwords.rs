@@ -49,8 +49,8 @@ fn generate_single_password(options: &Options, diceware_repository: &Vec<Dicewar
         let mut w = get_random_word(&options.language[..], diceware_repository);
         words.push(w);
     }
-    let password = words.join(&options.separator);
-    password
+
+    words.join(&options.separator)
 }
 
 
@@ -60,6 +60,7 @@ fn generate_combined_password(options: &Options, diceware_repository: Vec<Dicewa
         let new_password = generate_single_password(&options, &diceware_repository);
         combined_password.push(new_password);
     }
+
     combined_password.join("\n")
 }
 
@@ -74,25 +75,29 @@ fn copy_to_clipboard(password: String) {
 
 #[cfg(test)]
 mod passwords_tests {
+    macro_rules! s(
+        ($e:expr) => {{
+            let s: &'static str = $e;
+            String::from(s)
+        }}
+    );
+
     use super::*;
     use super::DicewareInfo;
 
     fn build_fake_diceware_repository() -> Vec<DicewareInfo> {
-        let mut fake_diceware_repository : Vec<DicewareInfo> = Vec::new();
-        let polish_diceware_info = DicewareInfo {
-            language: "pl".to_string(),
-            num_dices: 1,
-            words: vec!["polish_word1".to_string(), "polish_word2".to_string()]
-        };
-        let english_diceware_info = DicewareInfo {
-            language: "en".to_string(),
-            num_dices: 1,
-            words: vec!["english1".to_string(), "english2".to_string()]
-        };
-        fake_diceware_repository.push(polish_diceware_info);
-        fake_diceware_repository.push(english_diceware_info);
-
-        fake_diceware_repository
+        vec![
+            DicewareInfo {
+                language: s!("pl"),
+                num_dices: 1,
+                words: vec![s!("pl-1"), s!("pl-2"), s!("pl-3"), s!("pl-4"), s!("pl-5"), s!("pl-6")]
+            },
+            DicewareInfo {
+                language: s!("en"),
+                num_dices: 1,
+                words: vec![s!("en-1"), s!("en-2"), s!("en-3"), s!("en-4"), s!("en-5"), s!("en-6")]
+            }
+        ]
     }
 
     #[test]
@@ -116,6 +121,87 @@ mod passwords_tests {
 
         let di = get_diceware_info_by_language(invalid_language, &diceware_repository);
         assert_eq!(di.language, "en".to_string());
+    }
+
+    #[test]
+    fn generate_single_word_should_return_one_word_in_specified_language() {
+        let diceware_repository = build_fake_diceware_repository();
+
+        let word = get_random_word("pl", &diceware_repository);
+        assert!(word.len() > 0);
+        assert!(word.starts_with("pl"));
+    }
+
+    #[test]
+    fn generate_single_password_should_return_password_consisting_of_specified_number_of_words() {
+        let diceware_repository = build_fake_diceware_repository();
+
+        let options = Options {
+            language : s!("pl"),
+            clipboard: false,
+            help: false,
+            password_count: 1,
+            password_length: 2,
+            separator: s!(" ")
+        };
+        let password = generate_single_password(&options, &diceware_repository);
+        assert!(password.len() > 0);
+//        let words = password.split_whitespace();
+    }
+
+    #[test]
+    fn dash_is_used_as_default_separator() {
+        let diceware_repository = build_fake_diceware_repository();
+
+        let password_length: usize = 4;
+        let options = Options {
+            language : s!("pl"),
+            clipboard: false,
+            help: false,
+            password_count: 1,
+            password_length: password_length,
+            separator: s!("")
+        };
+
+        let password = generate_single_password(&options, &diceware_repository);
+        assert!(password.contains("-"));
+    }
+
+    #[test]
+    fn specified_separator_should_be_used() {
+        let diceware_repository = build_fake_diceware_repository();
+
+        let password_length: usize = 4;
+        let separator = s!("*");
+        let options = Options {
+            language : s!("pl"),
+            clipboard: false,
+            help: false,
+            password_count: 1,
+            password_length: password_length,
+            separator: separator
+        };
+
+        let password = generate_single_password(&options, &diceware_repository);
+        assert!(password.contains(&options.separator));
+    }
+
+    #[test]
+    fn dpg_should_generate_specified_number_of_passwords_at_once() {
+        let diceware_repository = build_fake_diceware_repository();
+        let expected_passwords_count: usize = 5;
+        let options = Options {
+            language : s!("pl"),
+            clipboard: false,
+            help: false,
+            password_count: expected_passwords_count,
+            password_length: 1,
+            separator: s!("")
+        };
+
+        let password = generate_combined_password(&options, diceware_repository);
+        let passwords_count = password.lines().count();
+        assert_eq!(passwords_count, expected_passwords_count);
     }
 
     #[test]
