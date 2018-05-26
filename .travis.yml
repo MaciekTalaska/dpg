@@ -11,15 +11,6 @@ matrix:
     - os: osx
   fast_finish: true
 cache: cargo
-#before_install:
-#  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get -qq update; fi
-#  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y xorg-dev; fi
-#  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y libx11-xcb-dev; fi
-#  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y xvfb; fi
-#addons:
-#  apt:
-#    packages:
-#      - xvfb
 script:
   - cargo build --verbose
   - if [ $TRAVIS_OS_NAME == linux ]; then xvfb-run --server-args='-screen 0 1024x768x24' cargo test; fi
