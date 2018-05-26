@@ -22,6 +22,6 @@ cache: cargo
 #      - xvfb
 script:
   - cargo build --verbose
-  - if [ $TRAVIS_OS_NAME == linux ]; then "xvfb-run --server-args='-screen 0 1024x768x24'" which xvfb-run; fi
+  - if [ $TRAVIS_OS_NAME == linux ]; then xvfb-run --server-args='-screen 0 1024x768x24' cargo test; fi
   - if [ $TRAVIS_OS_NAME != linux ]; then cargo test; fi
 
