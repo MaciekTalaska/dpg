@@ -21,8 +21,8 @@ pub fn generate_diceware_passwords(options: &Options,
 
 fn get_diceware_info_by_language(language: &str, diceware_repository: &Vec<DicewareInfo>) -> DicewareInfo {
     match language.to_lowercase().as_str() {
-        "pl" => diceware_repository.iter().find(|di| di.language == "pl".to_string()).unwrap().clone(),
-        _ => diceware_repository.iter().find(|di| di.language == "en".to_string()).unwrap().clone()
+        "pl" => diceware_repository.iter().find(|di| di.language == "pl").unwrap().clone(),
+        _ => diceware_repository.iter().find(|di| di.language == "en").unwrap().clone()
     }
 }
 
@@ -102,7 +102,7 @@ mod passwords_tests {
 
         let di_en = get_diceware_info_by_language(expected_english, &diceware_repository);
         let di_pl = get_diceware_info_by_language(expected_polish, &diceware_repository);
-        assert_eq!(di_en.language, expected_english.to_string());
+        assert_eq!(di_en.language, expected_english);
         assert_eq!(di_pl.language, expected_polish);
 
     }
@@ -113,7 +113,7 @@ mod passwords_tests {
         let invalid_language = "xk";
 
         let di = get_diceware_info_by_language(invalid_language, &diceware_repository);
-        assert_eq!(di.language, "en".to_string());
+        assert_eq!(di.language, "en");
     }
 
     #[test]
@@ -199,8 +199,8 @@ mod passwords_tests {
 
     #[test]
     fn passwords_copy_to_clipboard() {
-        let initial = "initial".to_string();
-        let expected = "newstring".to_string();
+        let initial = s!("initial");
+        let expected = s!("newstring");
         copy_to_clipboard(initial);
         copy_to_clipboard(expected.clone());
 
