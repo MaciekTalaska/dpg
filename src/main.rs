@@ -1,6 +1,8 @@
 use std::env;
 extern crate dpg;
+#[macro_use]
 
+pub mod macros;
 pub mod dices;
 pub mod option_parser;
 pub mod diceware_info;

@@ -75,13 +75,6 @@ fn copy_to_clipboard(password: String) {
 
 #[cfg(test)]
 mod passwords_tests {
-    macro_rules! s(
-        ($e:expr) => {{
-            let s: &'static str = $e;
-            String::from(s)
-        }}
-    );
-
     use super::*;
     use super::DicewareInfo;
 
