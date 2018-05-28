@@ -5,7 +5,10 @@ use self::rand::Rng;
 fn get_rnd() -> rand::OsRng {
     let rng = match rand::OsRng::new() {
         Ok(result) => result,
-        Err(error) => panic!("Unable to obtain crypto secure random number generator! {}", error)
+        Err(error) => panic!(
+            "Unable to obtain crypto secure random number generator! {}",
+            error
+        ),
     };
     return rng;
 }
@@ -23,13 +26,12 @@ fn roll_dice_internal(rng: &mut rand::OsRng) -> u8 {
 pub fn roll_dices(dices: u8) -> u32 {
     let mut index: u32 = 0;
     let mut rng = get_rnd();
-    for _i in {0..dices} {
+    for _i in { 0..dices } {
         index *= 6;
-        index += (roll_dice_internal(&mut rng) as u32) -1;
+        index += (roll_dice_internal(&mut rng) as u32) - 1;
     }
     return index;
 }
-
 
 #[cfg(test)]
 mod dices_tests {
@@ -43,7 +45,7 @@ mod dices_tests {
     }
 
     fn max_by_dice_num(dice_num: u8) -> u32 {
-        (6 as u32).pow(dice_num as u32) -1
+        (6 as u32).pow(dice_num as u32) - 1
     }
 
     #[test]
@@ -54,7 +56,7 @@ mod dices_tests {
 
     #[test]
     fn roll_dices_2_dices_should_not_exceed_35() {
-        for _i in {0..10} {
+        for _i in { 0..10 } {
             let result = dices::roll_dices(2);
             assert!(result <= max_by_dice_num(2));
         }
@@ -62,7 +64,7 @@ mod dices_tests {
 
     #[test]
     fn roll_dices_3_dices_should_not_exceed_215() {
-        for _i in {0..40} {
+        for _i in { 0..40 } {
             let result = dices::roll_dices(3);
             assert!(result <= max_by_dice_num(3));
         }
@@ -70,7 +72,7 @@ mod dices_tests {
 
     #[test]
     fn roll_dices_4_dices_should_not_exceed_1295() {
-        for _i in {0..100} {
+        for _i in { 0..100 } {
             let result = dices::roll_dices(4);
             assert!(result <= max_by_dice_num(4));
         }
@@ -78,7 +80,7 @@ mod dices_tests {
 
     #[test]
     fn roll_dices_5_dices_should_not_exceed_7775() {
-        for _i in {0..1000} {
+        for _i in { 0..1000 } {
             let result = dices::roll_dices(5);
             assert!(result <= max_by_dice_num(5));
         }

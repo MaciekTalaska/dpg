@@ -5,14 +5,15 @@ static ERR_NO_ARGUMENTS: i32 = 1;
 static ERR_ARGUMENT_PARSING: i32 = 2;
 static ERR_UNKNOWN_OPTION: i32 = 3;
 
-static DEFAULT_SEPARATOR:&'static str = "-";
+static DEFAULT_SEPARATOR: &'static str = "-";
 static DEFAULT_PASSWORD_COUNT: usize = 1;
 
 static MIN_WORDS_COUNT: usize = 1;
 static MAX_WORDS_COUNT: usize = 255;
 
-const OPTION_PREFIXES :&'static str = "lwspch";
+const OPTION_PREFIXES: &'static str = "lwspch";
 
+#[cfg_attr(rustfmt, rustfmt_skip)]
 #[derive(Debug)]
 pub struct Options {
     pub language:           String,
@@ -31,18 +32,17 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
     match args.len() {
         1 => info(),
         2...5 => {
-            for i in {1..args.len()} {
-                let (k,v) =  get_option_key_value(&args[i]);
+            for i in { 1..args.len() } {
+                let (k, v) = get_option_key_value(&args[i]);
                 opts.insert(k, v);
             }
-        },
-        _ => info()
+        }
+        _ => info(),
     }
 
     validate_arguments(&opts);
     create_options(&opts)
 }
-
 
 fn validate_parameters_count(args: &Vec<String>) {
     if args.len() < 2 {
@@ -51,40 +51,51 @@ fn validate_parameters_count(args: &Vec<String>) {
     }
 }
 
-
-fn validate_arguments(opts: &HashMap<String,String>) {
+fn validate_arguments(opts: &HashMap<String, String>) {
     println!("validating arguments...");
     for k in opts.keys() {
         if !OPTION_PREFIXES.contains(k) {
-            println!("error: unknown option: -'{}'",k);
+            println!("error: unknown option: -'{}'", k);
             process::exit(ERR_UNKNOWN_OPTION);
         }
     }
 }
 
-
 fn create_options(opts: &HashMap<String, String>) -> Options {
     let options = Options {
-        language : opts.get("l").unwrap_or(&"en".to_string()).to_string(),
-        password_length : opts.get("w").unwrap_or(&"4".to_string()).parse::<usize>().unwrap_or(0),
-        clipboard : opts.contains_key("c"),
-        password_count: opts.get("p").unwrap_or(&"1".to_string()).parse::<usize>().unwrap_or(DEFAULT_PASSWORD_COUNT),
-        separator : opts.get("s").unwrap_or(&DEFAULT_SEPARATOR.to_string()).to_string(),
+        language: opts.get("l").unwrap_or(&"en".to_string()).to_string(),
+        password_length: opts.get("w")
+            .unwrap_or(&"4".to_string())
+            .parse::<usize>()
+            .unwrap_or(0),
+        clipboard: opts.contains_key("c"),
+        password_count: opts.get("p")
+            .unwrap_or(&"1".to_string())
+            .parse::<usize>()
+            .unwrap_or(DEFAULT_PASSWORD_COUNT),
+        separator: opts.get("s")
+            .unwrap_or(&DEFAULT_SEPARATOR.to_string())
+            .to_string(),
         help: opts.contains_key("h"),
     };
     validate_options(&options);
     return options;
 }
 
-
 fn validate_options(options: &Options) {
     let language = options.language.clone();
     let password_length = options.password_length.clone();
     #[cfg(debug_assertions)]
-    println!("[passed parameter to check] language: {} password: {}", language, password_length);
-    if password_length < MIN_WORDS_COUNT || password_length  > MAX_WORDS_COUNT {
-       println!("error: password should consist of at least {} and max {} words", MIN_WORDS_COUNT, MAX_WORDS_COUNT);
-       process::exit(ERR_ARGUMENT_PARSING);
+    println!(
+        "[passed parameter to check] language: {} password: {}",
+        language, password_length
+    );
+    if password_length < MIN_WORDS_COUNT || password_length > MAX_WORDS_COUNT {
+        println!(
+            "error: password should consist of at least {} and max {} words",
+            MIN_WORDS_COUNT, MAX_WORDS_COUNT
+        );
+        process::exit(ERR_ARGUMENT_PARSING);
     }
     if language != "en" && language != "pl" {
         println!("error: language: '{}' is not supported!", language);
@@ -96,7 +107,6 @@ fn validate_options(options: &Options) {
     }
 }
 
-
 fn get_option_key_value(option: &str) -> (String, String) {
     check_argument_format(option);
 
@@ -106,13 +116,12 @@ fn get_option_key_value(option: &str) -> (String, String) {
     };
 
     let index = input.find(":").unwrap_or(input.len());
-    let (k,v) = input.split_at(index);
+    let (k, v) = input.split_at(index);
     #[cfg(debug_assertions)]
-    println!("k/v: {:?}", (k,v));
+    println!("k/v: {:?}", (k, v));
 
-    (k.to_string(), v.replace(":",""))
+    (k.to_string(), v.replace(":", ""))
 }
-
 
 fn info() {
     let info_message = "dpg - diceware password generator \r
@@ -131,9 +140,8 @@ options:
 \r
 -h                  - this help\r
 \n";
-    print!("{}",info_message);
+    print!("{}", info_message);
 }
-
 
 fn check_argument_format(option: &str) {
     if !option.starts_with("-") {

@@ -4,8 +4,8 @@ extern crate dpg;
 
 pub mod macros;
 pub mod dices;
-pub mod option_parser;
 pub mod diceware_info;
+pub mod option_parser;
 pub mod passwords;
 
 fn main() {
@@ -16,4 +16,3 @@ fn main() {
     // this should be printed probably only with "-verbose"
     println!("generated password(s):\n{}", passwords);
 }
-
