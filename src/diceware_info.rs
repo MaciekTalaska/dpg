@@ -57,7 +57,7 @@ fn process_diceware_words(message: &str) -> DicewareInfo {
         .collect::<Vec<String>>();
 
     return DicewareInfo {
-        language: "".to_string(),
+        language: s!(""),
         num_dices: calculate_max_dice_count(words.len()),
         words,
     };
