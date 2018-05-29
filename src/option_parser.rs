@@ -1,5 +1,12 @@
 use std::collections::HashMap;
-use std::process;
+
+#[cfg(not(debug_assertions))]
+use std::process::exit;
+#[cfg(debug_assertions)]
+fn exit(exit_code: i32) {
+    eprintln!("exit_code: {0}", exit_code);
+    panic!("{0}", exit_code);
+}
 
 static ERR_NO_ARGUMENTS: i32 = 1;
 static ERR_ARGUMENT_PARSING: i32 = 2;
@@ -46,8 +53,8 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
 
 fn validate_parameters_count(args: &Vec<String>) {
     if args.len() < 2 {
-        println!("error: insufficient parameters. Type 'dpg -h' for help.");
-        process::exit(ERR_NO_ARGUMENTS);
+        eprintln!("error: insufficient parameters. Type 'dpg -h' for help.");
+        exit(ERR_NO_ARGUMENTS);
     }
 }
 
@@ -55,8 +62,8 @@ fn validate_arguments(opts: &HashMap<String, String>) {
     println!("validating arguments...");
     for k in opts.keys() {
         if !OPTION_PREFIXES.contains(k) {
-            println!("error: unknown option: -'{}'", k);
-            process::exit(ERR_UNKNOWN_OPTION);
+            eprintln!("error: unknown option: -'{}'", k);
+            exit(ERR_UNKNOWN_OPTION);
         }
     }
 }
@@ -91,19 +98,19 @@ fn validate_options(options: &Options) {
         language, password_length
     );
     if password_length < MIN_WORDS_COUNT || password_length > MAX_WORDS_COUNT {
-        println!(
+        eprintln!(
             "error: password should consist of at least {} and max {} words",
             MIN_WORDS_COUNT, MAX_WORDS_COUNT
         );
-        process::exit(ERR_ARGUMENT_PARSING);
+        exit(ERR_ARGUMENT_PARSING);
     }
     if language != "en" && language != "pl" {
-        println!("error: language: '{}' is not supported!", language);
-        process::exit(ERR_ARGUMENT_PARSING);
+        eprintln!("error: language: '{}' is not supported!", language);
+        exit(ERR_ARGUMENT_PARSING);
     }
     if options.help {
         info();
-        process::exit(0);
+        exit(0);
     }
 }
 
@@ -145,8 +152,8 @@ options:
 
 fn check_argument_format(option: &str) {
     if !option.starts_with("-") {
-        println!("unrecognized option: {}", option);
-        println!("  are you missing a '-' prefix?");
-        process::exit(ERR_ARGUMENT_PARSING);
+        eprintln!("unrecognized option: {}", option);
+        eprintln!("  are you missing a '-' prefix?");
+        exit(ERR_ARGUMENT_PARSING);
     }
 }
