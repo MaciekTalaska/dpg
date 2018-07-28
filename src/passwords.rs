@@ -26,12 +26,12 @@ fn get_diceware_info_by_language(
         "pl" => diceware_repository
             .iter()
             .find(|di| di.language == "pl")
-            .unwrap()
+            .expect("unable to find data for language [pl]")
             .clone(),
         _ => diceware_repository
             .iter()
             .find(|di| di.language == "en")
-            .unwrap()
+            .expect("unable to find data for default language [en]")
             .clone(),
     }
 }
@@ -75,7 +75,8 @@ fn generate_combined_password(options: &Options, diceware_repository: Vec<Dicewa
 }
 
 fn copy_to_clipboard(password: String) {
-    let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
+    let mut ctx: ClipboardContext = ClipboardProvider::new()
+        .expect("error accessing clipboard");
     let _clipboard_result = ctx.set_contents(password.to_owned());
     // wait for 100ms, so clipboard holds the content after process ends
     thread::sleep(time::Duration::from_millis(100));
@@ -220,12 +221,14 @@ mod passwords_tests {
     #[test]
     fn passwords_copy_to_clipboard() {
         let initial = s!("initial");
-        let expected = s!("newstring");
+        let expected = s!("expected");
         copy_to_clipboard(initial);
         copy_to_clipboard(expected.clone());
 
-        let mut ctx: clipboard::ClipboardContext = ClipboardProvider::new().unwrap();
-        let retrieved = ctx.get_contents().unwrap();
+        let mut ctx: clipboard::ClipboardContext = ClipboardProvider::new()
+            .expect("error accessing clipboard [in test]");
+        let retrieved = ctx.get_contents()
+            .expect("error retrieving clipboard data [in test]");
         assert_eq!(retrieved, expected);
     }
 }

@@ -50,7 +50,7 @@ fn calculate_max_dice_count(size: usize) -> u8 {
 fn process_diceware_words(message: &str, language: &str) -> DicewareInfo {
     let words = message
         .lines()
-        .map(|l| l.split_whitespace().last().unwrap())
+        .map(|l| l.split_whitespace().last().expect("bad file format: second column is missing"))
         .map(|s| s.to_string())
         .collect::<Vec<String>>();
 
