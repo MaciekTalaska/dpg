@@ -20,12 +20,10 @@ pub fn print_diceware_info(info: DicewareInfo) {
 
 pub fn build_diceware_repository() -> Vec<DicewareInfo> {
     let languages = ["en", "pl"];
-    let mut diceware_repository: Vec<DicewareInfo> = Vec::new();
-    for lang in languages.iter() {
-        let info = read_diceware_list(lang);
-        diceware_repository.push(info);
-    }
-    return diceware_repository;
+
+    languages.iter()
+        .map(|language| read_diceware_list(language))
+        .collect::<Vec<DicewareInfo>>()
 }
 
 fn read_diceware_list(language: &str) -> DicewareInfo {
@@ -43,9 +41,10 @@ fn get_diceware_words_by_language(language: &str) -> &str {
 }
 
 fn calculate_max_dice_count(size: usize) -> u8 {
-    let fsize: f32 = size as f32;
-
-    fsize.log(6.0).abs().ceil() as u8
+    (size as f32)
+        .log(6.0)
+        .abs()
+        .ceil() as u8
 }
 
 fn process_diceware_words(message: &str, language: &str) -> DicewareInfo {
