@@ -158,8 +158,8 @@ mod passwords_tests {
             separator: s!(" "),
         };
         let password = generate_single_password(&options, &diceware_repository);
-        assert!(password.len() > 0);
-        //        let words = password.split_whitespace();
+        let words_count = password.split_whitespace().count();
+        assert_eq!(words_count, options.password_length);
     }
 
     #[test]
