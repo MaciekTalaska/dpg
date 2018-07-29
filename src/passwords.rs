@@ -20,7 +20,7 @@ pub fn generate_diceware_passwords(
 
 fn get_diceware_info_by_language(
     language: &str,
-    diceware_repository: &Vec<DicewareInfo>,
+    diceware_repository: &[DicewareInfo],
 ) -> DicewareInfo {
     match language.to_lowercase().as_str() {
         "pl" => diceware_repository
@@ -36,7 +36,7 @@ fn get_diceware_info_by_language(
     }
 }
 
-fn get_random_word(language: &str, diceware_repository: &Vec<DicewareInfo>) -> String {
+fn get_random_word(language: &str, diceware_repository: &[DicewareInfo]) -> String {
     let info: DicewareInfo = get_diceware_info_by_language(language, diceware_repository.as_ref());
 
     #[cfg(debug_assertions)]
@@ -54,7 +54,7 @@ fn get_random_word(language: &str, diceware_repository: &Vec<DicewareInfo>) -> S
     info.words[result as usize % info.words.len()].clone()
 }
 
-fn generate_single_password(options: &Options, diceware_repository: &Vec<DicewareInfo>) -> String {
+fn generate_single_password(options: &Options, diceware_repository: &[DicewareInfo]) -> String {
     let language = &options.language[..];
 
     let mut words: Vec<String> = Vec::with_capacity(options.password_length);

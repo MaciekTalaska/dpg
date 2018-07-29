@@ -51,7 +51,7 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
     create_options(&opts)
 }
 
-fn validate_parameters_count(args: &Vec<String>) {
+fn validate_parameters_count(args: &[String]) {
     if args.len() < 2 {
         eprintln!("error: insufficient parameters. Type 'dpg -h' for help.");
         exit(ERR_NO_ARGUMENTS);
