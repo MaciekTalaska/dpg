@@ -11,7 +11,7 @@ pub fn generate_diceware_passwords(
     options: &Options,
     diceware_repository: Vec<DicewareInfo>,
 ) -> String {
-    let password = generate_combined_password(options, diceware_repository);
+    let password = generate_all_passwords(options, diceware_repository);
     if options.clipboard {
         copy_to_clipboard(password.clone());
     }
@@ -55,23 +55,25 @@ fn get_random_word(language: &str, diceware_repository: &Vec<DicewareInfo>) -> S
 }
 
 fn generate_single_password(options: &Options, diceware_repository: &Vec<DicewareInfo>) -> String {
-    let mut words: Vec<String> = Vec::new();
+    let language = &options.language[..];
+
+    let mut words: Vec<String> = Vec::with_capacity(options.password_length);
     for _i in { 0..options.password_length } {
-        let mut w = get_random_word(&options.language[..], diceware_repository);
-        words.push(w);
+        let word = get_random_word(language, diceware_repository);
+        words.push(word);
     }
 
     words.join(&options.separator)
 }
 
-fn generate_combined_password(options: &Options, diceware_repository: Vec<DicewareInfo>) -> String {
-    let mut combined_password: Vec<String> = Vec::<String>::new();
+fn generate_all_passwords(options: &Options, diceware_repository: Vec<DicewareInfo>) -> String {
+    let mut all_passwords: Vec<String> = Vec::<String>::with_capacity(options.password_count);
     for _i in { 0..options.password_count } {
-        let new_password = generate_single_password(&options, &diceware_repository);
-        combined_password.push(new_password);
+        let password = generate_single_password(&options, &diceware_repository);
+        all_passwords.push(password);
     }
 
-    combined_password.join("\n")
+    all_passwords.join("\n")
 }
 
 fn copy_to_clipboard(password: String) {
@@ -213,7 +215,7 @@ mod passwords_tests {
             separator: s!(""),
         };
 
-        let password = generate_combined_password(&options, diceware_repository);
+        let password = generate_all_passwords(&options, diceware_repository);
         let passwords_count = password.lines().count();
         assert_eq!(passwords_count, expected_passwords_count);
     }
