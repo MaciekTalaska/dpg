@@ -6,7 +6,7 @@ fn get_rnd() -> rand::OsRng {
     let rng = match rand::OsRng::new() {
         Ok(result) => result,
         Err(error) => panic!(
-            "Unable to obtain crypto secure random number generator! {}",
+            "Unable to obtain crypto secure random number generator!\n{}",
             error
         ),
     };
