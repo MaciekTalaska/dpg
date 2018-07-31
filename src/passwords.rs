@@ -36,13 +36,16 @@ fn get_diceware_info_by_language(
     }
 }
 
-fn get_random_word(language: &str, diceware_repository: &[DicewareInfo]) -> String {
+fn get_random_word(language: &str, diceware_repository: &[DicewareInfo], simulate_dices: bool) -> String {
     let info: DicewareInfo = get_diceware_info_by_language(language, diceware_repository.as_ref());
 
     #[cfg(debug_assertions)]
     println!("number of dice rolls: {:?}", info.num_dices);
 
-    let result = super::dices::get_random_number(info.words.len() as u32);
+    let result = match simulate_dices {
+        true => super::dices::roll_dices(info.num_dices),
+        false => super::dices::get_random_number(info.words.len() as u32)
+    };
 
     #[cfg(debug_assertions)]
     println!("index: {:?}", result);
@@ -59,7 +62,7 @@ fn generate_single_password(options: &Options, diceware_repository: &[DicewareIn
 
     let mut words: Vec<String> = Vec::with_capacity(options.password_length);
     for _i in { 0..options.password_length } {
-        let word = get_random_word(language, diceware_repository);
+        let word = get_random_word(language, diceware_repository, options.simulate_dices);
         words.push(word);
     }
 
@@ -143,7 +146,7 @@ mod passwords_tests {
     fn generate_single_word_should_return_one_word_in_specified_language() {
         let diceware_repository = build_fake_diceware_repository();
 
-        let word = get_random_word("pl", &diceware_repository);
+        let word = get_random_word("pl", &diceware_repository, false);
         assert!(word.len() > 0);
         assert!(word.starts_with("pl"));
     }
@@ -159,6 +162,7 @@ mod passwords_tests {
             password_count: 1,
             password_length: 2,
             separator: s!(" "),
+            simulate_dices: false,
         };
         let password = generate_single_password(&options, &diceware_repository);
         let words_count = password.split_whitespace().count();
@@ -177,6 +181,7 @@ mod passwords_tests {
             password_count: 1,
             password_length: password_length,
             separator: s!(""),
+            simulate_dices: false,
         };
 
         let password = generate_single_password(&options, &diceware_repository);
@@ -196,6 +201,7 @@ mod passwords_tests {
             password_count: 1,
             password_length: password_length,
             separator: separator,
+            simulate_dices: false,
         };
 
         let password = generate_single_password(&options, &diceware_repository);
@@ -213,6 +219,7 @@ mod passwords_tests {
             password_count: expected_passwords_count,
             password_length: 1,
             separator: s!(""),
+            simulate_dices: false,
         };
 
         let password = generate_all_passwords(&options, diceware_repository);

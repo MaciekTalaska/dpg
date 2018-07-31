@@ -18,7 +18,7 @@ static DEFAULT_PASSWORD_COUNT: usize = 1;
 static MIN_WORDS_COUNT: usize = 1;
 static MAX_WORDS_COUNT: usize = 255;
 
-const OPTION_PREFIXES: &'static str = "lwspch";
+const OPTION_PREFIXES: &'static str = "lwspchd";
 
 #[cfg_attr(rustfmt, rustfmt_skip)]
 #[derive(Debug)]
@@ -29,6 +29,7 @@ pub struct Options {
     pub password_count:     usize,
     pub clipboard:          bool,
     pub help:               bool,
+    pub simulate_dices:     bool,
 }
 
 pub fn parse_command_line(args: Vec<String>) -> Options {
@@ -83,6 +84,7 @@ fn create_options(opts: &HashMap<String, String>) -> Options {
         separator: opts.get("s")
             .unwrap_or(&DEFAULT_SEPARATOR.to_string())
             .to_string(),
+        simulate_dices: opts.contains_key("d"),
         help: opts.contains_key("h"),
     };
     validate_options(&options);
@@ -143,7 +145,8 @@ options:
                       Default: '-'\r
 -p:<number>         - number of passwords to generate (up to 255)\r\
                       Default: 1\r
--c                  - copy generated password to clipboard\r
+-c                  - copy generated password to clipboard\r\
+-d                  - simulate throwing dices (slower)\r\
 \r
 -h                  - this help\r
 \n";
