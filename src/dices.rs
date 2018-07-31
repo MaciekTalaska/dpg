@@ -13,6 +13,13 @@ fn get_rnd() -> rand::OsRng {
     return rng;
 }
 
+pub fn get_random_number(max: u32) -> u32{
+    let mut rng = get_rnd();
+    let value = rng.gen::<u32>();
+
+    (value % max)
+}
+
 pub fn roll_dice() -> u8 {
     let mut rng = get_rnd();
     return roll_dice_internal(&mut rng);

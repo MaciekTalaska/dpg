@@ -42,7 +42,7 @@ fn get_random_word(language: &str, diceware_repository: &[DicewareInfo]) -> Stri
     #[cfg(debug_assertions)]
     println!("number of dice rolls: {:?}", info.num_dices);
 
-    let result = super::dices::roll_dices(info.num_dices);
+    let result = super::dices::get_random_number(info.words.len() as u32);
 
     #[cfg(debug_assertions)]
     println!("index: {:?}", result);
