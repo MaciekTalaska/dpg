@@ -88,7 +88,8 @@ fn create_options(opts: &HashMap<String, String>) -> Options {
         help: opts.contains_key("h"),
     };
     validate_options(&options);
-    return options;
+
+    options
 }
 
 fn validate_options(options: &Options) {
