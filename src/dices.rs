@@ -65,7 +65,7 @@ mod dices_tests {
 
     #[test]
     fn roll_dices_2_dices_should_not_exceed_35() {
-        for _i in { 0..10 } {
+        for _i in { 0..35*10} {
             let result = dices::roll_dices(2);
             assert!(result <= max_by_dice_num(2));
         }
@@ -73,7 +73,7 @@ mod dices_tests {
 
     #[test]
     fn roll_dices_3_dices_should_not_exceed_215() {
-        for _i in { 0..40 } {
+        for _i in { 0..215*10} {
             let result = dices::roll_dices(3);
             assert!(result <= max_by_dice_num(3));
         }
@@ -81,7 +81,7 @@ mod dices_tests {
 
     #[test]
     fn roll_dices_4_dices_should_not_exceed_1295() {
-        for _i in { 0..100 } {
+        for _i in { 0..1295*10} {
             let result = dices::roll_dices(4);
             assert!(result <= max_by_dice_num(4));
         }
