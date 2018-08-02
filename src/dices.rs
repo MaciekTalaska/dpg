@@ -19,16 +19,16 @@ pub fn get_random_number(max: u32) -> u32{
     (value % max)
 }
 
-pub fn roll_dice() -> u8 {
+pub fn roll_dice() -> u32 {
     let mut rng = get_rnd();
 
     roll_dice_internal(&mut rng)
 }
 
-fn roll_dice_internal(rng: &mut rand::OsRng) -> u8 {
+fn roll_dice_internal(rng: &mut rand::OsRng) -> u32 {
     let value = rng.gen::<u8>();
 
-    value % 6 + 1
+    (value % 6 + 1) as u32
 }
 
 pub fn roll_dices(dices: u8) -> u32 {
@@ -36,7 +36,7 @@ pub fn roll_dices(dices: u8) -> u32 {
     let mut rng = get_rnd();
     for _i in { 0..dices } {
         index *= 6;
-        index += (roll_dice_internal(&mut rng) as u32) - 1;
+        index += (roll_dice_internal(&mut rng)) - 1;
     }
 
     index
