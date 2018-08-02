@@ -10,4 +10,4 @@ clipboard = "0.4.6"
 
 [profile.release]
 lto = true
-opt-level = 3
+opt-level = "z"
