@@ -17,3 +17,9 @@ pub fn generate_diceware_passwords(args: Vec<String>) -> String {
 
     passwords::generate_diceware_passwords(&options, diceware_repository)
 }
+
+pub fn generate_diceware_passwords_new(options: option_parser::Options) -> String {
+    let diceware_repository = self::diceware_info::build_diceware_repository();
+
+    passwords::generate_diceware_passwords(&options, diceware_repository)
+}
