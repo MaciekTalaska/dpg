@@ -39,7 +39,7 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
 
     match args.len() {
         1 => info(),
-        2...5 => {
+        2...7 => {
             for i in { 1..args.len() } {
                 let (k, v) = get_option_key_value(&args[i]);
                 opts.insert(k, v);
