@@ -73,7 +73,7 @@ fn create_options(opts: &HashMap<String, String>) -> Options {
     let options = Options {
         language: opts.get("l").unwrap_or(&"en".to_string()).to_string(),
         password_length: opts.get("w")
-            .unwrap_or(&"4".to_string())
+            .expect("error parsing options: '-w' is required!")
             .parse::<usize>()
             .unwrap_or(0),
         clipboard: opts.contains_key("c"),
