@@ -9,7 +9,7 @@ fn main() {
     #[cfg(debug_assertions)]
     println!("Options: {:?}", options);
 
-    let passwords = dpg::generate_diceware_passwords_new(options);
+    let passwords = dpg::generate_diceware_passwords(options);
 
     // this should be printed probably only with "-verbose"
     println!("generated password(s):\n{}", passwords);
