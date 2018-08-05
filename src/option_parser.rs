@@ -32,6 +32,18 @@ pub struct Options {
     pub simulate_dices:     bool,
 }
 
+impl PartialEq for Options {
+    fn eq(&self, other: &Options) -> bool {
+        self.language == other.language
+        && self.separator == other.separator
+        && self.password_length == other.password_length
+        && self.password_count == other.password_count
+        && self.clipboard == other.clipboard
+        && self.help == other.help
+        && self.simulate_dices == other.simulate_dices
+    }
+}
+
 pub fn parse_command_line(args: Vec<String>) -> Options {
     validate_parameters_count(&args);
 
@@ -156,5 +168,165 @@ fn check_argument_format(option: &str) {
         eprintln!("unrecognized option: {}", option);
         eprintln!("  are you missing a '-' prefix?");
         exit(ERR_ARGUMENT_PARSING);
+    }
+}
+
+#[cfg(test)]
+mod option_parser_tests {
+    use super::*;
+
+    #[test]
+    #[should_panic(expected = "1")]
+    fn should_not_work_with_empty_argument_list() {
+        let args = vec![s!("./dpg")];
+        let _options = parse_command_line(args);
+    }
+
+    #[test]
+    fn only_words_is_required_parameter() {
+        let args = vec![s!("./dpg"),
+                        s!("-w:5")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "en".to_string(),
+            password_length: 5,
+            password_count: 1,
+            separator: "-".to_string(),
+            simulate_dices: false,
+            help: false,
+            clipboard: false,
+        };
+        assert_eq!(options, expected_options);
+    }
+
+    #[test]
+    fn only_language_and_passwordlength() {
+        let args = vec![s!("./dpg"),
+                        s!("-l:pl"),
+                        s!("-w:6")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "pl".to_string(),
+            password_length: 6,
+            password_count: 1,
+            separator: "-".to_string(),
+            simulate_dices: false,
+            help: false,
+            clipboard: false,
+        };
+        assert_eq!(options, expected_options);
+    }
+
+    #[test]
+    fn language_password_length_and_count() {
+        let args = vec![s!("./dpg"),
+                        s!("-l:pl"),
+                        s!("-w:3"),
+                        s!("-p:5")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "pl".to_string(),
+            password_length: 3,
+            password_count: 5,
+            separator: "-".to_string(),
+            simulate_dices: false,
+            help: false,
+            clipboard: false,
+        };
+        assert_eq!(options, expected_options);
+    }
+
+
+    #[test]
+    fn language_password_length_count_separator() {
+        let args = vec![s!("./dpg"),
+                        s!("-l:pl"),
+                        s!("-w:7"),
+                        s!("-p:4"),
+                        s!("-s:.")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "pl".to_string(),
+            password_length: 7,
+            password_count: 4,
+            separator: ".".to_string(),
+            simulate_dices: false,
+            help: false,
+            clipboard: false,
+        };
+        assert_eq!(options, expected_options);
+    }
+
+    #[test]
+    fn language_password_length_count_separator_clipboard() {
+        let args = vec![s!("./dpg"),
+                        s!("-l:pl"),
+                        s!("-w:8"),
+                        s!("-p:5"),
+                        s!("-s:."),
+                        s!("-c")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "pl".to_string(),
+            password_length: 8,
+            password_count: 5,
+            separator: ".".to_string(),
+            simulate_dices: false,
+            help: false,
+            clipboard: true,
+        };
+        assert_eq!(options, expected_options);
+    }
+
+    #[test]
+    fn language_password_length_count_separator_clipboard_simulate_dices() {
+        let args = vec![s!("./dpg"),
+                        s!("-l:pl"),
+                        s!("-w:9"),
+                        s!("-p:6"),
+                        s!("-s:."),
+                        s!("-c"),
+                        s!("-d")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "pl".to_string(),
+            password_length: 9,
+            password_count: 6,
+            separator: ".".to_string(),
+            simulate_dices: true,
+            help: false,
+            clipboard: true,
+        };
+        assert_eq!(options, expected_options);
+    }
+
+    #[test]
+    #[should_panic(expected = "0")]
+    fn language_password_length_count_separator_clipboard_simulate_dices_help() {
+//        let args = vec![s!("./dpg"),
+//                        s!("-l:pl"),
+//                        s!("-w:9"),
+//                        s!("-p:6"),
+//                        s!("-s:."),
+//                        s!("-c"),
+//                        s!("-d"),
+//                        s!("-h")];
+        let args = vec![s!("./dpg"),
+                        s!("-l:pl"),
+                        s!("-w:9"),
+                        s!("-p:6"),
+                        s!("-s:."),
+                        s!("-h")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "pl".to_string(),
+            password_length: 9,
+            password_count: 6,
+            separator: ".".to_string(),
+            simulate_dices: true,
+            help: true,
+            clipboard: true,
+        };
+        assert_eq!(options, expected_options);
     }
 }
