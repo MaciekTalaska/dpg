@@ -14,7 +14,7 @@ pub fn generate_diceware_passwords(
     let password = generate_all_passwords(options, diceware_repository);
     // TODO: this should probably be moved from here,
     // it is not responsibility of the library itself
-    // to be able to copy generated passwords to clipboard
+    // to copy generated passwords into clipboard
     if options.clipboard {
         copy_to_clipboard(password.clone());
     }
