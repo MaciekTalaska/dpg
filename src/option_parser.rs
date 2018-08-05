@@ -50,7 +50,6 @@ impl PartialEq for Options {
 }
 
 pub fn parse_command_line(args: Vec<String>) -> Options {
-    //validate_parameters_count(&args);
 
     let mut opts: HashMap<String, String> = HashMap::with_capacity(MAX_OPTIONS_COUNT);
     let arg_count = args.len();
@@ -60,24 +59,6 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
             eprintln!("error: insufficient parameters. Type 'dpg -h' for help.");
             exit(ERR_NO_ARGUMENTS);
         },
-//        2 => {
-//            let (k,v) =get_option_key_value(&args[1]);
-//            if (k != "h") && (k != "w") {
-//                eprintln!("only -w or -h could be used alone");
-//                exit(ERR_ARGUMENT_PARSING);
-//            }
-//            if k == "h" {
-//                info();
-//                exit(0);
-//            }
-//            opts.insert(k,v);
-//        },
-//        3...MAX_OPTIONS_COUNT => {
-//            for i in { 1..arg_count} {
-//                let (k, v) = get_option_key_value(&args[i]);
-//                opts.insert(k, v);
-//            }
-//        }
         2...MAX_OPTIONS_COUNT => {
             for i in { 1..arg_count} {
                 let (k, v) = get_option_key_value(&args[i]);
@@ -90,13 +71,6 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
     validate_arguments(&opts);
     create_options(&opts)
 }
-
-//fn validate_parameters_count(args: &[String]) {
-//    if args.len() < 2 {
-//        eprintln!("error: insufficient parameters. Type 'dpg -h' for help.");
-//        exit(ERR_NO_ARGUMENTS);
-//    }
-//}
 
 fn validate_arguments(opts: &HashMap<String, String>) {
     #[cfg(debug_assertions)]
