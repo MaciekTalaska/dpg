@@ -11,6 +11,5 @@ fn main() {
 
     let passwords = dpg::generate_diceware_passwords(options);
 
-    // this should be printed probably only with "-verbose"
     println!("generated password(s):\n{}", passwords);
 }
