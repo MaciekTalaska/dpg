@@ -18,6 +18,9 @@ static DEFAULT_PASSWORD_COUNT: usize = 1;
 
 static MIN_WORDS_COUNT: usize = 1;
 static MAX_WORDS_COUNT: usize = 255;
+static MAX_PASSWORD_COUNT: usize = 255;
+static MIN_PASSWORD_COUNT: usize = 1;
+
 
 const OPTION_PREFIXES: &'static str = "lwspchd";
 
@@ -107,7 +110,8 @@ fn create_options(opts: &HashMap<String, String>) -> Options {
 
 fn validate_options(options: &Options) {
     let language = options.language.clone();
-    let password_length = options.password_length.clone();
+    let password_length = options.password_length;
+    let password_count = options.password_count;
     #[cfg(debug_assertions)]
     println!(
         "[passed parameter to check] language: {} password: {}",
@@ -118,6 +122,11 @@ fn validate_options(options: &Options) {
             "error: password should consist of at least {} and max {} words",
             MIN_WORDS_COUNT, MAX_WORDS_COUNT
         );
+        exit(ERR_ARGUMENT_PARSING);
+    }
+    if password_count < MIN_PASSWORD_COUNT || password_count > MAX_PASSWORD_COUNT {
+        eprintln!("error: it is possible to generate {}-{} passwords at once",
+            MIN_PASSWORD_COUNT, MAX_PASSWORD_COUNT);
         exit(ERR_ARGUMENT_PARSING);
     }
     if language != "en" && language != "pl" {
@@ -192,6 +201,35 @@ mod option_parser_tests {
         let args = vec![s!("./dpg")];
         let _options = parse_command_line(args);
     }
+
+    #[test]
+    #[should_panic(expected = "2")]
+    fn minimum_1_password_should_be_generated() {
+        let args = vec![s!("./dpg"), s!("-p:0"), s!("-w:5")];
+        let _options = parse_command_line(args);
+    }
+
+    #[test]
+    #[should_panic(expected = "2")]
+    fn max_255_could_be_generated() {
+        let args = vec![s!("./dpg"), s!("-p:256"), s!("-w:5")];
+        let _options = parse_command_line(args);
+    }
+
+    #[test]
+    #[should_panic(expected = "2")]
+    fn password_must_be_at_least_1_word_long() {
+        let args = vec![s!("./dpg"), s!("-w:0")];
+        let _options = parse_command_line(args);
+    }
+
+    #[test]
+    #[should_panic(expected = "2")]
+    fn password_could_be_at_most_255_words_long() {
+        let args = vec![s!("./dpg"), s!("-w:256")];
+        let _options = parse_command_line(args);
+    }
+
 
     #[test]
     fn only_words_is_required_parameter() {
