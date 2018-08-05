@@ -171,14 +171,14 @@ author: Maciek Talaska <maciek.talaska@gmail.com> \r
 source: github.com/MaciekTalaska/dpg \r
 \r
 options:
--l:<language>   language (en or pl)                         [default: en]\r
--w:<number>     password length (in words)                  [range: 1-255]\r
--p:<number>     number of passwords to generate (up to 255) [default: 1]\r
--s:<char>       separator to be used to separate words      [default: '-']\r
--c              copy generated password to clipboard\r\
+-l:<language>   language (en or pl)                   [default: en]\r
+-w:<number>     password length (in words)            [range: 1-255]\r
+-p:<number>     number of passwords to generate       [range: 1-255, default: 1]\r
+-s:<char>       character to separate words with      [default: '-']\r
+-c              copy password(s) to clipboard\r\
 -d              simulate throwing dices (slower)\r\
 \r
--h                  - this help\r
+-h              this help\r
 \n";
     print!("{}", info_message);
 }
