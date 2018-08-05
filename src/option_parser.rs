@@ -21,6 +21,7 @@ static MAX_WORDS_COUNT: usize = 255;
 static MAX_PASSWORD_COUNT: usize = 255;
 static MIN_PASSWORD_COUNT: usize = 1;
 
+pub const MAX_OPTIONS_COUNT: usize = 6+1; // executable itself + 6 options
 
 const OPTION_PREFIXES: &'static str = "lwspchd";
 
@@ -49,14 +50,36 @@ impl PartialEq for Options {
 }
 
 pub fn parse_command_line(args: Vec<String>) -> Options {
-    validate_parameters_count(&args);
+    //validate_parameters_count(&args);
 
-    let mut opts: HashMap<String, String> = HashMap::new();
+    let mut opts: HashMap<String, String> = HashMap::with_capacity(MAX_OPTIONS_COUNT);
+    let arg_count = args.len();
 
-    match args.len() {
-        1 => info(),
-        2...7 => {
-            for i in { 1..args.len() } {
+    match arg_count {
+        1 => {
+            eprintln!("error: insufficient parameters. Type 'dpg -h' for help.");
+            exit(ERR_NO_ARGUMENTS);
+        },
+//        2 => {
+//            let (k,v) =get_option_key_value(&args[1]);
+//            if (k != "h") && (k != "w") {
+//                eprintln!("only -w or -h could be used alone");
+//                exit(ERR_ARGUMENT_PARSING);
+//            }
+//            if k == "h" {
+//                info();
+//                exit(0);
+//            }
+//            opts.insert(k,v);
+//        },
+//        3...MAX_OPTIONS_COUNT => {
+//            for i in { 1..arg_count} {
+//                let (k, v) = get_option_key_value(&args[i]);
+//                opts.insert(k, v);
+//            }
+//        }
+        2...MAX_OPTIONS_COUNT => {
+            for i in { 1..arg_count} {
                 let (k, v) = get_option_key_value(&args[i]);
                 opts.insert(k, v);
             }
@@ -68,15 +91,22 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
     create_options(&opts)
 }
 
-fn validate_parameters_count(args: &[String]) {
-    if args.len() < 2 {
-        eprintln!("error: insufficient parameters. Type 'dpg -h' for help.");
-        exit(ERR_NO_ARGUMENTS);
-    }
-}
+//fn validate_parameters_count(args: &[String]) {
+//    if args.len() < 2 {
+//        eprintln!("error: insufficient parameters. Type 'dpg -h' for help.");
+//        exit(ERR_NO_ARGUMENTS);
+//    }
+//}
 
 fn validate_arguments(opts: &HashMap<String, String>) {
+    #[cfg(debug_assertions)]
     println!("validating arguments...");
+
+    if (opts.len() == 1) && (opts.contains_key("h")) {
+        info();
+        exit(0);
+    }
+
     for k in opts.keys() {
         if !OPTION_PREFIXES.contains(k) {
             eprintln!("error: unknown option: -'{}'", k);
@@ -220,6 +250,13 @@ mod option_parser_tests {
     #[should_panic(expected = "2")]
     fn password_must_be_at_least_1_word_long() {
         let args = vec![s!("./dpg"), s!("-w:0")];
+        let _options = parse_command_line(args);
+    }
+
+    #[test]
+    #[should_panic(expected = "0")]
+    fn help_is_available() {
+        let args = vec![s!("./dpg"), s!("-h")];
         let _options = parse_command_line(args);
     }
 
