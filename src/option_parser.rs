@@ -11,6 +11,7 @@ fn exit(exit_code: i32) {
 static ERR_NO_ARGUMENTS: i32 = 1;
 static ERR_ARGUMENT_PARSING: i32 = 2;
 static ERR_UNKNOWN_OPTION: i32 = 3;
+static ERR_TOO_MANY_OPTIONS: i32 = 4;
 
 static DEFAULT_SEPARATOR: &'static str = "-";
 static DEFAULT_PASSWORD_COUNT: usize = 1;
@@ -57,7 +58,7 @@ pub fn parse_command_line(args: Vec<String>) -> Options {
                 opts.insert(k, v);
             }
         }
-        _ => info(),
+        _ => too_many_arguments_error(),
     }
 
     validate_arguments(&opts);
@@ -143,6 +144,16 @@ fn get_option_key_value(option: &str) -> (String, String) {
     println!("k/v: {:?}", (k, v));
 
     (k.to_string(), v.replace(":", ""))
+}
+
+
+fn too_many_arguments_error() {
+    let info_message = " \
+error: too many options provided! \r\
+\r\
+use -h for help";
+    println!("{:}", info_message);
+    exit(ERR_TOO_MANY_OPTIONS);
 }
 
 fn info() {
@@ -303,19 +314,35 @@ mod option_parser_tests {
     #[test]
     #[should_panic(expected = "0")]
     fn language_password_length_count_separator_clipboard_simulate_dices_help() {
-//        let args = vec![s!("./dpg"),
-//                        s!("-l:pl"),
-//                        s!("-w:9"),
-//                        s!("-p:6"),
-//                        s!("-s:."),
-//                        s!("-c"),
-//                        s!("-d"),
-//                        s!("-h")];
         let args = vec![s!("./dpg"),
                         s!("-l:pl"),
                         s!("-w:9"),
                         s!("-p:6"),
                         s!("-s:."),
+                        s!("-h")];
+        let options = parse_command_line(args);
+        let expected_options = Options {
+            language: "pl".to_string(),
+            password_length: 9,
+            password_count: 6,
+            separator: ".".to_string(),
+            simulate_dices: true,
+            help: true,
+            clipboard: true,
+        };
+        assert_eq!(options, expected_options);
+    }
+
+    #[test]
+    #[should_panic(expected = "4")]
+    fn too_many_options() {
+        let args = vec![s!("./dpg"),
+                        s!("-l:pl"),
+                        s!("-w:9"),
+                        s!("-p:6"),
+                        s!("-s:."),
+                        s!("-c"),
+                        s!("-d"),
                         s!("-h")];
         let options = parse_command_line(args);
         let expected_options = Options {
