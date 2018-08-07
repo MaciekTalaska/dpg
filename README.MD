@@ -36,18 +36,32 @@ Dpg uses OsRng from rand crate (https://crates.io/crates/rand). Rand crate docum
 
 Options
 -------
+
 `-l:<language>`     language list to use - currently only 'en' (English) or 'pl' (Polish) are supported. 'en' is used by default - i.e. for generating passwords consisting of English words this option does not have to be explicitly specified
 
 `-w:<number>`       the number of words (password length in words) to be generated.<br>
                     &emsp;Minumum: 1<br>
                     &emsp;Maximum: 255<br>
 
+`-p:<number>`       number of passwords to generate at once<br>
+                    &emsp;Default: 1<br>
+                    &emsp;Minumum: 1<br>
+                    &emsp;Maximum: 255<br>
+                    
+
+`-s:<character>`    a character to be used to separate words<br>
+                    &emsp;Default: `-` (dash)
+
+Flags:
+------
+
 `-c`                copy generated password to clipboard
 
-`-p:<number>`       number of passwords to generate at once
-
-`-s:<character>`    a character to be used to separate words, by default '-' is used
-
+`-d`                simulate dices option. At the moment dpg may work in two different modes:<br>
+                    &emsp;a) 'simplified mode' in which only one random number is generated to get a single words from a list<br>
+                    &emsp;b) 'diceware explicit' mode, in which there are several random numbers generated, each is equivalent of rolling a dice, that are required to retrieve single word from list<br><br>
+                    &emsp;These two modes offer the same safety (as the same, crypto-secure method of generating random numbers is used), but obviously the second one (which could be turned on by using `-d` switch) is a tiny bit slower, as there are more operations required. This should not be anything ntoicable unless there are very many very long passwords being generated.
+                    </div>
 Todo:
 Additional options to be added:
 
