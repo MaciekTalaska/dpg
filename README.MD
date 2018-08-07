@@ -29,6 +29,11 @@ Dpg requires list of words to be used (diceware word list). At the moment the ap
 List of english words has been taken from FFI website: https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases
 List of Polish words has been created by me (https://github.com/MaciekTalaska/diceware-pl) - this work is based on the list created originally by Piotr (DrFugazi) Tarnowski.
 
+
+[Mathias Gumz's repository](https://github.com/mgumz/diceware/tree/master/lists) contains diceware lists for different languages.
+
+
+
 Security
 --------
 
@@ -73,3 +78,5 @@ Licenses
 Diceware is trademark (™) by Arnold G. Reinhold (http://world.std.com/~reinhold/diceware.html)
 
 The English word list used is created and copyrighted by Electronic Frontier Foundation (https://www.eff.org/about).
+
+Polish word list has been created by myself, but is based on the work of Dr Piotr 'Fugazi' Tarnowski.
