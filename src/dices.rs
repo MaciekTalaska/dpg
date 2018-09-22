@@ -34,12 +34,9 @@ fn roll_dice_internal(rng: &mut rand::OsRng) -> u32 {
 pub fn roll_dices(dices: u8) -> u32 {
     let mut rng = get_rnd();
 
-    let indices = (0..dices).collect::<Vec<u8>>().iter()
-        .map(|_e| roll_dice_internal(&mut rng)-1).collect::<Vec<u32>>();
-    let index = indices.iter()
-        .fold(0, |sum, val| sum * 6 + val);
-
-    index
+    (0..dices)
+        .map(|_e| roll_dice_internal(&mut rng)-1)
+        .fold(0, |sum, val| sum * 6 + val)
 }
 
 #[cfg(test)]
