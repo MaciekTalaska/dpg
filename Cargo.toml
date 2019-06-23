@@ -3,6 +3,11 @@ name = "dpg"
 version = "0.1.0"
 authors = ["MaciekTalaska <maciek.talaska@gmail.com>"]
 description = "generate password(s) using diceware method & crypto secure random numbers"
+readme = "README.MD"
+license = "MIT"
+repository = "https://github.com/MaciekTalaska/dpg"
+keywords = ["library", "random", "security", "generator", "password"]
+categories = ["command-line interface", "command-line utilities", "cryptography"]
 
 [dependencies]
 rand = "0.4.2"
