@@ -50,12 +50,13 @@ fn get_random_word(language: &str, diceware_repository: &[DicewareInfo], simulat
         false => super::dices::get_random_number(info.words.len() as u32)
     };
 
-    #[cfg(debug_assertions)]
+    #[cfg(debug_assertions)] {
     println!("index: {:?}", result);
     println!(
         "selected word: {}",
         info.words[result as usize % info.words.len()]
     );
+    }
 
     info.words[result as usize % info.words.len()].clone()
 }
