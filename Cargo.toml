@@ -1,13 +1,17 @@
 [package]
 name = "dpg"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["MaciekTalaska <maciek.talaska@gmail.com>"]
 description = "generate password(s) using diceware method & crypto secure random numbers"
 readme = "README.MD"
 license = "MIT"
 repository = "https://github.com/MaciekTalaska/dpg"
 keywords = ["library", "random", "security", "generator", "password"]
-categories = ["command-line interface", "command-line utilities", "cryptography"]
+categories = ["command-line-utilities", "cryptography", "authentication"]
+
+[badges]
+appveyor = { repository = "MaciekTalaska/dpg", branch = "master", service = "github" }
+travis-ci = { repository = "MaciekTalaska/dpg", branch = "master" }
 
 [dependencies]
 rand = "0.4.2"
