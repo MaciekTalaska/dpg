@@ -72,6 +72,15 @@ Additional options to be added:
 
 `-i:<file path>`    path to external wordlist file
 
+Installation/Usage
+------------------
+
+`dpg` is available on crates.io, so the easiest way to have it installed is via cargo: `cargo install dpg`. 
+
+This will download, compile and store the binary inside the `~/.cargo/bin` directory, and this should make `dpg` available to the current user as a command-line utility.
+
+
+
 Licenses
 --------
 
