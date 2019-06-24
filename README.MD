@@ -67,10 +67,6 @@ Flags:
                     &emsp;b) 'diceware explicit' mode, in which there are several random numbers generated, each is equivalent of rolling a dice, that are required to retrieve single word from list<br><br>
                     &emsp;These two modes offer the same safety (as the same, crypto-secure method of generating random numbers is used), but obviously the second one (which could be turned on by using `-d` switch) is a tiny bit slower, as there are more operations required. This should not be anything ntoicable unless there are very many very long passwords being generated.
                     </div>
-Todo:
-Additional options to be added:
-
-`-i:<file path>`    path to external wordlist file
 
 Installation/Usage
 ------------------
@@ -79,6 +75,12 @@ Installation/Usage
 
 This will download, compile and store the binary inside the `~/.cargo/bin` directory, and this should make `dpg` available to the current user as a command-line utility.
 
+
+Todo
+----
+
+ - [ ] ability to use external word list file  
+ - [ ] calculating password strength
 
 
 Licenses
