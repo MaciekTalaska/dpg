@@ -28,9 +28,13 @@ const OPTION_PREFIXES: &'static str = "lwspchd";
 #[cfg_attr(rustfmt, rustfmt_skip)]
 #[derive(Debug)]
 pub struct Options {
+    /// two-letter language code specifying the word list to use for password(s) generation
     pub language:           String,
+    /// a string that should be used to concatenate words
     pub separator:          String,
+    /// words per password (length of password in words)
     pub password_length:    usize,
+    /// number of passwords to generate
     pub password_count:     usize,
     pub clipboard:          bool,
     pub help:               bool,
@@ -49,6 +53,10 @@ impl PartialEq for Options {
     }
 }
 
+/// Parses Vec<String> as command-line arguments.
+/// It may exit with error (in case insufficient number of arguments are passed or unknown option is specified).
+///
+/// If parsing succeeds - an dpg::option_parser::Options struct is returned
 pub fn parse_command_line(args: Vec<String>) -> Options {
 
     let mut opts: HashMap<String, String> = HashMap::with_capacity(MAX_OPTIONS_COUNT);

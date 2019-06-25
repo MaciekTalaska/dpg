@@ -7,6 +7,24 @@ use std::{thread, time};
 use diceware_info::DicewareInfo;
 use option_parser::Options;
 
+
+/// Main function to be called to generate passwords. It requires properly filled Options structue and repository of diceware word lists.
+///
+/// Example of usage:
+/// ```rust
+///    let options : dpg::option_parser::Options = dpg::option_parser::Options {
+///        language: "en".to_string(), // use English word list
+///        password_length: 6, // 6 words per password
+///        password_count: 3,  // generate 3 passwords
+///        separator: "-".to_string(),
+///        simulate_dices: false,
+///        clipboard: false,
+///        help: false
+///    };
+///
+///    let repository = dpg::diceware_info::build_diceware_repository();
+///    let passwords = dpg::passwords::generate_diceware_passwords(&options, repository);
+/// ```
 pub fn generate_diceware_passwords(
     options: &Options,
     diceware_repository: Vec<DicewareInfo>,

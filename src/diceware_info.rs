@@ -18,6 +18,8 @@ pub fn print_diceware_info(info: DicewareInfo) {
     println!("words.length: {:?}", info.words.len());
 }
 
+/// Builds repository of word lists for many languages.
+/// Note: currently does NOT support external words lists!
 pub fn build_diceware_repository() -> Vec<DicewareInfo> {
     let languages = ["en", "pl"];
 
