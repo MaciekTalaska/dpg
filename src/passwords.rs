@@ -39,6 +39,30 @@ pub fn generate_diceware_passwords(
     password
 }
 
+
+/// Alernarive for generate_diceware_passwords
+/// - does not require passing parameters as Options struct
+/// - does not require passing repository (this function takes care of creating repository)
+pub fn generate_passwords(language: &str,
+                          password_length: usize,
+                          passwords_count: usize,
+                          separator: &str,
+                          simulate_dices: bool) -> String {
+    let repository = ::diceware_info::build_diceware_repository();
+    let options = ::option_parser::Options {
+        language : language.to_string(),
+        separator : separator.to_string(),
+        password_length,
+        password_count : passwords_count,
+        simulate_dices,
+        clipboard : false,
+        help : false,
+    };
+
+    let passwords = generate_all_passwords(&options, repository);
+    passwords
+}
+
 fn get_diceware_info_by_language(
     language: &str,
     diceware_repository: &[DicewareInfo],
