@@ -40,6 +40,74 @@ pub fn generate_diceware_passwords(
 }
 
 
+pub struct PasswordsCounter {
+    count: usize,
+    maxcount: usize,
+    password: String,
+    repository: Vec<DicewareInfo>,
+}
+
+impl PasswordsCounter {
+    pub fn new(maxcount: usize) -> PasswordsCounter {
+        PasswordsCounter { maxcount: maxcount,
+            count: 0,
+            password: "".to_string(),
+            repository: ::diceware_info::build_diceware_repository(),}
+    }
+}
+
+impl Iterator for PasswordsCounter {
+    type Item = String;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        println!("----------------------------------------------");
+        self.password = generate_passwords("en", 6, 1, "-", false);
+        //self.count += 1;
+        //println!("self.password: {}", self.password);
+        //if self.count < self.maxcount {
+            Some(self.password.clone())
+        //}
+        //else { None }
+    }
+}
+
+
+pub fn generate_passwords_iter(language: &str, password_length: usize, passwords_count: usize, separator: &str, simulate_dices: bool) -> String {
+
+    let repository = ::diceware_info::build_diceware_repository();
+    let options = ::option_parser::Options {
+        language : language.to_string(),
+        separator : separator.to_string(),
+        password_length,
+        password_count : passwords_count,
+        simulate_dices,
+        clipboard : false,
+        help : false,
+    };
+    let mut pc = PasswordsCounter::new(passwords_count);
+
+    "nothing".to_string()
+}
+
+
+fn generate_diceware_password_single(language: &str, password_length: usize, passwords_count: usize, separator: &str, simulate_dices: bool, repository: Vec<DicewareInfo>) -> String {
+    let options = ::option_parser::Options {
+        language : language.to_string(),
+        separator : separator.to_string(),
+        password_length,
+        password_count : passwords_count,
+        simulate_dices,
+        clipboard : false,
+        help : false,
+    };
+    "".to_string()
+}
+
+fn prepare_diceware_password_generator()  -> () {
+
+}
+
+
 /// Alernarive for generate_diceware_passwords
 /// - does not require passing parameters as Options struct
 /// - does not require passing repository (this function takes care of creating repository)
