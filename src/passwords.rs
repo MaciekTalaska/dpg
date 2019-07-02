@@ -67,12 +67,8 @@ impl Iterator for PasswordsIterator {
 
     fn next(&mut self) -> Option<Self::Item> {
 
-//        let password = generate_passwords(
-//            &self.language,
-//            self.password_length,
-//            1,
-//            &self.separator,
-//            self.simulate_dices);
+        // TODO: it is probably better to create options struct once, instead
+        // of having it created every time
         let password = generate_diceware_password_single(&self.language,
                                                          self.password_length,
                                                          &self.separator,
@@ -121,11 +117,6 @@ fn generate_diceware_password_single(language: &str,
     generate_single_password(&options, repository)
 }
 
-//fn prepare_diceware_password_generator()  -> () {
-//
-//}
-
-
 /// Alernarive for generate_diceware_passwords
 /// - does not require passing parameters as Options struct
 /// - does not require passing repository (this function takes care of creating repository)
@@ -145,8 +136,7 @@ pub fn generate_passwords(language: &str,
         help : false,
     };
 
-    //let passwords = generate_all_passwords(&options, repository);
-    let passwords = generate_single_password(&options, &repository);
+    let passwords = generate_all_passwords(&options, repository);
     passwords
 }
 
