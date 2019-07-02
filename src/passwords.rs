@@ -8,7 +8,7 @@ use diceware_info::DicewareInfo;
 use option_parser::Options;
 
 
-/// Main function to be called to generate passwords. It requires properly filled Options structue and repository of diceware word lists.
+/// Main function to be called to generate passwords. It requires properly filled Options structue and repository of diceware word lists (Vec<DicewareInfo> or &[DicewareInfo]).
 ///
 /// Example of usage:
 /// ```rust
@@ -41,11 +41,8 @@ pub fn generate_diceware_passwords(
 
 
 pub struct PasswordsIterator {
-    language: String,
-    separator: String,
-    password_length: usize,
-    simulate_dices: bool,
     repository: Vec<DicewareInfo>,
+    options: ::option_parser::Options,
 }
 
 impl PasswordsIterator {
@@ -54,11 +51,17 @@ impl PasswordsIterator {
                password_length: usize,
                simulate_dices: bool) -> PasswordsIterator {
         PasswordsIterator {
-            language: language.to_string(),
-            separator: separator.to_string(),
-            password_length: password_length,
-            simulate_dices: simulate_dices,
-            repository: ::diceware_info::build_diceware_repository(),}
+            repository: ::diceware_info::build_diceware_repository(),
+            options: ::option_parser::Options {
+                language: language.to_string(),
+                separator: separator.to_string(),
+                password_length,
+                password_count: 1,
+                simulate_dices: simulate_dices,
+                clipboard: false,
+                help: false,
+            }
+        }
     }
 }
 
@@ -67,13 +70,7 @@ impl Iterator for PasswordsIterator {
 
     fn next(&mut self) -> Option<Self::Item> {
 
-        // TODO: it is probably better to create options struct once, instead
-        // of having it created every time
-        let password = generate_diceware_password_single(&self.language,
-                                                         self.password_length,
-                                                         &self.separator,
-                                                         self.simulate_dices,
-                                                         &self.repository);
+        let password = generate_single_password(&self.options, &self.repository);
         Some(password.clone())
     }
 }
@@ -99,23 +96,23 @@ impl Iterator for PasswordsIterator {
 //}
 
 
-fn generate_diceware_password_single(language: &str,
-                                     password_length: usize,
-                                     separator: &str,
-                                     simulate_dices: bool,
-                                     repository: &Vec<DicewareInfo>)
-    -> String {
-    let options = ::option_parser::Options {
-        language : language.to_string(),
-        separator : separator.to_string(),
-        password_length,
-        password_count : 1,
-        simulate_dices,
-        clipboard : false,
-        help : false,
-    };
-    generate_single_password(&options, repository)
-}
+//fn generate_diceware_password_single(language: &str,
+//                                     password_length: usize,
+//                                     separator: &str,
+//                                     simulate_dices: bool,
+//                                     repository: &Vec<DicewareInfo>)
+//    -> String {
+//    let options = ::option_parser::Options {
+//        language : language.to_string(),
+//        separator : separator.to_string(),
+//        password_length,
+//        password_count : 1,
+//        simulate_dices,
+//        clipboard : false,
+//        help : false,
+//    };
+//    generate_single_password(&options, repository)
+//}
 
 /// Alernarive for generate_diceware_passwords
 /// - does not require passing parameters as Options struct
