@@ -40,72 +40,90 @@ pub fn generate_diceware_passwords(
 }
 
 
-pub struct PasswordsCounter {
-    count: usize,
-    maxcount: usize,
-    password: String,
+pub struct PasswordsIterator {
+    language: String,
+    separator: String,
+    password_length: usize,
+    simulate_dices: bool,
     repository: Vec<DicewareInfo>,
 }
 
-impl PasswordsCounter {
-    pub fn new(maxcount: usize) -> PasswordsCounter {
-        PasswordsCounter { maxcount: maxcount,
-            count: 0,
-            password: "".to_string(),
+impl PasswordsIterator {
+    pub fn new(language: &str,
+               separator: &str,
+               password_length: usize,
+               simulate_dices: bool) -> PasswordsIterator {
+        PasswordsIterator {
+            language: language.to_string(),
+            separator: separator.to_string(),
+            password_length: password_length,
+            simulate_dices: simulate_dices,
             repository: ::diceware_info::build_diceware_repository(),}
     }
 }
 
-impl Iterator for PasswordsCounter {
+impl Iterator for PasswordsIterator {
     type Item = String;
 
     fn next(&mut self) -> Option<Self::Item> {
-        println!("----------------------------------------------");
-        self.password = generate_passwords("en", 6, 1, "-", false);
-        //self.count += 1;
-        //println!("self.password: {}", self.password);
-        //if self.count < self.maxcount {
-            Some(self.password.clone())
-        //}
-        //else { None }
+
+//        let password = generate_passwords(
+//            &self.language,
+//            self.password_length,
+//            1,
+//            &self.separator,
+//            self.simulate_dices);
+        let password = generate_diceware_password_single(&self.language,
+                                                         self.password_length,
+                                                         &self.separator,
+                                                         self.simulate_dices,
+                                                         &self.repository);
+        Some(password.clone())
     }
 }
 
 
-pub fn generate_passwords_iter(language: &str, password_length: usize, passwords_count: usize, separator: &str, simulate_dices: bool) -> String {
+// is it a good idea to wrap iterating over generated passwords, so that they are being printed to stdout one by one?
 
-    let repository = ::diceware_info::build_diceware_repository();
+//pub fn generate_passwords_iter(language: &str, password_length: usize, passwords_count: usize, //separator: &str, simulate_dices: bool) -> String {
+//
+//    let repository = ::diceware_info::build_diceware_repository();
+//    let options = ::option_parser::Options {
+//        language : language.to_string(),
+//        separator : separator.to_string(),
+//        password_length,
+//        password_count : passwords_count,
+//        simulate_dices,
+//        clipboard : false,
+//        help : false,
+//    };
+//    let mut pc = PasswordsIterator::new(passwords_count);
+//
+//    "nothing".to_string()
+//}
+
+
+fn generate_diceware_password_single(language: &str,
+                                     password_length: usize,
+                                     separator: &str,
+                                     simulate_dices: bool,
+                                     repository: &Vec<DicewareInfo>)
+    -> String {
     let options = ::option_parser::Options {
         language : language.to_string(),
         separator : separator.to_string(),
         password_length,
-        password_count : passwords_count,
+        password_count : 1,
         simulate_dices,
         clipboard : false,
         help : false,
     };
-    let mut pc = PasswordsCounter::new(passwords_count);
-
-    "nothing".to_string()
+    generate_single_password(&options, repository)
 }
 
-
-fn generate_diceware_password_single(language: &str, password_length: usize, passwords_count: usize, separator: &str, simulate_dices: bool, repository: Vec<DicewareInfo>) -> String {
-    let options = ::option_parser::Options {
-        language : language.to_string(),
-        separator : separator.to_string(),
-        password_length,
-        password_count : passwords_count,
-        simulate_dices,
-        clipboard : false,
-        help : false,
-    };
-    "".to_string()
-}
-
-fn prepare_diceware_password_generator()  -> () {
-
-}
+//fn prepare_diceware_password_generator()  -> () {
+//
+//}
 
 
 /// Alernarive for generate_diceware_passwords
@@ -127,7 +145,8 @@ pub fn generate_passwords(language: &str,
         help : false,
     };
 
-    let passwords = generate_all_passwords(&options, repository);
+    //let passwords = generate_all_passwords(&options, repository);
+    let passwords = generate_single_password(&options, &repository);
     passwords
 }
 
@@ -152,21 +171,21 @@ fn get_diceware_info_by_language(
 fn get_random_word(language: &str, diceware_repository: &[DicewareInfo], simulate_dices: bool) -> String {
     let info: DicewareInfo = get_diceware_info_by_language(language, diceware_repository.as_ref());
 
-    #[cfg(debug_assertions)]
-    println!("number of dice rolls: {:?}", info.num_dices);
+    //#[cfg(debug_assertions)]
+    //println!("number of dice rolls: {:?}", info.num_dices);
 
     let result = match simulate_dices {
         true => super::dices::roll_dices(info.num_dices),
         false => super::dices::get_random_number(info.words.len() as u32)
     };
 
-    #[cfg(debug_assertions)] {
-    println!("index: {:?}", result);
-    println!(
-        "selected word: {}",
-        info.words[result as usize % info.words.len()]
-    );
-    }
+    //#[cfg(debug_assertions)] {
+    //println!("index: {:?}", result);
+    //println!(
+    //    "selected word: {}",
+    //    info.words[result as usize % info.words.len()]
+    //);
+    //}
 
     info.words[result as usize % info.words.len()].clone()
 }
