@@ -10,7 +10,7 @@ dpg is a simple executable/library that helps in generating strong and easy to r
 What is diceware?
 -----------------
 
-Common problem with strong, secure passwords is that these are hard to remember. Diceware method () aims to solve the problem. This method is based on generating password containing couple of words (4 or more). It is easier to remember couple of words, especially those that could be somehow visualized, than do the same with random string of letters, special characters, digits etc. Good explanation of diceware has been depicted in one of the xkcd comic strips: 
+Common problem with strong, secure passwords is that these are hard to remember. Diceware (™) method aims to solve the problem. This method is based on generating password containing couple of words (4 or more). It is easier to remember couple of words, especially those that could be somehow visualized, than do the same with random string of letters, special characters, digits etc. Good explanation of diceware has been depicted in one of the xkcd comic strips: 
 
 ![alt text](https://imgs.xkcd.com/comics/password_strength.png "xkcd on Diceware")
 
@@ -19,12 +19,14 @@ Diceware method is described in details by its author - Arnold G. Reinhold: http
 Why dpg?
 --------
 
-This app has been created as an opportunity to get familiar with Rust programming language. It was my first project written in Rust. I just wanted to check the language on something that is a bit more than just a kata. This project allowed me to research on Rust project stucture (splitting code into modules), testing.
+This app has been created as an opportunity to get familiar with Rust programming language. It was my first non-trivial project written in Rust. I just wanted to check the language against a problem that is a bit more complex than a coding-kata. This project allowed me to research on Rust project structure (splitting code into modules), testing.
+
+The other reason is that I have not found anything similar at that time - and I wanted to be able to generate strong and easy to remember password without much effort.
 
 Diceware lists
 --------------
 
-Dpg requires list of words to be used (diceware word list). At the moment the application has two lists built in: one containg words in English (default) and other list containing words in Polish (it has to be explicity specified). 
+Dpg requires list of words to be used (diceware word list). At the moment the application has two lists built in: one containing words in English (default) and other list containing words in Polish (it has to be explicitly specified). 
 
 List of english words has been taken from FFI website: https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases
 List of Polish words has been created by me (https://github.com/MaciekTalaska/diceware-pl) - this work is based on the list created originally by Piotr (DrFugazi) Tarnowski.
@@ -37,7 +39,7 @@ List of Polish words has been created by me (https://github.com/MaciekTalaska/di
 Security
 --------
 
-Dpg uses OsRng from rand crate (https://crates.io/crates/rand). Rand crate documentation states that: ["An application that requires an entropy source for cryptographic purposes must use OsRng, which reads randomness from the source that the operating system provides (e.g. /dev/urandom on Unixes or CryptGenRandom() on Windows). The other random number generators provided by this module are not suitable for such purposes."](https://docs.rs/rand/0.4.2/rand/#cryptographic-security) 
+Dpg uses OsRng from [rand crate](https://crates.io/crates/rand). Rand crate documentation states that: ["An application that requires an entropy source for cryptographic purposes must use OsRng, which reads randomness from the source that the operating system provides (e.g. /dev/urandom on Unixes or CryptGenRandom() on Windows). The other random number generators provided by this module are not suitable for such purposes."](https://docs.rs/rand/0.4.2/rand/#cryptographic-security) 
 
 Options
 -------
@@ -65,7 +67,7 @@ Flags:
 `-d`                simulate dices option. At the moment dpg may work in two different modes:<br>
                     &emsp;a) 'simplified mode' in which only one random number is generated to get a single words from a list<br>
                     &emsp;b) 'diceware explicit' mode, in which there are several random numbers generated, each is equivalent of rolling a dice, that are required to retrieve single word from list<br><br>
-                    &emsp;These two modes offer the same safety (as the same, crypto-secure method of generating random numbers is used), but obviously the second one (which could be turned on by using `-d` switch) is a tiny bit slower, as there are more operations required. This should not be anything ntoicable unless there are very many very long passwords being generated.
+                    &emsp;These two modes offer the same safety (as the same, crypto-secure method of generating random numbers is used), but obviously the second one (which could be turned on by using `-d` switch) is a tiny bit slower, as there are more operations required. This should not be anything noticeable unless there are very many very long passwords being generated.
                     </div>
 
 Installation/Usage
