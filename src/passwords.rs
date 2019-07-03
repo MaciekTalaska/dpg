@@ -8,7 +8,7 @@ use diceware_info::DicewareInfo;
 use option_parser::Options;
 
 
-/// Main function to be called to generate passwords. It requires properly filled Options structue and repository of diceware word lists (Vec<DicewareInfo> or &[DicewareInfo]).
+/// Main function to be called to generate passwords. It requires properly filled Options structue and repository of diceware word lists (which is collection of DicewareInfo structues).
 ///
 /// Example of usage:
 /// ```rust
@@ -29,14 +29,14 @@ pub fn generate_diceware_passwords(
     options: &Options,
     diceware_repository: Vec<DicewareInfo>,
 ) -> String {
-    let password = generate_all_passwords(options, diceware_repository);
+    let passwords = generate_all_passwords(options, diceware_repository);
     // TODO: this should probably be moved from here,
     // it is not responsibility of the library itself
     // to copy generated passwords into clipboard
     if options.clipboard {
-        copy_to_clipboard(password.clone());
+        copy_to_clipboard(passwords.clone());
     }
-    password
+    passwords
 }
 
 
@@ -57,7 +57,7 @@ impl PasswordsIterator {
                 separator: separator.to_string(),
                 password_length,
                 password_count: 1,
-                simulate_dices: simulate_dices,
+                simulate_dices,
                 clipboard: false,
                 help: false,
             }
@@ -114,7 +114,7 @@ impl Iterator for PasswordsIterator {
 //    generate_single_password(&options, repository)
 //}
 
-/// Alernarive for generate_diceware_passwords
+/// Alternative for generate_diceware_passwords
 /// - does not require passing parameters as Options struct
 /// - does not require passing repository (this function takes care of creating repository)
 pub fn generate_passwords(language: &str,
