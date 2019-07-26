@@ -330,7 +330,7 @@ mod passwords_tests {
             clipboard: false,
             help: false,
             password_count: 1,
-            password_length: password_length,
+            password_length,
             separator: s!(""),
             simulate_dices: false,
         };
@@ -350,8 +350,8 @@ mod passwords_tests {
             clipboard: false,
             help: false,
             password_count: 1,
-            password_length: password_length,
-            separator: separator,
+            password_length,
+            separator,
             simulate_dices: false,
         };
 
