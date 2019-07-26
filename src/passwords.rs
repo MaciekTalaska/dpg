@@ -175,12 +175,12 @@ fn get_diceware_info_by_language(
     match language.to_lowercase().as_str() {
         "pl" => diceware_repository
             .iter()
-            .find(|di| di.language == "pl")
+            .find(|di| di.language.as_str() == "pl")
             .expect("unable to find data for language [pl]")
             .clone(),
         _ => diceware_repository
             .iter()
-            .find(|di| di.language == "en")
+            .find(|di| di.language.as_str() == "en")
             .expect("unable to find data for default language [en]")
             .clone(),
     }

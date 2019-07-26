@@ -121,7 +121,7 @@ fn create_options(opts: &HashMap<String, String>) -> Options {
 }
 
 fn validate_options(options: &Options) {
-    let language = options.language.clone();
+    let language = options.language.as_str();
     let password_length = options.password_length;
     let password_count = options.password_count;
     #[cfg(debug_assertions)]
