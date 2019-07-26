@@ -13,13 +13,13 @@ use option_parser::Options;
 /// Example of usage:
 /// ```rust
 ///    let options : dpg::option_parser::Options = dpg::option_parser::Options {
-///        language: "en".to_string(), // use English word list
-///        password_length: 6, // 6 words per password
-///        password_count: 3,  // generate 3 passwords
-///        separator: "-".to_string(),
-///        simulate_dices: false,
-///        clipboard: false,
-///        help: false
+///        language: "en".to_string(),     // use English word list
+///        password_length: 6,             // 6 words per password
+///        password_count: 3,              // generate 3 passwords
+///        separator: "-".to_string(),     // separate words by dash ('-')
+///        simulate_dices: false,          // do not simulate dice roll
+///        clipboard: false,               // do not copy passwords to clipboard
+///        help: false                     // do not call for help/usage
 ///    };
 ///
 ///    let repository = dpg::diceware_info::build_diceware_repository();
@@ -36,6 +36,60 @@ pub fn generate_diceware_passwords(
     if options.clipboard {
         copy_to_clipboard(passwords.clone());
     }
+    passwords
+}
+
+/// Alternative for generate_diceware_passwords
+/// - does not require passing parameters as Options struct
+/// - does not require passing repository (this function takes care of creating repository)
+///
+/// This mehod should be easier to consume, as it creates all requirements needed itself.
+/// Please note that this function does not allow to:
+/// - passwords to be copied to clipboard
+/// - set help flag to 'true' so that the additional help on usage is printed. This is due to the fact, that this method is only intended to be consumed as part of the library, so that it does not >>>>>>>>>>>>>>
+///
+/// Example of usage:
+/// ```rust
+///
+///    let passwords = dpg::passwords::generate_diceware_passwords_simple(
+///        "en",       // use English words list
+///        6,          // 6 words per password
+///        3,          // generate 3 passwords
+///        "-",        // separate words by dash ('-')
+///        false);     // do not simulate dice rolls
+///
+///    // the code above is the same as:
+///
+///    let options : dpg::option_parser::Options = dpg::option_parser::Options {
+///        language: "en".to_string(),     // use English word list
+///        password_length: 6,             // 6 words per password
+///        password_count: 3,              // generate 3 passwords
+///        separator: "-".to_string(),     // separate words by dash ('-')
+///        simulate_dices: false,          // do not simulate dice roll
+///        clipboard: false,               // do not copy passwords to clipboard
+///        help: false                     // do not call for help/usage
+///    };
+///
+///    let repository = dpg::diceware_info::build_diceware_repository();
+///    let passwords = dpg::passwords::generate_diceware_passwords(&options, repository);
+/// ```
+pub fn generate_diceware_passwords_simple(language: &str,
+                               password_length: usize,
+                               passwords_count: usize,
+                               separator: &str,
+                               simulate_dices: bool) -> String {
+    let repository = ::diceware_info::build_diceware_repository();
+    let options = ::option_parser::Options {
+        language : language.to_string(),
+        separator : separator.to_string(),
+        password_length,
+        password_count : passwords_count,
+        simulate_dices,
+        clipboard : false,
+        help : false,
+    };
+
+    let passwords = generate_all_passwords(&options, repository);
     passwords
 }
 
@@ -113,29 +167,6 @@ impl Iterator for PasswordsIterator {
 //    };
 //    generate_single_password(&options, repository)
 //}
-
-/// Alternative for generate_diceware_passwords
-/// - does not require passing parameters as Options struct
-/// - does not require passing repository (this function takes care of creating repository)
-pub fn generate_passwords(language: &str,
-                          password_length: usize,
-                          passwords_count: usize,
-                          separator: &str,
-                          simulate_dices: bool) -> String {
-    let repository = ::diceware_info::build_diceware_repository();
-    let options = ::option_parser::Options {
-        language : language.to_string(),
-        separator : separator.to_string(),
-        password_length,
-        password_count : passwords_count,
-        simulate_dices,
-        clipboard : false,
-        help : false,
-    };
-
-    let passwords = generate_all_passwords(&options, repository);
-    passwords
-}
 
 fn get_diceware_info_by_language(
     language: &str,
