@@ -83,6 +83,12 @@ Using `dpg` as a library
 
 Even though `dpg` has been initially developed as a command-line utility, it is very easy to use it as a library (dependency) in your project.
 
+There are two main ways to have passwords generated:
+- using `generate_diceware_passwords` function
+- using `generate_dicware_passwords_simple` function
+
+#### generate_diceware_passwords 
+
 1. Add `dpg` to your project's `Cargo.toml` as dependency
 2. Build repository of word lists by calling `dpg::diceware_info::build_diceware_repositiry`
 3. Build `dpg::option_parser::Options` structure
@@ -93,18 +99,18 @@ Password(s) are returned as string. If more than 1 password has been requested -
 Full example:
 
 ```rust
-    let options : dpg::option_parser::Options = dpg::option_parser::Options {
-        language: "en".to_string(),
-        password_length: 6,
-        password_count: 3,
-        separator: "-".to_string(),
-        clipboard: false,
-        simulate_dices: false,
-        help: false                        
-    };
+let options : dpg::option_parser::Options = dpg::option_parser::Options {
+    language: "en".to_string(),
+    password_length: 6,
+    password_count: 3,
+    separator: "-".to_string(),
+    clipboard: false,
+    simulate_dices: false,
+    help: false                        
+};
 
-    let repository = dpg::diceware_info::build_diceware_repository();
-    let passwords = dpg::passwords::generate_diceware_passwords(&options, repository);
+let repository = dpg::diceware_info::build_diceware_repository();
+let passwords = dpg::passwords::generate_diceware_passwords(&options, repository);
 ```
 Options structure has been created for the sake of convenience when using `dpq` as command-line utility. Options structure is created right after parsing command-line arguments. 
 
@@ -117,10 +123,48 @@ Options structure contains following fields:
 - simulate_dices    :bool       - specifies if generating words should be very close to the original method or not. Simulating throwing dices may be a bit slower - so this may have some impact when generating many passwords.
 - help              :bool - indicates if user asked for more verbose input, if so - enhanced help is printed out, and utility exits. Similarly to `clipboard` - this only makes sense when using `dpg` as command-line utility.
 
+#### generate_diceware_passwords_simple 
+
+Just to make things more convenient, and as in many cases building dependencies is actually an extra step - `generate_diceware_passwords_simple` method has bee created. This method acts exactly as the `generate_diceware_passwords` but does not require `Options structure` and `DicewareRepository` to be passed as parameters.
+
+Please note: due to the fact, that this function has been introduced for the sake of simplifying use of `dpg` as a library from your own code - two decisions have been made:
+- `generate_diceware_passwords_simple` is not capable of copying generated passwords to the clipboard
+- `generate_diceware_passwords_simple` will not print anything to the standard output
+
+These two restrictions should not be a problem in the scenario of using `dpg` as a library, and calling `generate_diceware_passwords_simple` from your own code. In such a scenario it is your code's responsibility to interact with the clipboard, and controll what is printed to the standard output.
+
+Example: 
+
+```rust
+   // generating 3 passwords (6 words each) and using the "classic" `generate_diceware_passwords` function requires following code to write: 
+
+   let options : dpg::option_parser::Options = dpg::option_parser::Options {
+       language: "en".to_string(),     // use English word list
+       password_length: 6,             // 6 words per password
+       password_count: 3,              // generate 3 passwords
+       separator: "-".to_string(),     // separate words by dash ('-')
+       simulate_dices: false,          // do not simulate dice roll
+       clipboard: false,               // do not copy passwords to clipboard
+       help: false                     // do not call for help/usage
+   };
+
+   let repository = dpg::diceware_info::build_diceware_repository();
+   let passwords = dpg::passwords::generate_diceware_passwords(&options, repository);
+
+   // the same could be achieved as once function call to `generate_diceware_password_simple`. This function does not allow 
+   let passwords = dpg::passwords::generate_diceware_passwords_simple(
+       "en",       // use English words list
+       6,          // 6 words per password
+       3,          // generate 3 passwords
+       "-",        // separate words by dash ('-')
+       false);     // do not simulate dice rolls
+
+```
+
 Todo
 ----
 
- - [ ] ability to use external word list file  
+ - [ ] ability to use external word list files
  - [ ] calculating password strength
 
 
