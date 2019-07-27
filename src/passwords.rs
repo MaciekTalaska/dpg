@@ -46,10 +46,12 @@ pub fn generate_diceware_passwords(
 /// This mehod should be easier to consume, as it creates all requirements needed itself.
 /// Please note that this function does not allow to:
 /// - passwords to be copied to clipboard
-/// - set help flag to 'true' so that the additional help on usage is printed. This is due to the fact, that this method is only intended to be consumed as part of the library, so that it does not >>>>>>>>>>>>>>
+/// - set help flag to 'true' so that the additional help on usage is printed. This is due to the fact, that this method is only intended to be consumed as third party library and be called directly from your code. Printing anything to the standard output and using clipboard should be responsibility of your own code.
 ///
 /// Example of usage:
 /// ```rust
+///
+///    // generating 3 passwords, using English word list, each password 6 words long. Words separated by dash ("-"):
 ///
 ///    let passwords = dpg::passwords::generate_diceware_passwords_simple(
 ///        "en",       // use English words list
