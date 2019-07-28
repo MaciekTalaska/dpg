@@ -12,6 +12,8 @@ use option_parser::Options;
 ///
 /// Example of usage:
 /// ```rust
+///    // generating 3 passwords, using English word list, each password 6 words long. Words separated by dash ("-"):
+///
 ///    let options : dpg::option_parser::Options = dpg::option_parser::Options {
 ///        language: "en".to_string(),     // use English word list
 ///        password_length: 6,             // 6 words per password
@@ -59,21 +61,6 @@ pub fn generate_diceware_passwords(
 ///        3,          // generate 3 passwords
 ///        "-",        // separate words by dash ('-')
 ///        false);     // do not simulate dice rolls
-///
-///    // the code above is the same as:
-///
-///    let options : dpg::option_parser::Options = dpg::option_parser::Options {
-///        language: "en".to_string(),     // use English word list
-///        password_length: 6,             // 6 words per password
-///        password_count: 3,              // generate 3 passwords
-///        separator: "-".to_string(),     // separate words by dash ('-')
-///        simulate_dices: false,          // do not simulate dice roll
-///        clipboard: false,               // do not copy passwords to clipboard
-///        help: false                     // do not call for help/usage
-///    };
-///
-///    let repository = dpg::diceware_info::build_diceware_repository();
-///    let passwords = dpg::passwords::generate_diceware_passwords(&options, repository);
 /// ```
 pub fn generate_diceware_passwords_simple(language: &str,
                                password_length: usize,
