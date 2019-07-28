@@ -152,24 +152,6 @@ impl Iterator for PasswordsIterator {
 //}
 
 
-//fn generate_diceware_password_single(language: &str,
-//                                     password_length: usize,
-//                                     separator: &str,
-//                                     simulate_dices: bool,
-//                                     repository: &Vec<DicewareInfo>)
-//    -> String {
-//    let options = ::option_parser::Options {
-//        language : language.to_string(),
-//        separator : separator.to_string(),
-//        password_length,
-//        password_count : 1,
-//        simulate_dices,
-//        clipboard : false,
-//        help : false,
-//    };
-//    generate_single_password(&options, repository)
-//}
-
 fn get_diceware_info_by_language(
     language: &str,
     diceware_repository: &[DicewareInfo],
