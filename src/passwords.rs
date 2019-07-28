@@ -132,26 +132,6 @@ impl Iterator for PasswordsIterator {
 }
 
 
-// is it a good idea to wrap iterating over generated passwords, so that they are being printed to stdout one by one?
-
-//pub fn generate_passwords_iter(language: &str, password_length: usize, passwords_count: usize, //separator: &str, simulate_dices: bool) -> String {
-//
-//    let repository = ::diceware_info::build_diceware_repository();
-//    let options = ::option_parser::Options {
-//        language : language.to_string(),
-//        separator : separator.to_string(),
-//        password_length,
-//        password_count : passwords_count,
-//        simulate_dices,
-//        clipboard : false,
-//        help : false,
-//    };
-//    let mut pc = PasswordsIterator::new(passwords_count);
-//
-//    "nothing".to_string()
-//}
-
-
 fn get_diceware_info_by_language(
     language: &str,
     diceware_repository: &[DicewareInfo],
