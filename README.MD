@@ -87,6 +87,8 @@ There are two main ways to have passwords generated:
 - using `generate_diceware_passwords` function
 - using `generate_dicware_passwords_simple` function
 
+Additionally an iterator could be used for generating very many passwords.
+
 #### generate_diceware_passwords 
 
 1. Add `dpg` to your project's `Cargo.toml` as dependency
@@ -147,6 +149,35 @@ Example (compare it to the above example of using `generate_diceware_passwords`)
        "-",        // separate words by dash ('-')
        false);     // do not simulate dice rolls
 ```
+
+#### Using iterator for generating many passwords
+
+Both functions described above work synchronously. That means that the processing takes some time, and at the end all generated passwords are returned at once. In most cases this should be pretty ok. There is although scenario, when such an approach may not be convenient: generating very long list of passwords. In such a case the time taken for generating all the passwords could be significant, and not a single password could be returned before all are ready.
+
+Iterator based approach has been created to solve this problem. Passwords are generated one by one, so just after a blink of an eye first batch of passwords should be available.
+
+Example of usage:
+
+```rust
+// first we have to create iterator, passing couple of important values as parameters:
+let mut password_iter = PasswordsIterator::new(
+    "en",       // use English word list
+    ".",        // use dot as a separator
+    5,          // 5 words per password
+    false);     // do not simulate dices
+
+
+// when iterator is created it is easy to get password(s) one by one:
+for _i in 0..30000 {
+    let password = password_iter.next();
+
+    println!("{}", password.unwrap());
+}
+
+```
+Note: iterator is build in such a way, that there is no counter in it all - you will always get a new password after calling `next()`. That means that it is super easy to create a service that produces password on request.
+Note2: iterator is configured when created - all passwords will be generated using the same word list, will be of the same length (words per password), and words will be separated by the same character.
+
 
 Todo
 ----
